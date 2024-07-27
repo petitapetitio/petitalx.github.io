@@ -3,7 +3,7 @@ from pelican.settings import DEFAULT_CONFIG
 
 AUTHOR = 'Alexandre Petit'
 SITENAME = 'petitalxio'
-SITEURL = "localhost:8000"
+SITEURL = ""
 
 PATH = "content"
 
