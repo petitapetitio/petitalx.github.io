@@ -1,3 +1,6 @@
+from pelican.readers import MarkdownReader
+from pelican.settings import DEFAULT_CONFIG
+
 AUTHOR = 'Alexandre Petit'
 SITENAME = 'petitalxio'
 SITEURL = ""
@@ -9,6 +12,9 @@ TIMEZONE = 'Europe/Paris'
 DEFAULT_LANG = 'fr'
 
 THEME = "themes/petitalxio"
+
+config = DEFAULT_CONFIG.copy()
+HOME, _ = MarkdownReader(config).read("content/pages/home.md")
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
