@@ -11,6 +11,13 @@ Je suis né à Rouen.
 
 Et j'habite actuellement à Rouen.
 
+Une liste ? 
+
+- 1
+- 2
+- et trois
+
+
 ## Moi en 10 minutes
 
 Voir la page [how to me](pages/moi-en-10-minutes.html)

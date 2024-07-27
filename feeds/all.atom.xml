@@ -1,2 +1,173 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>petitalxio</title><link href="https://petitalx.github.io/" rel="alternate"></link><link href="https://petitalx.github.io/feeds/all.atom.xml" rel="self"></link><id>https://petitalx.github.io/</id><updated>2012-05-20T00:00:00+02:00</updated><entry><title>4-4-4</title><link href="https://petitalx.github.io/4-4-4.html" rel="alternate"></link><published>2012-05-20T00:00:00+02:00</published><updated>2012-05-20T00:00:00+02:00</updated><author><name>Alexandre Petit</name></author><id>tag:petitalx.github.io,2012-05-20:/4-4-4.html</id><content type="html">&lt;p&gt;This is the fourth article written in markdown.&lt;/p&gt;</content><category term="misc"></category></entry><entry><title>500</title><link href="https://petitalx.github.io/500.html" rel="alternate"></link><published>2012-05-20T00:00:00+02:00</published><updated>2012-05-20T00:00:00+02:00</updated><author><name>Alexandre Petit</name></author><id>tag:petitalx.github.io,2012-05-20:/500.html</id><content type="html">&lt;p&gt;This is the fifth article written in markdown.&lt;/p&gt;</content><category term="misc"></category></entry><entry><title>3rd markdown powered article</title><link href="https://petitalx.github.io/3rd-markdown-powered-article.html" rel="alternate"></link><published>2012-04-20T00:00:00+02:00</published><updated>2012-04-20T00:00:00+02:00</updated><author><name>Alexandre Petit</name></author><id>tag:petitalx.github.io,2012-04-20:/3rd-markdown-powered-article.html</id><content type="html">&lt;p&gt;This is the third article written in markdown.&lt;/p&gt;</content><category term="misc"></category></entry><entry><title>Another markdown powered article</title><link href="https://petitalx.github.io/another-markdown-powered-article.html" rel="alternate"></link><published>2012-04-20T00:00:00+02:00</published><updated>2012-04-20T00:00:00+02:00</updated><author><name>Alexandre Petit</name></author><id>tag:petitalx.github.io,2012-04-20:/another-markdown-powered-article.html</id><content type="html">&lt;p&gt;This is another article written in markdown.&lt;/p&gt;</content><category term="misc"></category></entry><entry><title>A markdown powered article</title><link href="https://petitalx.github.io/a-markdown-powered-article.html" rel="alternate"></link><published>2011-04-20T00:00:00+02:00</published><updated>2011-04-20T00:00:00+02:00</updated><author><name>Alexandre Petit</name></author><id>tag:petitalx.github.io,2011-04-20:/a-markdown-powered-article.html</id><content type="html">&lt;p&gt;You're mutually oblivious.&lt;/p&gt;</content><category term="misc"></category></entry></feed>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>petitalxio</title><link href="https://petitalx.github.io/" rel="alternate"></link><link href="https://petitalx.github.io/feeds/all.atom.xml" rel="self"></link><id>https://petitalx.github.io/</id><updated>2024-07-27T00:00:00+02:00</updated><entry><title>Créer son site personnel gratuitement avec Githbub Pages et Python, et Pelican</title><link href="https://petitalx.github.io/creer-son-site-personnel-gratuitement-avec-githbub-pages-et-python-et-pelican.html" rel="alternate"></link><published>2024-07-27T00:00:00+02:00</published><updated>2024-07-27T00:00:00+02:00</updated><author><name>Alexandre Petit</name></author><id>tag:petitalx.github.io,2024-07-27:/creer-son-site-personnel-gratuitement-avec-githbub-pages-et-python-et-pelican.html</id><summary type="html">&lt;h2&gt;Contexte&lt;/h2&gt;
+&lt;p&gt;Cela fait plusieurs mois que j'expérimente différents supports d'écriture :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;je me suis lancé sur &lt;a href="https://www.linkedin.com/in/petitalx/"&gt;LinkedIn&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;j'ai créé une &lt;a href="https://100produits.substack.com/"&gt;newsletter sur Substack&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;j'écrire deux pages par jour dans un carnet physique depuis 20 jours&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Une difficulté que je rencontre est que je n'ai pas de ligne éditoriale claire, pas de …&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Contexte&lt;/h2&gt;
+&lt;p&gt;Cela fait plusieurs mois que j'expérimente différents supports d'écriture :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;je me suis lancé sur &lt;a href="https://www.linkedin.com/in/petitalx/"&gt;LinkedIn&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;j'ai créé une &lt;a href="https://100produits.substack.com/"&gt;newsletter sur Substack&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;j'écrire deux pages par jour dans un carnet physique depuis 20 jours&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Une difficulté que je rencontre est que je n'ai pas de ligne éditoriale claire, pas de promesse. &lt;/p&gt;
+&lt;p&gt;J'ai envie d'écrire sur des sujets variés : &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;de retours d'expérience de projets techniques&lt;/li&gt;
+&lt;li&gt;des "récits" de voyage&lt;/li&gt;
+&lt;li&gt;des points d'avancement de projet&lt;/li&gt;
+&lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Et je n'ai pas envie de m'imposer de façon "push". &lt;/p&gt;
+&lt;p&gt;Pour ces deux raisons, donc un site personnel me semble être une bonne solution.&lt;/p&gt;
+&lt;p&gt;En complément de The Developer's Brain, je veux réaliser 30 projets en Python. &lt;/p&gt;
+&lt;p&gt;Créer un site personnel en python apparaît comme bon challenge !&lt;/p&gt;
+&lt;h2&gt;Cadrer le projet&lt;/h2&gt;
+&lt;p&gt;Ma motivation est de "Claim a personal domain"&lt;/p&gt;
+&lt;p&gt;Ce qui est important pour moi est de :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;livrer&lt;/li&gt;
+&lt;li&gt;choisir une solution simple&lt;/li&gt;
+&lt;li&gt;avoir un processus de décision clair dans le choix des technologies&lt;/li&gt;
+&lt;li&gt;faire un projet en python pour pousser mon expertise sur ce langage&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Les risques que je perçois sont : &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;de tomber dans un rabbit hole lors du choix de la technologie&lt;/li&gt;
+&lt;li&gt;de me torturer le cerveau pour choisir une solution d'hébergement&lt;/li&gt;
+&lt;li&gt;de choisir un outil trop complexe pour mon besoin&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;OK.&lt;/p&gt;
+&lt;p&gt;À présent, je suis mis en garde !&lt;/p&gt;
+&lt;h2&gt;Choisir la technologie&lt;/h2&gt;
+&lt;p&gt;Pour créer un site avec Python, j'ai d'abord pensé aux technologies suivantes : &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Django : un framework fullstack populaire pour créer des applications web&lt;/li&gt;
+&lt;li&gt;Flask : un framework léger pour créer des applications web&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Je me suis posé la question &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Quelle framework choisir pour créer un site personnel ?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Je suis tombé sur ce fil Reddit &lt;a href="https://www.reddit.com/r/Python/comments/166xf22/best_framework_for_portfolio_website/"&gt;Best framework for portfolio website?&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Les réponses sont unanimes. Utiliser Django ou Flask revient à se compliquer la vie. Un générateur de site statique est plus simple, moins cher et plus rapide&lt;/p&gt;
+&lt;p&gt;En effet, les générateurs de site statique ont les avantages suivants : 
+- Simplicité : ils sont en général plus simple à utiliser que les frameworks fullstack complets
+- Prix : il existe de nombreuses solutions d'hébergement gratuit
+- SEO : les pages sont statiques et donc facilement indexables par les moteurs de recherche&lt;/p&gt;
+&lt;p&gt;Je me suis donc tourné vers les générateurs de site statique.&lt;/p&gt;
+&lt;h2&gt;Choisir un générateur de site statique&lt;/h2&gt;
+&lt;p&gt;Les solutions les plus tendances sont : 
+- Jekyll
+- Hugo
+- Astro&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Jekyll&lt;/strong&gt; existe depuis 2008. L'outil est écrit en Ruby. Plus de &lt;a href="https://trends.builtwith.com/fr/cms/Jekyll"&gt;180k&lt;/a&gt; sites web sont construit avec, et c'est la technologie qui est proposée par défaut pour Github Pages. Il bénéficie communauté, d'un écosystème de plugins. La &lt;a href="https://jekyllrb.com/showcase/"&gt;galerie&lt;/a&gt; démontre qu'il est possible de faire des sites esthétiques et complets avec. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Hugo&lt;/strong&gt; existe depuis 2013. Il est écrit en Go et se veut le générateur statique le plus rapide (en termes de compilation). Il est utilisé par &lt;a href="https://trends.builtwith.com/fr/cms/Hugo"&gt;presque 300k sites&lt;/a&gt;. Il dispose de fonctionnalités de localisation, et peut être associé à des frameworks CSS comme Tailwind. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Astro&lt;/strong&gt; est un générateur de site statique qui permet de combiner Svelte, React et Vue. Je l'ai tout de suite écarté car un wrapper autour de frameworks indique une complexité élevée. &lt;/p&gt;
+&lt;p&gt;Et python ?&lt;/p&gt;
+&lt;p&gt;Il existe bien un générateur de sites statiques en python : Pelican.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Pelican&lt;/strong&gt; existe depuis 2010. Il est écrit en python et a été créé par &lt;a href="http://blog.notmyidea.org/"&gt;Alexis Metaireau&lt;/a&gt;. Il est utilisé par seulement &lt;a href="https://trends.builtwith.com/websitelist/Pelican"&gt;3500 sites&lt;/a&gt;, mais il dispose d'une documentation claire. Et comme il est écrit en python, je pourrai contribuer au code source ! &lt;/p&gt;
+&lt;p&gt;Je choisis donc Pelican.&lt;/p&gt;
+&lt;h2&gt;Choisir une solution de déploiement&lt;/h2&gt;
+&lt;p&gt;Il existe plusieurs solutions pour déployer un site statique :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;AWS&lt;/li&gt;
+&lt;li&gt;Netlify&lt;/li&gt;
+&lt;li&gt;Github Pages&lt;/li&gt;
+&lt;li&gt;Mon propre serveur&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Je veux une solution gratuite et simple.&lt;/p&gt;
+&lt;p&gt;J'ai entendu beaucoup de bien de Github Pages. &lt;/p&gt;
+&lt;p&gt;Je vais tester cette solution.&lt;/p&gt;
+&lt;h2&gt;Créer le site&lt;/h2&gt;
+&lt;p&gt;Ok, on entre dans le vif du sujet.&lt;/p&gt;
+&lt;p&gt;Dans la suite de l'article, on va suivre ensemble les étapes que j'ai suivi pour construire mon site personnel &lt;code&gt;petitalx.io&lt;/code&gt;. &lt;code&gt;petitalx&lt;/code&gt; est mon username github. Naturellement, vous pouvez remplacer toutes les occurences de &lt;code&gt;petitalx&lt;/code&gt; par votre username.&lt;/p&gt;
+&lt;h3&gt;Créer un walking skeleton&lt;/h3&gt;
+&lt;p&gt;Notre premier objectif est de configurer et déployer un site le plus rapidement possible. On pourra ensuite itérer pour ajuster le style et simplifier le code.&lt;/p&gt;
+&lt;p&gt;Prérequis :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;avoir un terminal &lt;/li&gt;
+&lt;li&gt;avoir python installé&lt;/li&gt;
+&lt;li&gt;avoir un compte github&lt;/li&gt;
+&lt;li&gt;connaître le ba-ba de git&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;On commence par créer le projet en local.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nb"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;~/dev
+mkdir&lt;span class="w"&gt; &lt;/span&gt;petitalxio
+&lt;span class="nb"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;petitalxio
+
+python&lt;span class="w"&gt; &lt;/span&gt;--version&lt;span class="w"&gt; &lt;/span&gt;
+python&lt;span class="w"&gt; &lt;/span&gt;-m&lt;span class="w"&gt; &lt;/span&gt;venv&lt;span class="w"&gt; &lt;/span&gt;.venv
+&lt;span class="nb"&gt;source&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;.venv/bin/activate
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Créer le fichier requirements.txt suivant&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pelican[markdown]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Puis installer les dépendances&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip&lt;span class="w"&gt; &lt;/span&gt;install&lt;span class="w"&gt; &lt;/span&gt;-r&lt;span class="w"&gt; &lt;/span&gt;requirements.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Lancer l'assistant de création de site&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pelican-quickstart
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;créer le site dans un dossier &lt;code&gt;_pelican&lt;/code&gt; &lt;/li&gt;
+&lt;li&gt;choisir &lt;code&gt;fr&lt;/code&gt; comme langue par défaut&lt;/li&gt;
+&lt;li&gt;ne pas préciser de préfixe d'url&lt;/li&gt;
+&lt;li&gt;désactiver la pagination&lt;/li&gt;
+&lt;li&gt;choisir 'Europe/Paris' comme timezone&lt;/li&gt;
+&lt;li&gt;demander à générer le fichier Makefile&lt;/li&gt;
+&lt;li&gt;répondre oui à la question "Do you want to upload your website using GitHub Pages?"&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;OK ! &lt;/p&gt;
+&lt;p&gt;Pour visionner le site en local, lancer la commande&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nb"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;~/dev/petitalxio/_pelican
+pelican&lt;span class="w"&gt; &lt;/span&gt;content
+pelican&lt;span class="w"&gt; &lt;/span&gt;--listen
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h4&gt;Publier sur Github Pages&lt;/h4&gt;
+&lt;p&gt;Rendez-vous sur votre compte github : https://github.com/. &lt;/p&gt;
+&lt;p&gt;Créer un nouveau repository &lt;code&gt;username.github.io&lt;/code&gt; où &lt;code&gt;username&lt;/code&gt; est votre nom d'utilisateur github.&lt;/p&gt;
+&lt;p&gt;De retour sur votre poste, se replacer à la racine du projet&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nb"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;~/dev/petitalxio&lt;span class="sb"&gt;`&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Créer un fichier .gitignore avec le contenu suivant&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;.venv  
+**__pycache__**/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Initialiser le dépôt git&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nb"&gt;echo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;# petitalx.github.io&amp;quot;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&amp;gt;&amp;gt;&lt;span class="w"&gt; &lt;/span&gt;README.md
+git&lt;span class="w"&gt; &lt;/span&gt;init
+git&lt;span class="w"&gt; &lt;/span&gt;add&lt;span class="w"&gt; &lt;/span&gt;README.md
+git&lt;span class="w"&gt; &lt;/span&gt;commit&lt;span class="w"&gt; &lt;/span&gt;-m&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;first commit&amp;quot;&lt;/span&gt;
+git&lt;span class="w"&gt; &lt;/span&gt;branch&lt;span class="w"&gt; &lt;/span&gt;-M&lt;span class="w"&gt; &lt;/span&gt;main
+git&lt;span class="w"&gt; &lt;/span&gt;remote&lt;span class="w"&gt; &lt;/span&gt;add&lt;span class="w"&gt; &lt;/span&gt;origin&lt;span class="w"&gt; &lt;/span&gt;https://github.com/petitalx/petitalx.github.io.git
+git&lt;span class="w"&gt; &lt;/span&gt;push&lt;span class="w"&gt; &lt;/span&gt;-u&lt;span class="w"&gt; &lt;/span&gt;origin&lt;span class="w"&gt; &lt;/span&gt;main
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;La façon la plus simple de déployer le site est de générer le contenu du site à la racine du répertoire.&lt;/p&gt;
+&lt;p&gt;On va donc modifier le fichier &lt;code&gt;Makefile&lt;/code&gt; pour que la commande &lt;code&gt;make publish&lt;/code&gt; génère le site à la racine du répertoire.&lt;/p&gt;
+&lt;p&gt;Modifier le fichier &lt;code&gt;_pelican/Makefile&lt;/code&gt; pour que la variable &lt;code&gt;OUTPUTDIR&lt;/code&gt; soit égale à &lt;code&gt;$(BASEDIR)/..&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Lancer &lt;code&gt;make publish&lt;/code&gt; depuis &lt;code&gt;~/dev/petitalxio/_pelican&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Lancer &lt;code&gt;git add .&lt;/code&gt;, &lt;code&gt;git commit -m "generate content"&lt;/code&gt;, &lt;code&gt;git push&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Vérifier que le déploiement est en cours dans le volet https://github.com/petitalx/petitalx.github.io/actions.&lt;/p&gt;
+&lt;h1&gt;Brouillon&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Choisir la technologie&lt;/li&gt;
+&lt;li&gt;Choisir le solution de déploiement&lt;/li&gt;
+&lt;li&gt;Créer le site&lt;/li&gt;
+&lt;li&gt;Conclusion&lt;/li&gt;
+&lt;li&gt;Ressources&lt;/li&gt;
+&lt;li&gt;Mes notes de second cerveau&lt;/li&gt;
+&lt;li&gt;J'ai pris une décision confiant !!&lt;/li&gt;
+&lt;li&gt;Pistes pour aller plus loin : créer mon propre générateur, crééer un thème, contribuer à la doc de Pelican, prendre une issue&lt;/li&gt;
+&lt;/ul&gt;</content><category term="misc"></category></entry><entry><title>4-4-4</title><link href="https://petitalx.github.io/4-4-4.html" rel="alternate"></link><published>2012-05-20T00:00:00+02:00</published><updated>2012-05-20T00:00:00+02:00</updated><author><name>Alexandre Petit</name></author><id>tag:petitalx.github.io,2012-05-20:/4-4-4.html</id><content type="html">&lt;p&gt;This is the fourth article written in markdown.&lt;/p&gt;</content><category term="misc"></category></entry><entry><title>500</title><link href="https://petitalx.github.io/500.html" rel="alternate"></link><published>2012-05-20T00:00:00+02:00</published><updated>2012-05-20T00:00:00+02:00</updated><author><name>Alexandre Petit</name></author><id>tag:petitalx.github.io,2012-05-20:/500.html</id><content type="html">&lt;p&gt;This is the fifth article written in markdown.&lt;/p&gt;</content><category term="misc"></category></entry><entry><title>3rd markdown powered article</title><link href="https://petitalx.github.io/3rd-markdown-powered-article.html" rel="alternate"></link><published>2012-04-20T00:00:00+02:00</published><updated>2012-04-20T00:00:00+02:00</updated><author><name>Alexandre Petit</name></author><id>tag:petitalx.github.io,2012-04-20:/3rd-markdown-powered-article.html</id><content type="html">&lt;p&gt;This is the third article written in markdown.&lt;/p&gt;</content><category term="misc"></category></entry><entry><title>Another markdown powered article</title><link href="https://petitalx.github.io/another-markdown-powered-article.html" rel="alternate"></link><published>2012-04-20T00:00:00+02:00</published><updated>2012-04-20T00:00:00+02:00</updated><author><name>Alexandre Petit</name></author><id>tag:petitalx.github.io,2012-04-20:/another-markdown-powered-article.html</id><content type="html">&lt;p&gt;This is another article written in markdown.&lt;/p&gt;</content><category term="misc"></category></entry></feed>

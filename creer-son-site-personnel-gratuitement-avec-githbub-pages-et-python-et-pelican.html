@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+        <title>petitalxio - Créer son site personnel gratuitement avec Githbub Pages et Python, et Pelican</title>
+      <meta charset="utf-8" />
+      <meta name="generator" content="Pelican" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="https://petitalx.github.io/theme/css/style.css" />
+        <link href="https://petitalx.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="petitalxio Full Atom Feed" />
+        <link href="https://petitalx.github.io/feeds/misc.atom.xml" type="application/atom+xml" rel="alternate" title="petitalxio Categories Atom Feed" />
+
+
+
+
+
+  </head>
+
+  <body>
+    <header>
+      <hgroup><h1><a href="https://petitalx.github.io/">petitalxio</a></h1></hgroup>
+    </header>
+    <main>
+  <article>
+    <header>
+      <h2>
+        <a href="https://petitalx.github.io/creer-son-site-personnel-gratuitement-avec-githbub-pages-et-python-et-pelican.html" rel="bookmark"
+           title="Permalink to Créer son site personnel gratuitement avec Githbub Pages et Python, et Pelican">Créer son site personnel gratuitement avec Githbub Pages et Python, et Pelican</a></h2>
+      
+    </header>
+    <h2>Contexte</h2>
+<p>Cela fait plusieurs mois que j'expérimente différents supports d'écriture :</p>
+<ul>
+<li>je me suis lancé sur <a href="https://www.linkedin.com/in/petitalx/">LinkedIn</a></li>
+<li>j'ai créé une <a href="https://100produits.substack.com/">newsletter sur Substack</a></li>
+<li>j'écrire deux pages par jour dans un carnet physique depuis 20 jours</li>
+</ul>
+<p>Une difficulté que je rencontre est que je n'ai pas de ligne éditoriale claire, pas de promesse. </p>
+<p>J'ai envie d'écrire sur des sujets variés : </p>
+<ul>
+<li>de retours d'expérience de projets techniques</li>
+<li>des "récits" de voyage</li>
+<li>des points d'avancement de projet</li>
+<li>...</li>
+</ul>
+<p>Et je n'ai pas envie de m'imposer de façon "push". </p>
+<p>Pour ces deux raisons, donc un site personnel me semble être une bonne solution.</p>
+<p>En complément de The Developer's Brain, je veux réaliser 30 projets en Python. </p>
+<p>Créer un site personnel en python apparaît comme bon challenge !</p>
+<h2>Cadrer le projet</h2>
+<p>Ma motivation est de "Claim a personal domain"</p>
+<p>Ce qui est important pour moi est de :</p>
+<ul>
+<li>livrer</li>
+<li>choisir une solution simple</li>
+<li>avoir un processus de décision clair dans le choix des technologies</li>
+<li>faire un projet en python pour pousser mon expertise sur ce langage</li>
+</ul>
+<p>Les risques que je perçois sont : </p>
+<ul>
+<li>de tomber dans un rabbit hole lors du choix de la technologie</li>
+<li>de me torturer le cerveau pour choisir une solution d'hébergement</li>
+<li>de choisir un outil trop complexe pour mon besoin</li>
+</ul>
+<p>OK.</p>
+<p>À présent, je suis mis en garde !</p>
+<h2>Choisir la technologie</h2>
+<p>Pour créer un site avec Python, j'ai d'abord pensé aux technologies suivantes : </p>
+<ul>
+<li>Django : un framework fullstack populaire pour créer des applications web</li>
+<li>Flask : un framework léger pour créer des applications web</li>
+</ul>
+<p>Je me suis posé la question </p>
+<blockquote>
+<p>Quelle framework choisir pour créer un site personnel ?</p>
+</blockquote>
+<p>Je suis tombé sur ce fil Reddit <a href="https://www.reddit.com/r/Python/comments/166xf22/best_framework_for_portfolio_website/">Best framework for portfolio website?</a>.</p>
+<p>Les réponses sont unanimes. Utiliser Django ou Flask revient à se compliquer la vie. Un générateur de site statique est plus simple, moins cher et plus rapide</p>
+<p>En effet, les générateurs de site statique ont les avantages suivants : 
+- Simplicité : ils sont en général plus simple à utiliser que les frameworks fullstack complets
+- Prix : il existe de nombreuses solutions d'hébergement gratuit
+- SEO : les pages sont statiques et donc facilement indexables par les moteurs de recherche</p>
+<p>Je me suis donc tourné vers les générateurs de site statique.</p>
+<h2>Choisir un générateur de site statique</h2>
+<p>Les solutions les plus tendances sont : 
+- Jekyll
+- Hugo
+- Astro</p>
+<p><strong>Jekyll</strong> existe depuis 2008. L'outil est écrit en Ruby. Plus de <a href="https://trends.builtwith.com/fr/cms/Jekyll">180k</a> sites web sont construit avec, et c'est la technologie qui est proposée par défaut pour Github Pages. Il bénéficie communauté, d'un écosystème de plugins. La <a href="https://jekyllrb.com/showcase/">galerie</a> démontre qu'il est possible de faire des sites esthétiques et complets avec. </p>
+<p><strong>Hugo</strong> existe depuis 2013. Il est écrit en Go et se veut le générateur statique le plus rapide (en termes de compilation). Il est utilisé par <a href="https://trends.builtwith.com/fr/cms/Hugo">presque 300k sites</a>. Il dispose de fonctionnalités de localisation, et peut être associé à des frameworks CSS comme Tailwind. </p>
+<p><strong>Astro</strong> est un générateur de site statique qui permet de combiner Svelte, React et Vue. Je l'ai tout de suite écarté car un wrapper autour de frameworks indique une complexité élevée. </p>
+<p>Et python ?</p>
+<p>Il existe bien un générateur de sites statiques en python : Pelican.</p>
+<p><strong>Pelican</strong> existe depuis 2010. Il est écrit en python et a été créé par <a href="http://blog.notmyidea.org/">Alexis Metaireau</a>. Il est utilisé par seulement <a href="https://trends.builtwith.com/websitelist/Pelican">3500 sites</a>, mais il dispose d'une documentation claire. Et comme il est écrit en python, je pourrai contribuer au code source ! </p>
+<p>Je choisis donc Pelican.</p>
+<h2>Choisir une solution de déploiement</h2>
+<p>Il existe plusieurs solutions pour déployer un site statique :</p>
+<ul>
+<li>AWS</li>
+<li>Netlify</li>
+<li>Github Pages</li>
+<li>Mon propre serveur</li>
+</ul>
+<p>Je veux une solution gratuite et simple.</p>
+<p>J'ai entendu beaucoup de bien de Github Pages. </p>
+<p>Je vais tester cette solution.</p>
+<h2>Créer le site</h2>
+<p>Ok, on entre dans le vif du sujet.</p>
+<p>Dans la suite de l'article, on va suivre ensemble les étapes que j'ai suivi pour construire mon site personnel <code>petitalx.io</code>. <code>petitalx</code> est mon username github. Naturellement, vous pouvez remplacer toutes les occurences de <code>petitalx</code> par votre username.</p>
+<h3>Créer un walking skeleton</h3>
+<p>Notre premier objectif est de configurer et déployer un site le plus rapidement possible. On pourra ensuite itérer pour ajuster le style et simplifier le code.</p>
+<p>Prérequis :</p>
+<ul>
+<li>avoir un terminal </li>
+<li>avoir python installé</li>
+<li>avoir un compte github</li>
+<li>connaître le ba-ba de git</li>
+</ul>
+<p>On commence par créer le projet en local.</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/dev
+mkdir<span class="w"> </span>petitalxio
+<span class="nb">cd</span><span class="w"> </span>petitalxio
+
+python<span class="w"> </span>--version<span class="w"> </span>
+python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>.venv
+<span class="nb">source</span><span class="w"> </span>.venv/bin/activate
+</code></pre></div>
+
+<p>Créer le fichier requirements.txt suivant</p>
+<div class="highlight"><pre><span></span><code>pelican[markdown]
+</code></pre></div>
+
+<p>Puis installer les dépendances</p>
+<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+</code></pre></div>
+
+<p>Lancer l'assistant de création de site</p>
+<div class="highlight"><pre><span></span><code>pelican-quickstart
+</code></pre></div>
+
+<ul>
+<li>créer le site dans un dossier <code>_pelican</code> </li>
+<li>choisir <code>fr</code> comme langue par défaut</li>
+<li>ne pas préciser de préfixe d'url</li>
+<li>désactiver la pagination</li>
+<li>choisir 'Europe/Paris' comme timezone</li>
+<li>demander à générer le fichier Makefile</li>
+<li>répondre oui à la question "Do you want to upload your website using GitHub Pages?"</li>
+</ul>
+<p>OK ! </p>
+<p>Pour visionner le site en local, lancer la commande</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/dev/petitalxio/_pelican
+pelican<span class="w"> </span>content
+pelican<span class="w"> </span>--listen
+</code></pre></div>
+
+<h4>Publier sur Github Pages</h4>
+<p>Rendez-vous sur votre compte github : https://github.com/. </p>
+<p>Créer un nouveau repository <code>username.github.io</code> où <code>username</code> est votre nom d'utilisateur github.</p>
+<p>De retour sur votre poste, se replacer à la racine du projet</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/dev/petitalxio<span class="sb">`</span>
+</code></pre></div>
+
+<p>Créer un fichier .gitignore avec le contenu suivant</p>
+<div class="highlight"><pre><span></span><code>.venv  
+**__pycache__**/
+</code></pre></div>
+
+<p>Initialiser le dépôt git</p>
+<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;# petitalx.github.io&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>README.md
+git<span class="w"> </span>init
+git<span class="w"> </span>add<span class="w"> </span>README.md
+git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;first commit&quot;</span>
+git<span class="w"> </span>branch<span class="w"> </span>-M<span class="w"> </span>main
+git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>origin<span class="w"> </span>https://github.com/petitalx/petitalx.github.io.git
+git<span class="w"> </span>push<span class="w"> </span>-u<span class="w"> </span>origin<span class="w"> </span>main
+</code></pre></div>
+
+<p>La façon la plus simple de déployer le site est de générer le contenu du site à la racine du répertoire.</p>
+<p>On va donc modifier le fichier <code>Makefile</code> pour que la commande <code>make publish</code> génère le site à la racine du répertoire.</p>
+<p>Modifier le fichier <code>_pelican/Makefile</code> pour que la variable <code>OUTPUTDIR</code> soit égale à <code>$(BASEDIR)/..</code>.</p>
+<p>Lancer <code>make publish</code> depuis <code>~/dev/petitalxio/_pelican</code>.</p>
+<p>Lancer <code>git add .</code>, <code>git commit -m "generate content"</code>, <code>git push</code>.</p>
+<p>Vérifier que le déploiement est en cours dans le volet https://github.com/petitalx/petitalx.github.io/actions.</p>
+<h1>Brouillon</h1>
+<ul>
+<li>Choisir la technologie</li>
+<li>Choisir le solution de déploiement</li>
+<li>Créer le site</li>
+<li>Conclusion</li>
+<li>Ressources</li>
+<li>Mes notes de second cerveau</li>
+<li>J'ai pris une décision confiant !!</li>
+<li>Pistes pour aller plus loin : créer mon propre générateur, crééer un thème, contribuer à la doc de Pelican, prendre une issue</li>
+</ul>
+    <footer>
+      <p>Published: <time datetime="2024-07-27T00:00:00+02:00">
+        Sam 27 juillet 2024
+      </time></p>
+        <address>
+          By             <a href="https://petitalx.github.io/author/alexandre-petit.html">Alexandre Petit</a>
+        </address>
+        <p>
+          Category: <a href="https://petitalx.github.io/category/misc.html">misc</a>
+        </p>
+    </footer>
+  </article>
+    </main>
+  </body>
+</html>
