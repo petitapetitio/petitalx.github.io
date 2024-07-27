@@ -41,3 +41,12 @@ DEFAULT_PAGINATION = False
 
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
+
+# Disable the generation of these pages
+TAG_SAVE_AS = ''
+TAGS_SAVE_AS = ''
+CATEGORY_SAVE_AS = ''
+CATEGORIES_SAVE_AS = ''
+AUTHOR_SAVE_AS = ''
+AUTHORS_SAVE_AS = ''
+ARCHIVES_SAVE_AS = ''
