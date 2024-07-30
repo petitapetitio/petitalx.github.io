@@ -5,9 +5,7 @@
       <meta charset="utf-8" />
       <meta name="generator" content="Pelican" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" type="text/css" href="https://petitalx.github.io/theme/css/style.css" />
-        <link href="https://petitalx.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="petitalxio Full Atom Feed" />
-        <link href="https://petitalx.github.io/feeds/misc.atom.xml" type="application/atom+xml" rel="alternate" title="petitalxio Categories Atom Feed" />
+      <link rel="stylesheet" type="text/css" href="/theme/css/style.css" />
 
 
 
@@ -17,22 +15,30 @@
 
   <body>
     <header>
-      <hgroup><h1><a href="https://petitalx.github.io/">petitalxio</a></h1></hgroup>
+      <hgroup><h1><a href="/">petitalxio</a></h1></hgroup>
     </header>
     <main>
   <article>
     <header>
       <h2>
-        <a href="https://petitalx.github.io/creer-son-site-personnel-gratuitement-avec-githbub-pages-et-python-et-pelican.html" rel="bookmark"
+        <a href="/creer-son-site-personnel-gratuitement-avec-githbub-pages-et-python-et-pelican.html" rel="bookmark"
            title="Permalink to Créer son site personnel gratuitement avec Githbub Pages et Python, et Pelican">Créer son site personnel gratuitement avec Githbub Pages et Python, et Pelican</a></h2>
       
     </header>
-    <h2>Contexte</h2>
+    <p>Hello ! </p>
+<p>Dans cet article, on va voir comment créer un site personnel :</p>
+<ul>
+<li>avec le générateur de site statique Pelican (écrit en Python)</li>
+<li>hébergé sur Github Pages</li>
+<li>à partir de contenu Markdown</li>
+</ul>
+<p>Le résultat final ressemble à <a href="http://petitalx.io/">ça</a>. <em>If you don't give a shit about</em> le contexte et mon processus de décision, tu peux sauter directement à la section "Créer le site". Si à un moment tu es perdu dans les explications, tu peux toujours regarder le <a href="https://github.com/petitalx/petitalx.github.io">code source de mon site</a>.</p>
+<h2>Contexte</h2>
 <p>Cela fait plusieurs mois que j'expérimente différents supports d'écriture :</p>
 <ul>
 <li>je me suis lancé sur <a href="https://www.linkedin.com/in/petitalx/">LinkedIn</a></li>
 <li>j'ai créé une <a href="https://100produits.substack.com/">newsletter sur Substack</a></li>
-<li>j'écrire deux pages par jour dans un carnet physique depuis 20 jours</li>
+<li>j'écris deux pages par jour dans un carnet physique depuis 20 jours</li>
 </ul>
 <p>Une difficulté que je rencontre est que je n'ai pas de ligne éditoriale claire, pas de promesse. </p>
 <p>J'ai envie d'écrire sur des sujets variés : </p>
@@ -40,15 +46,18 @@
 <li>de retours d'expérience de projets techniques</li>
 <li>des "récits" de voyage</li>
 <li>des points d'avancement de projet</li>
+<li>des tutoriels</li>
+<li>des résumés de livres</li>
+<li>des réflexions</li>
 <li>...</li>
 </ul>
 <p>Et je n'ai pas envie de m'imposer de façon "push". </p>
-<p>Pour ces deux raisons, donc un site personnel me semble être une bonne solution.</p>
+<p>Pour ces deux raisons, un site personnel me semble être une bonne solution.</p>
 <p>En complément de The Developer's Brain, je veux réaliser 30 projets en Python. </p>
 <p>Créer un site personnel en python apparaît comme bon challenge !</p>
 <h2>Cadrer le projet</h2>
-<p>Ma motivation est de "Claim a personal domain"</p>
-<p>Ce qui est important pour moi est de :</p>
+<p>Ma motivation est de "claim a personal domain", de m'installer dans un coin de la carte.</p>
+<p>Ce qui va être important pour moi est de :</p>
 <ul>
 <li>livrer</li>
 <li>choisir une solution simple</li>
@@ -62,7 +71,7 @@
 <li>de choisir un outil trop complexe pour mon besoin</li>
 </ul>
 <p>OK.</p>
-<p>À présent, je suis mis en garde !</p>
+<p>À présent, je suis mis en garde.</p>
 <h2>Choisir la technologie</h2>
 <p>Pour créer un site avec Python, j'ai d'abord pensé aux technologies suivantes : </p>
 <ul>
@@ -74,9 +83,10 @@
 <p>Quelle framework choisir pour créer un site personnel ?</p>
 </blockquote>
 <p>Je suis tombé sur ce fil Reddit <a href="https://www.reddit.com/r/Python/comments/166xf22/best_framework_for_portfolio_website/">Best framework for portfolio website?</a>.</p>
-<p>Les réponses sont unanimes. Utiliser Django ou Flask revient à se compliquer la vie. Un générateur de site statique est plus simple, moins cher et plus rapide</p>
-<p>En effet, les générateurs de site statique ont les avantages suivants : 
-- Simplicité : ils sont en général plus simple à utiliser que les frameworks fullstack complets
+<p>Les réponses sont unanimes : utiliser Django ou Flask revient à se compliquer la vie. Un générateur de site statique est plus simple, moins cher et plus rapide.</p>
+<p>Un générateur de sites statique est une application qui prends en entrée des fichiers textes et les converti en fichiers HTML.</p>
+<p>Les générateurs de site statique ont les avantages suivants : 
+- Simplicité : ils sont en général plus simple à appréhender que les frameworks Fullstack qui présentent davantage de fonctionnalités comme de l'authentification, des interactions avec une base de donnée. 
 - Prix : il existe de nombreuses solutions d'hébergement gratuit
 - SEO : les pages sont statiques et donc facilement indexables par les moteurs de recherche</p>
 <p>Je me suis donc tourné vers les générateurs de site statique.</p>
@@ -90,10 +100,10 @@
 <p><strong>Astro</strong> est un générateur de site statique qui permet de combiner Svelte, React et Vue. Je l'ai tout de suite écarté car un wrapper autour de frameworks indique une complexité élevée. </p>
 <p>Et python ?</p>
 <p>Il existe bien un générateur de sites statiques en python : Pelican.</p>
-<p><strong>Pelican</strong> existe depuis 2010. Il est écrit en python et a été créé par <a href="http://blog.notmyidea.org/">Alexis Metaireau</a>. Il est utilisé par seulement <a href="https://trends.builtwith.com/websitelist/Pelican">3500 sites</a>, mais il dispose d'une documentation claire. Et comme il est écrit en python, je pourrai contribuer au code source ! </p>
+<p><strong>Pelican</strong> existe depuis 2010 et a été créé par <a href="http://blog.notmyidea.org/">Alexis Metaireau</a>. Il est utilisé par seulement <a href="https://trends.builtwith.com/websitelist/Pelican">3500 sites</a>, mais il dispose d'une documentation claire. Et comme il est écrit en python, je pourrai contribuer au code source au besoin. Au première abord, il dispose de toutes les fonctionnalités dont j'ai besoin : il y a une section blog, des pages on peut ajuster le style.</p>
 <p>Je choisis donc Pelican.</p>
 <h2>Choisir une solution de déploiement</h2>
-<p>Il existe plusieurs solutions pour déployer un site statique :</p>
+<p>Il existe des dizaines de solutions pour déployer un site statique, parmi lesquelles :</p>
 <ul>
 <li>AWS</li>
 <li>Netlify</li>
@@ -103,18 +113,23 @@
 <p>Je veux une solution gratuite et simple.</p>
 <p>J'ai entendu beaucoup de bien de Github Pages. </p>
 <p>Je vais tester cette solution.</p>
+<p>(Possibilité de détailler davantage chaque solution ici : date de création, complexité, coût)</p>
 <h2>Créer le site</h2>
 <p>Ok, on entre dans le vif du sujet.</p>
-<p>Dans la suite de l'article, on va suivre ensemble les étapes que j'ai suivi pour construire mon site personnel <code>petitalx.io</code>. <code>petitalx</code> est mon username github. Naturellement, vous pouvez remplacer toutes les occurences de <code>petitalx</code> par votre username.</p>
+<p>Dans la suite de l'article, on va suivre ensemble les étapes que j'ai suivi pour construire mon site personnel https://petitalx.io. </p>
+<blockquote>
+<p><code>petitalx</code> est mon username Github. Naturellement, vous pouvez remplacer toutes les occurrences de <code>petitalx</code> par votre username. Vous ne pourrez pas copier coller toutes les instructions. Mais cela fera travailler votre mémoire mécanique :).</p>
+</blockquote>
 <h3>Créer un walking skeleton</h3>
-<p>Notre premier objectif est de configurer et déployer un site le plus rapidement possible. On pourra ensuite itérer pour ajuster le style et simplifier le code.</p>
-<p>Prérequis :</p>
+<p>Notre premier objectif est de configurer et déployer un site le plus rapidement possible. On pourra ensuite itérer pour ajuster le style, ajouter du contenu, et simplifier le code.</p>
+<p>Pré-requis :</p>
 <ul>
-<li>avoir un terminal </li>
-<li>avoir python installé</li>
-<li>avoir un compte github</li>
+<li>avoir un terminal unix</li>
+<li>avoir Python installé</li>
+<li>avoir un compte Github</li>
 <li>connaître le ba-ba de git</li>
 </ul>
+<h4>Initialisation du projet</h4>
 <p>On commence par créer le projet en local.</p>
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/dev
 mkdir<span class="w"> </span>petitalxio
@@ -140,22 +155,25 @@ python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </s
 <ul>
 <li>créer le site dans un dossier <code>_pelican</code> </li>
 <li>choisir <code>fr</code> comme langue par défaut</li>
-<li>ne pas préciser de préfixe d'url</li>
+<li>ne pas expliciter de préfixe d'url</li>
 <li>désactiver la pagination</li>
 <li>choisir 'Europe/Paris' comme timezone</li>
 <li>demander à générer le fichier Makefile</li>
 <li>répondre oui à la question "Do you want to upload your website using GitHub Pages?"</li>
 </ul>
 <p>OK ! </p>
-<p>Pour visionner le site en local, lancer la commande</p>
+<p>Pour visionner le site en local, lancer les commandes</p>
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/dev/petitalxio/_pelican
 pelican<span class="w"> </span>content
 pelican<span class="w"> </span>--listen
 </code></pre></div>
 
+<blockquote>
+<p>Remarque : vous pouvez ensuite supprimer le dossier <code>output</code> car dans la section suivante nous allons changer le chemin de sortie des fichiers.</p>
+</blockquote>
 <h4>Publier sur Github Pages</h4>
-<p>Rendez-vous sur votre compte github : https://github.com/. </p>
-<p>Créer un nouveau repository <code>username.github.io</code> où <code>username</code> est votre nom d'utilisateur github.</p>
+<p>Rendez-vous sur votre compte Github : https://github.com/. </p>
+<p>Créer un nouveau repository <code>username.github.io</code> où <code>username</code> est votre nom d'utilisateur Github.</p>
 <p>De retour sur votre poste, se replacer à la racine du projet</p>
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/dev/petitalxio<span class="sb">`</span>
 </code></pre></div>
@@ -175,18 +193,227 @@ git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </s
 git<span class="w"> </span>push<span class="w"> </span>-u<span class="w"> </span>origin<span class="w"> </span>main
 </code></pre></div>
 
-<p>La façon la plus simple de déployer le site est de générer le contenu du site à la racine du répertoire.</p>
-<p>On va donc modifier le fichier <code>Makefile</code> pour que la commande <code>make publish</code> génère le site à la racine du répertoire.</p>
-<p>Modifier le fichier <code>_pelican/Makefile</code> pour que la variable <code>OUTPUTDIR</code> soit égale à <code>$(BASEDIR)/..</code>.</p>
+<p>La façon la plus simple de déployer le site est de générer le contenu du site à la racine du répertoire. Pour faciliter les manipulations, on va modifier le <code>Makefile</code> pour que la commande <code>make publish</code> génère le site à la racine du répertoire.</p>
+<p>Ouvrir le fichier <code>_pelican/Makefile</code> et modifier la ligne <code>OUTPUTDIR</code> tel que</p>
+<div class="highlight"><pre><span></span><code><span class="nv">OUTPUTDIR</span><span class="o">=</span><span class="k">$(</span>BASEDIR<span class="k">)</span>/..
+</code></pre></div>
+
 <p>Lancer <code>make publish</code> depuis <code>~/dev/petitalxio/_pelican</code>.</p>
-<p>Lancer <code>git add .</code>, <code>git commit -m "generate content"</code>, <code>git push</code>.</p>
-<p>Vérifier que le déploiement est en cours dans le volet https://github.com/petitalx/petitalx.github.io/actions.</p>
-<h1>Brouillon</h1>
+<p>Depuis la racine du répertoire, lancer </p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>add<span class="w"> </span>.
+git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;generate content</span>
+<span class="s2">git push</span>
+</code></pre></div>
+
+<p>Vérifier que le déploiement est en cours dans le volet "Actions" du répertoire Github.</p>
+<p>(mettre un screenshot)
+https://github.com/petitalx/petitalx.github.io/actions.</p>
+<p>Une fois le déploiement terminé, votre site est accessible à l'adresse <code>https://username.github.io</code></p>
+<p>Notre site personnel est en ligne ! </p>
+<p>🚀</p>
+<h3>Ajouter les premiers contenus</h3>
+<p>Dans cette section, on va voir :</p>
 <ul>
-<li>Choisir la technologie</li>
-<li>Choisir le solution de déploiement</li>
-<li>Créer le site</li>
-<li>Conclusion</li>
+<li>comment créer une nouvelle page</li>
+<li>comment créer un nouvel article</li>
+<li>comment publier les mises à jour</li>
+</ul>
+<h4>Création d'une page now</h4>
+<p>À quoi bon créer un site personnel si l'on y met pas une page "now" ? 🤷‍♂️.</p>
+<p>Une page now est une page qui indiquer au visiteur ce que l'on fait actuellement. Ton portfolio donne une bonne idée de ce que tu as réalisé par le passé. Ta page now. </p>
+<p>L'idée est de mettre dedans ce que tu raconterais à un amis que tu n'as pas vue depuis un an : </p>
+<ul>
+<li>où est-ce que tu vis actuellement</li>
+<li>quels sont tes challenges</li>
+<li>sur quels projets est-ce que tu travails.</li>
+</ul>
+<p>Créer un fichier <code>now.md</code> dans le dossier <code>~/dev/petitalxio/_pelican/content/pages</code> : </p>
+<div class="highlight"><pre><span></span><code><span class="o">---</span>
+<span class="n">Title</span><span class="p">:</span><span class="w"> </span><span class="n">Now</span>
+<span class="o">---</span>
+
+<span class="o">&gt;</span><span class="w"> </span><span class="n">Mis</span><span class="w"> </span><span class="err">à</span><span class="w"> </span><span class="n">jour</span><span class="w"> </span><span class="n">le</span><span class="w"> </span><span class="mi">28</span><span class="w"> </span><span class="n">juillet</span><span class="w"> </span><span class="mi">2024</span><span class="w"> </span><span class="err">à</span><span class="w"> </span><span class="n">Rouen</span><span class="p">,</span><span class="w"> </span><span class="n">France</span><span class="o">.</span>
+
+<span class="n">Je</span><span class="w"> </span><span class="n">travail</span><span class="w"> </span><span class="n">actuellement</span><span class="w"> </span><span class="n">pour</span><span class="w"> </span><span class="n">EDF</span><span class="w"> </span><span class="n">en</span><span class="w"> </span><span class="n">tant</span><span class="w"> </span><span class="n">que</span><span class="w"> </span><span class="n">Software</span><span class="w"> </span><span class="n">Engineer</span><span class="w"> </span><span class="n">où</span><span class="w"> </span><span class="n">je</span><span class="w"> </span><span class="n">développe</span><span class="w"> </span><span class="n">un</span><span class="w"> </span><span class="n">service</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">détection</span><span class="w"> </span><span class="n">d</span><span class="s1">&#39;anomalies sur des séries temporelles.</span>
+
+<span class="n">Mon</span><span class="w"> </span><span class="n">axe</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">travail</span><span class="w"> </span><span class="n">sur</span><span class="w"> </span><span class="n">les</span><span class="w"> </span><span class="n">prochains</span><span class="w"> </span><span class="n">mois</span><span class="w"> </span><span class="n">sont</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">rassembler</span><span class="w"> </span><span class="n">et</span><span class="w"> </span><span class="n">synthétiser</span><span class="w"> </span><span class="n">les</span><span class="w"> </span><span class="mi">99</span><span class="w"> </span><span class="n">meilleurs</span><span class="w"> </span><span class="n">livres</span><span class="w"> </span><span class="n">sur</span><span class="w"> </span><span class="n">le</span><span class="w"> </span><span class="n">Software</span><span class="w"> </span><span class="n">Engineering</span><span class="o">.</span><span class="w"> </span>
+
+<span class="n">En</span><span class="w"> </span><span class="n">complément</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">ce</span><span class="w"> </span><span class="n">projet</span><span class="w"> </span><span class="n">axé</span><span class="w"> </span><span class="n">sur</span><span class="w"> </span><span class="n">la</span><span class="w"> </span><span class="n">théorie</span><span class="p">,</span><span class="w"> </span><span class="n">je</span><span class="w"> </span><span class="n">réalise</span><span class="w"> </span><span class="n">réaliser</span><span class="w"> </span><span class="mi">100</span><span class="w"> </span><span class="n">challenges</span><span class="w"> </span><span class="n">en</span><span class="w"> </span><span class="n">Python</span><span class="o">.</span><span class="w"> </span><span class="n">Ce</span><span class="w"> </span><span class="n">site</span><span class="w"> </span><span class="n">constitue</span><span class="w"> </span><span class="n">l</span><span class="s1">&#39;un des challenges.</span>
+</code></pre></div>
+
+<p>Exemples de pages now : 
+- https://sive.rs/now : la page du boss
+- https://nownownow.com/ : l'annuaire des pages now</p>
+<h4>Création d'un premier article</h4>
+<p>Créer un fichier <code>mon-premier-article.md</code> dans le dossier <code>~/dev/petitalxio/_pelican/content/</code> : </p>
+<div class="highlight"><pre><span></span><code><span class="n">Title</span><span class="o">:</span><span class="w"> </span><span class="n">J</span><span class="err">&#39;</span><span class="n">ai</span><span class="w"> </span><span class="n">publié</span><span class="w"> </span><span class="n">mon</span><span class="w"> </span><span class="n">premier</span><span class="w"> </span><span class="n">article</span><span class="w"> </span><span class="o">!</span>
+<span class="n">Date</span><span class="o">:</span><span class="w"> </span><span class="mi">2024</span><span class="o">-</span><span class="mi">07</span><span class="o">-</span><span class="mi">27</span>
+
+<span class="n">Hello</span><span class="w"> </span><span class="n">les</span><span class="w"> </span><span class="n">amis</span><span class="o">.</span>
+
+<span class="n">Voici</span><span class="w"> </span><span class="n">mon</span><span class="w"> </span><span class="n">premier</span><span class="w"> </span><span class="n">article</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">blog</span><span class="o">.</span><span class="w"> </span>
+
+<span class="n">Il</span><span class="w"> </span><span class="n">est</span><span class="w"> </span><span class="n">expose</span><span class="w"> </span><span class="n">les</span><span class="w"> </span><span class="n">différents</span><span class="w"> </span><span class="n">formats</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">markdown</span>
+
+<span class="n">Une</span><span class="w"> </span><span class="n">liste</span><span class="w"> </span><span class="n">non</span><span class="w"> </span><span class="n">numérotée</span><span class="w"> </span><span class="o">:</span><span class="w"> </span>
+
+<span class="o">-</span><span class="w"> </span><span class="n">a</span>
+<span class="o">-</span><span class="w"> </span><span class="n">b</span>
+
+<span class="n">Une</span><span class="w"> </span><span class="n">liste</span><span class="w"> </span><span class="n">numérotée</span><span class="w"> </span><span class="o">:</span><span class="w"> </span>
+
+<span class="mi">1</span><span class="o">.</span><span class="w"> </span><span class="n">Cookie</span>
+<span class="mi">2</span><span class="o">.</span><span class="w"> </span><span class="n">Beurre</span>
+
+<span class="n">Une</span><span class="w"> </span><span class="n">citation</span><span class="w"> </span>
+
+<span class="o">&gt;</span><span class="w"> </span><span class="n">When</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">student</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="n">ready</span><span class="o">,</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">master</span><span class="w"> </span><span class="n">will</span><span class="w"> </span><span class="n">appear</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">Bruce</span><span class="w"> </span><span class="n">Lee</span>
+
+<span class="n">Un</span><span class="w"> </span><span class="err">é</span><span class="n">chantillon</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">code</span><span class="w"> </span><span class="err">`</span><span class="n">print</span><span class="o">(</span><span class="s2">&quot;hello&quot;</span><span class="o">)</span><span class="err">`</span>
+</code></pre></div>
+
+<h4>Publier les mises à jour</h4>
+<p>Pour visionner le résultat en local, lancer : </p>
+<div class="highlight"><pre><span></span><code>cd ~/dev/petitalxio/_pelican
+make devserver
+</code></pre></div>
+
+<p>Pour déployer, lancer</p>
+<div class="highlight"><pre><span></span><code>cd ~/dev/petitalxio/_pelican
+make publish
+
+cd ~/dev/petitalxio/
+git add . ; git commit -m &quot;update content&quot;; git push
+</code></pre></div>
+
+<p>Vous avez maintenant toutes les clés en main pour ajouter du contenu sur votre site. </p>
+<p>Pour aller plus loin, <a href="https://docs.getpelican.com/en/stable/content.html">la documentation</a> est là pour vous aider.</p>
+<h3>Mettre en forme</h3>
+<p>À présent que l'on a travaillé le fond, passons à la forme. </p>
+<p>Dans cette section, je te propose de faire évoluer le design de notre site personnel vers le style ci-dessous, qui est un mélange entre <a href="https://sive.rs/">le site personnel de Derek Sivers</a>, et la simplicité de http://bettermotherfuckingwebsite.com/</p>
+<p>Pour cela, on va repartir d'un thème "simple".</p>
+<h4>Mise en place d'un thème explicite</h4>
+<ul>
+<li>récupérer le dossier https://github.com/getpelican/pelican/tree/main/pelican/themes/simple/templates</li>
+<li>copier le dossier <code>simple/templates</code> dans <code>_pelican/themes/petitalxio/templates</code></li>
+<li>ajouter <code>THEME = "themes/petitalxio"</code> dans <code>pelicanconf.py</code></li>
+<li>régénérer le site fichiers. </li>
+</ul>
+<p>Tout est à plat ! </p>
+<p>(INSERER UN SCREENSHOT)</p>
+<h4>Ajout d'une feuille de style CSS</h4>
+<p>Coller le contenu suivant dans un fichier <code>_pelican/themes/petitalxio/css/style.css</code></p>
+<div class="highlight"><pre><span></span><code><span class="nt">body</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">max-width</span><span class="p">:</span><span class="w"> </span><span class="mi">650</span><span class="kt">px</span><span class="p">;</span>
+<span class="w">  </span><span class="k">margin</span><span class="p">:</span><span class="w"> </span><span class="mi">40</span><span class="kt">px</span><span class="w"> </span><span class="kc">auto</span><span class="p">;</span>
+<span class="w">  </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+<span class="w">  </span><span class="k">font</span><span class="p">:</span><span class="w"> </span><span class="mi">18</span><span class="kt">px</span><span class="o">/</span><span class="mf">1.5</span><span class="w"> </span><span class="o">-</span><span class="n">apple-system</span><span class="p">,</span><span class="w"> </span><span class="n">BlinkMacSystemFont</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Segoe UI&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">Roboto</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Helvetica Neue&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">Arial</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Noto Sans&quot;</span><span class="p">,</span><span class="w"> </span><span class="kc">sans-serif</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Apple Color Emoji&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Segoe UI Emoji&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Segoe UI Symbol&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Noto Color Emoji&quot;</span><span class="p">;</span>
+<span class="w">  </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="mh">#444</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">h1</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="nt">a</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="mh">#444</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">@</span><span class="k">media</span><span class="w"> </span><span class="o">(</span><span class="nt">prefers-color-scheme</span><span class="o">:</span><span class="w"> </span><span class="nt">dark</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nt">body</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="mh">#c9d1d9</span><span class="p">;</span>
+<span class="w">    </span><span class="k">background</span><span class="p">:</span><span class="w"> </span><span class="mh">#0d1117</span><span class="p">;</span>
+<span class="w">  </span><span class="p">}</span>
+
+<span class="w">  </span><span class="nt">a</span><span class="p">:</span><span class="nd">link</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="mh">#58a6ff</span><span class="p">;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<p>Ajouter la référence à la feuille de style dans le fichier <code>base.html</code>de notre template :</p>
+<div class="highlight"><pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    {% block head %}
+      <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>{{ SITENAME|striptags }}<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span> <span class="p">/&gt;</span>
+      <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;generator&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;Pelican&quot;</span> <span class="p">/&gt;</span>
+
+      <span class="cm">&lt;!-- DEBUT ligne à insérer --&gt;</span>
+      <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/css&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;{{ SITEURL }}/theme/css/style.css&quot;</span> <span class="p">/&gt;</span>
+      <span class="cm">&lt;!-- FIN ligne à insérer --&gt;</span>
+
+      <span class="cm">&lt;!-- ... suite du template --&gt;</span>
+</code></pre></div>
+
+<p>Régénérer, et le tour est joué.</p>
+<p>(SCREENSHOT)</p>
+<h4>Simplifier le template</h4>
+<p>On va à présent simplifier les templates suivants : 
+- base.html
+- index.html
+- page.html
+- article.html</p>
+<p>Commençons par la base : </p>
+<p>Puis l'index : 
+![[Pasted image 20240730081938.png]]</p>
+<h4>Création d'une page Home personnalisée</h4>
+<p>Créer un fichier <code>home.md</code> dans `_pelican/content/pages/</p>
+<div class="highlight"><pre><span></span><code>---  
+Title: Alexandre Petit  
+Date: 2024-07-21  
+---  
+
+<span class="gu">## Moi en 10 secondes  </span>
+
+Je suis un développeur Python.  
+
+Je suis né à Rouen.  
+
+Et j&#39;habite actuellement à Rouen.  
+
+<span class="gu">## Ce que je fais en ce moment ?  </span>
+
+Voir la page [<span class="nt">now</span>](<span class="na">pages/now</span>)
+</code></pre></div>
+
+<p>Ajouter les lignes suivantes dans le fichier <code>pelicanconf.py</code>. Cela va créer une variable globale <code>HOME</code> qui va contenir le contenu HTML.  </p>
+<div class="highlight"><pre><span></span><code><span class="c1"># En tête de fichier :</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pelican.readers</span><span class="w"> </span><span class="kn">import</span><span class="w"> </span><span class="n">MarkdownReader</span><span class="w">  </span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pelican.settings</span><span class="w"> </span><span class="kn">import</span><span class="w"> </span><span class="n">DEFAULT_CONFIG</span>
+
+<span class="c1"># Plus bas :</span>
+<span class="n">config</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">DEFAULT_CONFIG</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span><span class="w">  </span>
+<span class="n">HOME</span><span class="p">,</span><span class="w"> </span><span class="n">_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">MarkdownReader</span><span class="p">(</span><span class="n">config</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="s2">&quot;content/pages/home.md&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<p>On peut à présent faire injecter le contenu de la variable HOME dans le template de l'index. Ajouter la ligne <code>{{ HOME }}</code> à la suite de la ligne <code>{% block content %}</code> dans le fichier <code>_pelican/themes/petitalxio/templates/index.html</code>. Le début de votre fichier doit alors resembler à cela : </p>
+<div class="highlight"><pre><span></span><code><span class="cp">{%</span> <span class="k">extends</span> <span class="s2">&quot;base.html&quot;</span> <span class="cp">%}</span><span class="x">  </span>
+<span class="cp">{%</span> <span class="k">block</span> <span class="nv">content</span> <span class="cp">%}</span><span class="x">  </span>
+
+<span class="x">    </span><span class="cp">{{</span> <span class="nv">HOME</span> <span class="cp">}}</span>
+</code></pre></div>
+
+<p>Régénérer, et admirer le résultat</p>
+<h3>Code minimalism</h3>
+<p>Désactiver la génération des pages "Author", "Authors", "Tag", ... en ajoutant ces lignes au fichier pelicanconf.py :</p>
+<div class="highlight"><pre><span></span><code>TAG_SAVE_AS = &#39;&#39;  
+TAGS_SAVE_AS = &#39;&#39;  
+CATEGORY_SAVE_AS = &#39;&#39;  
+CATEGORIES_SAVE_AS = &#39;&#39;  
+AUTHOR_SAVE_AS = &#39;&#39;  
+AUTHORS_SAVE_AS = &#39;&#39;  
+ARCHIVES_SAVE_AS = &#39;&#39;
+</code></pre></div>
+
+<p>Nettoyer le dossier des templates pour ne conserver que les fichiers suivants : </p>
+<div class="highlight"><pre><span></span><code>templates
+├── article.html
+├── base.html
+├── index.html
+├── page.html
+└── translations.html
+</code></pre></div>
+
+<h2>Conclusion</h2>
+<ul>
 <li>Ressources</li>
 <li>Mes notes de second cerveau</li>
 <li>J'ai pris une décision confiant !!</li>
@@ -197,10 +424,10 @@ git<span class="w"> </span>push<span class="w"> </span>-u<span class="w"> </span
         Sam 27 juillet 2024
       </time></p>
         <address>
-          By             <a href="https://petitalx.github.io/author/alexandre-petit.html">Alexandre Petit</a>
+          By             <a href="/author/alexandre-petit.html">Alexandre Petit</a>
         </address>
         <p>
-          Category: <a href="https://petitalx.github.io/category/misc.html">misc</a>
+          Category: <a href="/category/misc.html">misc</a>
         </p>
     </footer>
   </article>
