@@ -5,8 +5,8 @@
       <meta charset="utf-8" />
       <meta name="generator" content="Pelican" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" type="text/css" href="/theme/css/style.css" />
-
+      <link rel="stylesheet" type="text/css" href="https://petitalx.github.io/theme/css/style.css" />
+        <link href="https://petitalx.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="petitalxio Full Atom Feed" />
 
 
 
@@ -15,15 +15,12 @@
 
   <body>
     <header>
-      <hgroup><h1><a href="/">petitalxio</a></h1></hgroup>
+      <hgroup><h1><a href="https://petitalx.github.io/">petitalxio</a></h1></hgroup>
     </header>
     <main>
   <article>
     <header>
-      <h2>
-        <a href="/creer-son-site-personnel-gratuitement-avec-githbub-pages-et-python-et-pelican.html" rel="bookmark"
-           title="Permalink to Créer son site personnel gratuitement avec Githbub Pages et Python, et Pelican">Créer son site personnel gratuitement avec Githbub Pages et Python, et Pelican</a></h2>
-      
+      <h2>Créer son site personnel gratuitement avec Githbub Pages et Python, et Pelican</h2>
     </header>
     <p>Hello ! </p>
 <p>Dans cet article, on va voir comment créer un site personnel :</p>
@@ -32,7 +29,8 @@
 <li>hébergé sur Github Pages</li>
 <li>à partir de contenu Markdown</li>
 </ul>
-<p>Le résultat final ressemble à <a href="http://petitalx.io/">ça</a>. <em>If you don't give a shit about</em> le contexte et mon processus de décision, tu peux sauter directement à la section "Créer le site". Si à un moment tu es perdu dans les explications, tu peux toujours regarder le <a href="https://github.com/petitalx/petitalx.github.io">code source de mon site</a>.</p>
+<p>Le résultat final ressemble à <a href="http://petitalx.io/">ça</a>. </p>
+<p><em>If you don't give a shit about</em> le contexte et mon processus de décision, tu peux sauter directement à la section "Créer le site". Si à un moment tu es perdu dans les explications, tu peux toujours regarder le <a href="https://github.com/petitalx/petitalx.github.io">code source de mon site</a>.</p>
 <h2>Contexte</h2>
 <p>Cela fait plusieurs mois que j'expérimente différents supports d'écriture :</p>
 <ul>
@@ -140,8 +138,8 @@ python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </s
 <span class="nb">source</span><span class="w"> </span>.venv/bin/activate
 </code></pre></div>
 
-<p>Créer le fichier requirements.txt suivant</p>
-<div class="highlight"><pre><span></span><code>pelican[markdown]
+<p>Créer un fichier requirements.txt avec la ligne<code>pelican[markdown]</code> :</p>
+<div class="highlight"><pre><span></span><code><span class="n">echo</span><span class="w"> </span><span class="ss">&quot;pelican[markdown]&quot;</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">requirements</span><span class="p">.</span><span class="n">txt</span>
 </code></pre></div>
 
 <p>Puis installer les dépendances</p>
@@ -157,9 +155,11 @@ python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </s
 <li>choisir <code>fr</code> comme langue par défaut</li>
 <li>ne pas expliciter de préfixe d'url</li>
 <li>désactiver la pagination</li>
-<li>choisir 'Europe/Paris' comme timezone</li>
+<li>renseigner <code>Europe/Paris</code> comme timezone</li>
 <li>demander à générer le fichier Makefile</li>
+<li>répondre pour l'upload avec FTP, SSH, Dropbox, S3 et Rackspace</li>
 <li>répondre oui à la question "Do you want to upload your website using GitHub Pages?"</li>
+<li>répondre ui à la question "Is it your personal page" ?</li>
 </ul>
 <p>OK ! </p>
 <p>Pour visionner le site en local, lancer les commandes</p>
@@ -168,21 +168,23 @@ pelican<span class="w"> </span>content
 pelican<span class="w"> </span>--listen
 </code></pre></div>
 
+<p><img alt="" src="images/creer-son-site-personnel-avec-pelican-et-ghp-2.png"></p>
 <blockquote>
-<p>Remarque : vous pouvez ensuite supprimer le dossier <code>output</code> car dans la section suivante nous allons changer le chemin de sortie des fichiers.</p>
+<p>Remarque : vous pouvez ensuite supprimer le dossier <code>_pelican/output</code> car dans la section suivante nous allons changer le chemin de sortie des fichiers.</p>
 </blockquote>
 <h4>Publier sur Github Pages</h4>
 <p>Rendez-vous sur votre compte Github : https://github.com/. </p>
-<p>Créer un nouveau repository <code>username.github.io</code> où <code>username</code> est votre nom d'utilisateur Github.</p>
+<p>Créer un nouveau repository <code>username.github.io</code> où <code>username</code> est votre nom d'utilisateur Github. Ne pas initialiser le README ni le .gitignore à ce stade.</p>
 <p>De retour sur votre poste, se replacer à la racine du projet</p>
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/dev/petitalxio<span class="sb">`</span>
 </code></pre></div>
 
-<p>Créer un fichier .gitignore avec le contenu suivant</p>
+<p>Créer un fichier <code>.gitignore</code> avec le contenu suivant</p>
 <div class="highlight"><pre><span></span><code>.venv  
 **__pycache__**/
 </code></pre></div>
 
+<p>(par exemples avec la commande <code>echo ".venv \n**__pycache__**/" &gt; .gitignore</code>)</p>
 <p>Initialiser le dépôt git</p>
 <div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;# petitalx.github.io&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>README.md
 git<span class="w"> </span>init
@@ -193,22 +195,23 @@ git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </s
 git<span class="w"> </span>push<span class="w"> </span>-u<span class="w"> </span>origin<span class="w"> </span>main
 </code></pre></div>
 
-<p>La façon la plus simple de déployer le site est de générer le contenu du site à la racine du répertoire. Pour faciliter les manipulations, on va modifier le <code>Makefile</code> pour que la commande <code>make publish</code> génère le site à la racine du répertoire.</p>
+<p>La façon la plus simple de déployer le site est de générer le contenu du site à la racine du répertoire. Pour faciliter les manipulations, on va modifier le <code>Makefile</code> afin que la commande <code>make publish</code> génère le site à la racine du répertoire.</p>
 <p>Ouvrir le fichier <code>_pelican/Makefile</code> et modifier la ligne <code>OUTPUTDIR</code> tel que</p>
 <div class="highlight"><pre><span></span><code><span class="nv">OUTPUTDIR</span><span class="o">=</span><span class="k">$(</span>BASEDIR<span class="k">)</span>/..
 </code></pre></div>
 
 <p>Lancer <code>make publish</code> depuis <code>~/dev/petitalxio/_pelican</code>.</p>
 <p>Depuis la racine du répertoire, lancer </p>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>add<span class="w"> </span>.
-git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;generate content</span>
-<span class="s2">git push</span>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>status
+git<span class="w"> </span>add<span class="w"> </span>.
+git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;generate content&quot;</span>
+git<span class="w"> </span>push
 </code></pre></div>
 
-<p>Vérifier que le déploiement est en cours dans le volet "Actions" du répertoire Github.</p>
-<p>(mettre un screenshot)
-https://github.com/petitalx/petitalx.github.io/actions.</p>
+<p>Vérifier que le déploiement est en cours dans le volet "<strong>Actions</strong>" du répertoire Github :</p>
+<p><img alt="" src="images/creer-son-site-personnel-avec-pelican-et-ghp-3.png"></p>
 <p>Une fois le déploiement terminé, votre site est accessible à l'adresse <code>https://username.github.io</code></p>
+<p><img alt="" src="images/premiere-mise-en-ligne.png"></p>
 <p>Notre site personnel est en ligne ! </p>
 <p>🚀</p>
 <h3>Ajouter les premiers contenus</h3>
@@ -218,14 +221,17 @@ https://github.com/petitalx/petitalx.github.io/actions.</p>
 <li>comment créer un nouvel article</li>
 <li>comment publier les mises à jour</li>
 </ul>
+<blockquote>
+<p>Depuis le dossier <code>_pelican</code>, lancer la commande <code>make devserver</code> afin de lancer le serveur et d'activer le mode auto-reload. Le mode auto-reload va générer les fichiers html locaux de façon automatique dès lors qu'un fichier est modifié.</p>
+</blockquote>
 <h4>Création d'une page now</h4>
 <p>À quoi bon créer un site personnel si l'on y met pas une page "now" ? 🤷‍♂️.</p>
-<p>Une page now est une page qui indiquer au visiteur ce que l'on fait actuellement. Ton portfolio donne une bonne idée de ce que tu as réalisé par le passé. Ta page now. </p>
+<p>Une page now est une page qui indiquer au visiteur ce que l'on fait actuellement. Ton portfolio donne une bonne idée de ce que tu as réalisé par le passé. Ta page now donne un aperçu de ce qui t'occupe actuellement. </p>
 <p>L'idée est de mettre dedans ce que tu raconterais à un amis que tu n'as pas vue depuis un an : </p>
 <ul>
-<li>où est-ce que tu vis actuellement</li>
+<li>où est-ce que tu vis </li>
 <li>quels sont tes challenges</li>
-<li>sur quels projets est-ce que tu travails.</li>
+<li>sur quels projets est-ce que tu travailles</li>
 </ul>
 <p>Créer un fichier <code>now.md</code> dans le dossier <code>~/dev/petitalxio/_pelican/content/pages</code> : </p>
 <div class="highlight"><pre><span></span><code><span class="o">---</span>
@@ -241,9 +247,12 @@ https://github.com/petitalx/petitalx.github.io/actions.</p>
 <span class="n">En</span><span class="w"> </span><span class="n">complément</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">ce</span><span class="w"> </span><span class="n">projet</span><span class="w"> </span><span class="n">axé</span><span class="w"> </span><span class="n">sur</span><span class="w"> </span><span class="n">la</span><span class="w"> </span><span class="n">théorie</span><span class="p">,</span><span class="w"> </span><span class="n">je</span><span class="w"> </span><span class="n">réalise</span><span class="w"> </span><span class="n">réaliser</span><span class="w"> </span><span class="mi">100</span><span class="w"> </span><span class="n">challenges</span><span class="w"> </span><span class="n">en</span><span class="w"> </span><span class="n">Python</span><span class="o">.</span><span class="w"> </span><span class="n">Ce</span><span class="w"> </span><span class="n">site</span><span class="w"> </span><span class="n">constitue</span><span class="w"> </span><span class="n">l</span><span class="s1">&#39;un des challenges.</span>
 </code></pre></div>
 
-<p>Exemples de pages now : 
-- https://sive.rs/now : la page du boss
-- https://nownownow.com/ : l'annuaire des pages now</p>
+<p>Et regarder le résultat sur la page http://127.0.0.1:8000</p>
+<p>Si vous cherchez des exemples de pages "now", consultez </p>
+<ul>
+<li>https://sive.rs/now (la page du boss)</li>
+<li>https://nownownow.com/ (l'annuaire des pages now)</li>
+</ul>
 <h4>Création d'un premier article</h4>
 <p>Créer un fichier <code>mon-premier-article.md</code> dans le dossier <code>~/dev/petitalxio/_pelican/content/</code> : </p>
 <div class="highlight"><pre><span></span><code><span class="n">Title</span><span class="o">:</span><span class="w"> </span><span class="n">J</span><span class="err">&#39;</span><span class="n">ai</span><span class="w"> </span><span class="n">publié</span><span class="w"> </span><span class="n">mon</span><span class="w"> </span><span class="n">premier</span><span class="w"> </span><span class="n">article</span><span class="w"> </span><span class="o">!</span>
@@ -272,7 +281,7 @@ https://github.com/petitalx/petitalx.github.io/actions.</p>
 <span class="n">Un</span><span class="w"> </span><span class="err">é</span><span class="n">chantillon</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">code</span><span class="w"> </span><span class="err">`</span><span class="n">print</span><span class="o">(</span><span class="s2">&quot;hello&quot;</span><span class="o">)</span><span class="err">`</span>
 </code></pre></div>
 
-<h4>Publier les mises à jour</h4>
+<h4>Visualiser et publier les mises à jour</h4>
 <p>Pour visionner le résultat en local, lancer : </p>
 <div class="highlight"><pre><span></span><code>cd ~/dev/petitalxio/_pelican
 make devserver
@@ -290,19 +299,18 @@ git add . ; git commit -m &quot;update content&quot;; git push
 <p>Pour aller plus loin, <a href="https://docs.getpelican.com/en/stable/content.html">la documentation</a> est là pour vous aider.</p>
 <h3>Mettre en forme</h3>
 <p>À présent que l'on a travaillé le fond, passons à la forme. </p>
-<p>Dans cette section, je te propose de faire évoluer le design de notre site personnel vers le style ci-dessous, qui est un mélange entre <a href="https://sive.rs/">le site personnel de Derek Sivers</a>, et la simplicité de http://bettermotherfuckingwebsite.com/</p>
+<p>Dans cette section, je te propose de faire évoluer le design de notre site personnel vers <a href="https://petitalx.io/">ce style</a>, qui est un mélange entre <a href="https://sive.rs/">le site personnel de Derek Sivers</a>, et la simplicité de http://bettermotherfuckingwebsite.com/</p>
 <p>Pour cela, on va repartir d'un thème "simple".</p>
 <h4>Mise en place d'un thème explicite</h4>
 <ul>
-<li>récupérer le dossier https://github.com/getpelican/pelican/tree/main/pelican/themes/simple/templates</li>
-<li>copier le dossier <code>simple/templates</code> dans <code>_pelican/themes/petitalxio/templates</code></li>
+<li>récupérer les fichiers suivants https://github.com/getpelican/pelican/tree/main/pelican/themes/simple/templates et les copier dans <code>_pelican/themes/petitalxio/templates</code></li>
 <li>ajouter <code>THEME = "themes/petitalxio"</code> dans <code>pelicanconf.py</code></li>
-<li>régénérer le site fichiers. </li>
+<li>régénérer le site </li>
 </ul>
 <p>Tout est à plat ! </p>
-<p>(INSERER UN SCREENSHOT)</p>
+<p><img alt="" src="images/site-avec-theme-simple.png"></p>
 <h4>Ajout d'une feuille de style CSS</h4>
-<p>Coller le contenu suivant dans un fichier <code>_pelican/themes/petitalxio/css/style.css</code></p>
+<p>Coller le contenu suivant dans un fichier <code>_pelican/themes/petitalxio/static/style.css</code></p>
 <div class="highlight"><pre><span></span><code><span class="nt">body</span><span class="w"> </span><span class="p">{</span>
 <span class="w">  </span><span class="k">max-width</span><span class="p">:</span><span class="w"> </span><span class="mi">650</span><span class="kt">px</span><span class="p">;</span>
 <span class="w">  </span><span class="k">margin</span><span class="p">:</span><span class="w"> </span><span class="mi">40</span><span class="kt">px</span><span class="w"> </span><span class="kc">auto</span><span class="p">;</span>
@@ -327,7 +335,7 @@ git add . ; git commit -m &quot;update content&quot;; git push
 <span class="p">}</span>
 </code></pre></div>
 
-<p>Ajouter la référence à la feuille de style dans le fichier <code>base.html</code>de notre template :</p>
+<p>Puis ajouter la référence à la feuille de style dans le fichier template <code>base.html</code> :</p>
 <div class="highlight"><pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
 <span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
@@ -336,29 +344,64 @@ git add . ; git commit -m &quot;update content&quot;; git push
       <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span> <span class="p">/&gt;</span>
       <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;generator&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;Pelican&quot;</span> <span class="p">/&gt;</span>
 
-      <span class="cm">&lt;!-- DEBUT ligne à insérer --&gt;</span>
-      <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/css&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;{{ SITEURL }}/theme/css/style.css&quot;</span> <span class="p">/&gt;</span>
-      <span class="cm">&lt;!-- FIN ligne à insérer --&gt;</span>
+      <span class="cm">&lt;!-- 👇👇👇👇👇👇👇 --&gt;</span>
+      <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/css&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;{{ SITEURL }}/theme/style.css&quot;</span> <span class="p">/&gt;</span>
+      <span class="cm">&lt;!-- 👆👆👆👆👆👆👆 --&gt;</span>
 
       <span class="cm">&lt;!-- ... suite du template --&gt;</span>
 </code></pre></div>
 
 <p>Régénérer, et le tour est joué.</p>
-<p>(SCREENSHOT)</p>
+<p><img alt="" src="images/site-avec-theme-bettermotherfuckingwebsite.png"></p>
+<blockquote>
+<p>Attention, pour que pelican embarque la feuille de style sans configuration supplémentaire, il est nécessaire qu'elle se trouve dans un dossier qui soit nommé "static" placé à la racine du thème. L'exemple <code>themes/petitalxio/static/style.css</code> valide ces conditions. </p>
+</blockquote>
+<p>Finalement, lancer les commandes suivantes afin de déployer votre site web :</p>
+<div class="highlight"><pre><span></span><code>shell
+<span class="nb">cd</span><span class="w"> </span>~/dev/petitalxio/_pelican
+make<span class="w"> </span>publish
+
+<span class="nb">cd</span><span class="w"> </span>..
+git<span class="w"> </span>status<span class="w">  </span>
+git<span class="w"> </span>add<span class="w"> </span>.
+git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;update website&quot;</span>
+git<span class="w"> </span>push
+</code></pre></div>
+
 <h4>Simplifier le template</h4>
-<p>On va à présent simplifier les templates suivants : 
-- base.html
-- index.html
-- page.html
-- article.html</p>
-<p>Commençons par la base : </p>
-<p>Puis l'index : 
-![[Pasted image 20240730081938.png]]</p>
+<p>On va à présent simplifier les templates suivants : </p>
+<ul>
+<li><code>base.html</code></li>
+<li><code>index.html</code></li>
+<li><code>page.html</code></li>
+<li><code>article.html</code></li>
+</ul>
+<p>Commençons par le fichier <code>base.html</code> : </p>
+<p><img alt="" src="images/simplify-base-screenshot.jpg"></p>
+<ul>
+<li>supprimer le bloc <code>&lt;nav&gt;</code></li>
+<li>supprimer le bloc <code>&lt;footer&gt;</code></li>
+</ul>
+<p>Continuer avec <code>index.html</code> : </p>
+<p><img alt="" src="images/simplify-index-template.png"></p>
+<ul>
+<li>remplacer le <code>{% block content_title %}</code>par un simple <code>&lt;h2&gt;</code> et en profiter pour traduire le texte</li>
+<li>remplacer la liste de miniatures par une simple liste de titres d'articles</li>
+<li>supprimer le bloc dédié à la pagination car on l'a désactivé pendant le quickstart</li>
+</ul>
+<p>Poursuivre avec le template article.html : </p>
+<p><img alt="" src="images/simplify-article-template.png"></p>
+<ul>
+<li>supprimer les directives liées à la traduction</li>
+<li>simplifier l'affichage du titre pour utiliser une simple balise <code>&lt;h2&gt;</code></li>
+<li>supprimer les blocs de métadonnée du footer liée à l'auteur, à la catégorie et aux tags</li>
+</ul>
+<p>Et terminer avec <code>page.html</code></p>
+<p><img alt="" src="images/simplify-page-template.jpg"></p>
 <h4>Création d'une page Home personnalisée</h4>
 <p>Créer un fichier <code>home.md</code> dans `_pelican/content/pages/</p>
 <div class="highlight"><pre><span></span><code>---  
-Title: Alexandre Petit  
-Date: 2024-07-21  
+Title: Home
 ---  
 
 <span class="gu">## Moi en 10 secondes  </span>
@@ -367,33 +410,40 @@ Je suis un développeur Python.
 
 Je suis né à Rouen.  
 
-Et j&#39;habite actuellement à Rouen.  
-
-<span class="gu">## Ce que je fais en ce moment ?  </span>
-
-Voir la page [<span class="nt">now</span>](<span class="na">pages/now</span>)
+Et j&#39;habite actuellement à Rouen.
 </code></pre></div>
 
+<blockquote>
+<p><code>[now](now)</code> résulte en un lien html relatif à la l'url courante. Si on est à l'url <code>petitalx.io/pages/home.html</code>, cela donne <code>petitalx.io/pages/now</code>. Le pré-processeur <code>{filename}</code> ne semble pas fonctionner chez moi.</p>
+</blockquote>
 <p>Ajouter les lignes suivantes dans le fichier <code>pelicanconf.py</code>. Cela va créer une variable globale <code>HOME</code> qui va contenir le contenu HTML.  </p>
 <div class="highlight"><pre><span></span><code><span class="c1"># En tête de fichier :</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">pelican.readers</span><span class="w"> </span><span class="kn">import</span><span class="w"> </span><span class="n">MarkdownReader</span><span class="w">  </span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">pelican.settings</span><span class="w"> </span><span class="kn">import</span><span class="w"> </span><span class="n">DEFAULT_CONFIG</span>
+<span class="kn">from</span> <span class="nn">pelican.readers</span> <span class="kn">import</span> <span class="n">MarkdownReader</span>  
+<span class="kn">from</span> <span class="nn">pelican.settings</span> <span class="kn">import</span> <span class="n">DEFAULT_CONFIG</span>
 
 <span class="c1"># Plus bas :</span>
-<span class="n">config</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">DEFAULT_CONFIG</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span><span class="w">  </span>
-<span class="n">HOME</span><span class="p">,</span><span class="w"> </span><span class="n">_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">MarkdownReader</span><span class="p">(</span><span class="n">config</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="s2">&quot;content/pages/home.md&quot;</span><span class="p">)</span>
+<span class="n">config</span> <span class="o">=</span> <span class="n">DEFAULT_CONFIG</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>  
+<span class="n">HOME</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">MarkdownReader</span><span class="p">(</span><span class="n">config</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="s2">&quot;content/pages/home.md&quot;</span><span class="p">)</span>
 </code></pre></div>
 
 <p>On peut à présent faire injecter le contenu de la variable HOME dans le template de l'index. Ajouter la ligne <code>{{ HOME }}</code> à la suite de la ligne <code>{% block content %}</code> dans le fichier <code>_pelican/themes/petitalxio/templates/index.html</code>. Le début de votre fichier doit alors resembler à cela : </p>
-<div class="highlight"><pre><span></span><code><span class="cp">{%</span> <span class="k">extends</span> <span class="s2">&quot;base.html&quot;</span> <span class="cp">%}</span><span class="x">  </span>
-<span class="cp">{%</span> <span class="k">block</span> <span class="nv">content</span> <span class="cp">%}</span><span class="x">  </span>
+<div class="highlight"><pre><span></span><code>{% extends &quot;base.html&quot; %}  
+{% block content %}  
 
-<span class="x">    </span><span class="cp">{{</span> <span class="nv">HOME</span> <span class="cp">}}</span>
+    {{ HOME }}
 </code></pre></div>
 
-<p>Régénérer, et admirer le résultat</p>
-<h3>Code minimalism</h3>
-<p>Désactiver la génération des pages "Author", "Authors", "Tag", ... en ajoutant ces lignes au fichier pelicanconf.py :</p>
+<p>Régénérer, et admirer le résultat.</p>
+<p><img alt="" src="images/creer-son-site-personnel-avec-pelican-et-ghp-4.png"></p>
+<h3>BONUS : Code minimalism</h3>
+<p>Ok, on a bien simplifié le design ! </p>
+<p>Maintenant, j'aimerais simplifier le code. </p>
+<p>Cette étape peut paraître superflu. 
+Mais vous allez voir, après on se sent mieux.</p>
+<p>Chaque fichier, chaque ligne de code qui est dans notre projet représente un cout. C'est une ligne de plus à lire lorsque l'on cherche à faire évoluer notre site, un fichier en plus à maintenir, une information supplémentaire à traiter.</p>
+<p>Dans cette section, on va éliminer le code inutile. </p>
+<h4>Ne plus générer les pages qui ne nous servent pas</h4>
+<p>Commencer par désactiver la génération des pages "Author", "Authors", "Tag", ... en ajoutant ces lignes au fichier <code>pelicanconf.py</code> :</p>
 <div class="highlight"><pre><span></span><code>TAG_SAVE_AS = &#39;&#39;  
 TAGS_SAVE_AS = &#39;&#39;  
 CATEGORY_SAVE_AS = &#39;&#39;  
@@ -403,32 +453,88 @@ AUTHORS_SAVE_AS = &#39;&#39;
 ARCHIVES_SAVE_AS = &#39;&#39;
 </code></pre></div>
 
-<p>Nettoyer le dossier des templates pour ne conserver que les fichiers suivants : </p>
+<p>Nettoyer le dossier des templates pour ne conserver que les 4 fichiers suivants : </p>
 <div class="highlight"><pre><span></span><code>templates
 ├── article.html
 ├── base.html
 ├── index.html
 ├── page.html
-└── translations.html
 </code></pre></div>
 
+<h4>Nettoyer le fichier de configuration</h4>
+<p>Nettoyer le fichier <code>pelicanconf.py</code>
+<img alt="" src="images/pelican-website-conf.jpg">
+- supprimer la variable <code>LINKS</code> : c'était une variable custom du template initial
+- supprimer la variable <code>SOCIAL</code> : idem, elle ne sert plus
+- supprimer la variable <code>DEFAULT_PAGINATION</code> qui utilise déjà la valeur par défaut
+- supprimer le code commenté relatif à <code>RELATIVE_URLS</code>
+- supprimer le lignes qui annulent la génération du feed</p>
+<h4>Nettoyer le Makefile</h4>
+<p>Le Makefile généré par <code>pelican-quickstart</code> met à disposition des commandes utiles.</p>
+<p>Je te propose de ne conserver que le strict minimum pour développer efficacement : 
+- <code>help</code> : affiche l'aide du Makefile
+- <code>clean</code> : supprime les fichiers HTML et XML de sortie
+- <code>devserver</code> : lance le serveur local et le hot reload
+- <code>publish</code> : génère le site la config serveur
+- <code>github</code> : génère le site et upload notre repository sur Github</p>
+<p>En regardant le détail de commande, on se rend compte que la commande <code>clean</code> est dangereuse en l'état. Comme on génère le site à la racine du repo, lancer <code>make clean</code> entraine la suppression de tous nos fichiers !</p>
+<p>Aussi, la commande Github utilise <code>ghp</code>. Ce n'est pas l'option que nous avons choisi pour déployer. </p>
+<p>Voici la version du fichier mise à jour (à partir de la ligne help) : </p>
+<div class="highlight"><pre><span></span><code><span class="n">help</span><span class="p">:</span>
+<span class="w">    </span><span class="err">@</span><span class="n">echo</span><span class="w"> </span><span class="s1">&#39;Makefile for a pelican Web site                                           &#39;</span>
+<span class="w">    </span><span class="err">@</span><span class="n">echo</span><span class="w"> </span><span class="s1">&#39;                                                                          &#39;</span>
+<span class="w">    </span><span class="err">@</span><span class="n">echo</span><span class="w"> </span><span class="s1">&#39;Usage:                                                                    &#39;</span>
+<span class="w">    </span><span class="err">@</span><span class="n">echo</span><span class="w"> </span><span class="s1">&#39;   make clean                          remove the generated files         &#39;</span>
+<span class="w">    </span><span class="err">@</span><span class="n">echo</span><span class="w"> </span><span class="s1">&#39;   make publish                        generate using production settings &#39;</span>
+<span class="w">    </span><span class="err">@</span><span class="n">echo</span><span class="w"> </span><span class="s1">&#39;   make devserver [PORT=8000]          serve and regenerate together      &#39;</span>
+<span class="w">    </span><span class="err">@</span><span class="n">echo</span><span class="w"> </span><span class="s1">&#39;   make github                         upload the web site                &#39;</span>
+<span class="w">    </span><span class="err">@</span><span class="n">echo</span><span class="w"> </span><span class="s1">&#39;                                                                          &#39;</span>
+<span class="w">    </span><span class="err">@</span><span class="n">echo</span><span class="w"> </span><span class="s1">&#39;Set the DEBUG variable to 1 to enable debugging, e.g. make DEBUG=1 html   &#39;</span>
+<span class="w">    </span><span class="err">@</span><span class="n">echo</span><span class="w"> </span><span class="s1">&#39;Set the RELATIVE variable to 1 to enable relative urls                    &#39;</span>
+<span class="w">    </span><span class="err">@</span><span class="n">echo</span><span class="w"> </span><span class="s1">&#39;                                                                          &#39;</span>
+
+<span class="n">clean</span><span class="p">:</span>
+<span class="w">    </span><span class="n">rm</span><span class="w"> </span><span class="o">$</span><span class="p">(</span><span class="n">OUTPUTDIR</span><span class="p">)</span><span class="o">/**.</span><span class="n">html</span><span class="p">;</span><span class="w"> </span><span class="n">rm</span><span class="w"> </span><span class="o">-</span><span class="n">rf</span><span class="w"> </span><span class="s2">&quot;$(OUTPUTDIR)/feeds&quot;</span><span class="p">;</span><span class="w"> </span><span class="n">rm</span><span class="w"> </span><span class="o">-</span><span class="n">rf</span><span class="w"> </span><span class="s2">&quot;$(OUTPUTDIR)/pages&quot;</span><span class="p">;</span><span class="w"> </span><span class="n">rm</span><span class="w"> </span><span class="o">-</span><span class="n">rf</span><span class="w"> </span><span class="s2">&quot;$(OUTPUTDIR)/theme&quot;</span>
+
+<span class="n">devserver</span><span class="p">:</span>
+<span class="w">    </span><span class="s2">&quot;$(PELICAN)&quot;</span><span class="w"> </span><span class="o">-</span><span class="n">lr</span><span class="w"> </span><span class="s2">&quot;$(INPUTDIR)&quot;</span><span class="w"> </span><span class="o">-</span><span class="n">o</span><span class="w"> </span><span class="s2">&quot;$(OUTPUTDIR)&quot;</span><span class="w"> </span><span class="o">-</span><span class="n">s</span><span class="w"> </span><span class="s2">&quot;$(CONFFILE)&quot;</span><span class="w"> </span><span class="o">$</span><span class="p">(</span><span class="n">PELICANOPTS</span><span class="p">)</span>
+
+<span class="n">publish</span><span class="p">:</span>
+<span class="w">    </span><span class="s2">&quot;$(PELICAN)&quot;</span><span class="w"> </span><span class="s2">&quot;$(INPUTDIR)&quot;</span><span class="w"> </span><span class="o">-</span><span class="n">o</span><span class="w"> </span><span class="s2">&quot;$(OUTPUTDIR)&quot;</span><span class="w"> </span><span class="o">-</span><span class="n">s</span><span class="w"> </span><span class="s2">&quot;$(PUBLISHCONF)&quot;</span><span class="w"> </span><span class="o">$</span><span class="p">(</span><span class="n">PELICANOPTS</span><span class="p">)</span>
+
+<span class="n">github</span><span class="p">:</span><span class="w"> </span><span class="n">publish</span>
+<span class="w">    </span><span class="n">git</span><span class="w"> </span><span class="n">add</span><span class="w"> </span><span class="o">-</span><span class="n">u</span><span class="w"> </span><span class="o">.</span>
+<span class="w">    </span><span class="n">git</span><span class="w"> </span><span class="n">commit</span><span class="w"> </span><span class="o">-</span><span class="n">m</span><span class="w"> </span><span class="s2">&quot;Update site&quot;</span>
+<span class="w">    </span><span class="n">git</span><span class="w"> </span><span class="n">push</span><span class="w"> </span><span class="n">origin</span><span class="w"> </span><span class="o">$</span><span class="p">(</span><span class="n">GITHUB_PAGES_BRANCH</span><span class="p">)</span>
+
+
+<span class="o">.</span><span class="n">PHONY</span><span class="p">:</span><span class="w"> </span><span class="n">help</span><span class="w"> </span><span class="n">clean</span><span class="w"> </span><span class="n">devserver</span><span class="w"> </span><span class="n">publish</span><span class="w"> </span><span class="n">github</span>
+</code></pre></div>
+
+<p>Enfin, il est aussi possible de supprimer le fichier <code>_pelican/tasks.py</code> qui fait doublon avec notre Makefile.</p>
+<p>Et voilà.</p>
+<p>Le projet est finalement très simple :)</p>
 <h2>Conclusion</h2>
 <ul>
 <li>Ressources</li>
 <li>Mes notes de second cerveau</li>
 <li>J'ai pris une décision confiant !!</li>
-<li>Pistes pour aller plus loin : créer mon propre générateur, crééer un thème, contribuer à la doc de Pelican, prendre une issue</li>
+<li>Pistes pour aller plus loin : <ul>
+<li>créer mon propre générateur</li>
+<li>créér le thème bettermotherfuckingwebsite pour contribuer (ma première contrib opensource !)</li>
+<li>prendre une issue</li>
+</ul>
+</li>
+</ul>
+<p>Ressources utiles </p>
+<ul>
+<li>La documentation de Pelican : https://docs.getpelican.com/en/stable/index.html</li>
+<li>La documentation de Github Pages : https://pages.github.com/</li>
 </ul>
     <footer>
       <p>Published: <time datetime="2024-07-27T00:00:00+02:00">
         Sam 27 juillet 2024
       </time></p>
-        <address>
-          By             <a href="/author/alexandre-petit.html">Alexandre Petit</a>
-        </address>
-        <p>
-          Category: <a href="/category/misc.html">misc</a>
-        </p>
     </footer>
   </article>
     </main>

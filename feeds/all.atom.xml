@@ -1,17 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>petitalxio</title><link href="https://petitalx.github.io/" rel="alternate"></link><link href="https://petitalx.github.io/feeds/all.atom.xml" rel="self"></link><id>https://petitalx.github.io/</id><updated>2024-07-27T00:00:00+02:00</updated><entry><title>Créer son site personnel gratuitement avec Githbub Pages et Python, et Pelican</title><link href="https://petitalx.github.io/creer-son-site-personnel-gratuitement-avec-githbub-pages-et-python-et-pelican.html" rel="alternate"></link><published>2024-07-27T00:00:00+02:00</published><updated>2024-07-27T00:00:00+02:00</updated><author><name>Alexandre Petit</name></author><id>tag:petitalx.github.io,2024-07-27:/creer-son-site-personnel-gratuitement-avec-githbub-pages-et-python-et-pelican.html</id><summary type="html">&lt;h2&gt;Contexte&lt;/h2&gt;
-&lt;p&gt;Cela fait plusieurs mois que j'expérimente différents supports d'écriture :&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>petitalxio</title><link href="https://petitalx.github.io/" rel="alternate"></link><link href="https://petitalx.github.io/feeds/all.atom.xml" rel="self"></link><id>https://petitalx.github.io/</id><updated>2024-07-27T00:00:00+02:00</updated><entry><title>Créer son site personnel gratuitement avec Githbub Pages et Python, et Pelican</title><link href="https://petitalx.github.io/creer-son-site-personnel-gratuitement-avec-githbub-pages-et-python-et-pelican.html" rel="alternate"></link><published>2024-07-27T00:00:00+02:00</published><updated>2024-07-27T00:00:00+02:00</updated><author><name>Alexandre Petit</name></author><id>tag:petitalx.github.io,2024-07-27:/creer-son-site-personnel-gratuitement-avec-githbub-pages-et-python-et-pelican.html</id><summary type="html">&lt;p&gt;Hello ! &lt;/p&gt;
+&lt;p&gt;Dans cet article, on va voir comment créer un site personnel :&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;je me suis lancé sur &lt;a href="https://www.linkedin.com/in/petitalx/"&gt;LinkedIn&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;j'ai créé une &lt;a href="https://100produits.substack.com/"&gt;newsletter sur Substack&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;j'écrire deux pages par jour dans un carnet physique depuis 20 jours&lt;/li&gt;
+&lt;li&gt;avec le générateur de site statique Pelican (écrit en Python)&lt;/li&gt;
+&lt;li&gt;hébergé sur Github Pages&lt;/li&gt;
+&lt;li&gt;à partir de contenu Markdown&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Une difficulté que je rencontre est que je n'ai pas de ligne éditoriale claire, pas de …&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Contexte&lt;/h2&gt;
+&lt;p&gt;Le résultat final ressemble à &lt;a href="http://petitalx.io/"&gt;ça&lt;/a&gt;. &lt;/p&gt;
+&lt;p&gt;&lt;em&gt;If you don't give a shit about&lt;/em&gt; le contexte et mon processus de …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Hello ! &lt;/p&gt;
+&lt;p&gt;Dans cet article, on va voir comment créer un site personnel :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;avec le générateur de site statique Pelican (écrit en Python)&lt;/li&gt;
+&lt;li&gt;hébergé sur Github Pages&lt;/li&gt;
+&lt;li&gt;à partir de contenu Markdown&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Le résultat final ressemble à &lt;a href="http://petitalx.io/"&gt;ça&lt;/a&gt;. &lt;/p&gt;
+&lt;p&gt;&lt;em&gt;If you don't give a shit about&lt;/em&gt; le contexte et mon processus de décision, tu peux sauter directement à la section "Créer le site". Si à un moment tu es perdu dans les explications, tu peux toujours regarder le &lt;a href="https://github.com/petitalx/petitalx.github.io"&gt;code source de mon site&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;Contexte&lt;/h2&gt;
 &lt;p&gt;Cela fait plusieurs mois que j'expérimente différents supports d'écriture :&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;je me suis lancé sur &lt;a href="https://www.linkedin.com/in/petitalx/"&gt;LinkedIn&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;j'ai créé une &lt;a href="https://100produits.substack.com/"&gt;newsletter sur Substack&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;j'écrire deux pages par jour dans un carnet physique depuis 20 jours&lt;/li&gt;
+&lt;li&gt;j'écris deux pages par jour dans un carnet physique depuis 20 jours&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Une difficulté que je rencontre est que je n'ai pas de ligne éditoriale claire, pas de promesse. &lt;/p&gt;
 &lt;p&gt;J'ai envie d'écrire sur des sujets variés : &lt;/p&gt;
@@ -19,15 +29,18 @@
 &lt;li&gt;de retours d'expérience de projets techniques&lt;/li&gt;
 &lt;li&gt;des "récits" de voyage&lt;/li&gt;
 &lt;li&gt;des points d'avancement de projet&lt;/li&gt;
+&lt;li&gt;des tutoriels&lt;/li&gt;
+&lt;li&gt;des résumés de livres&lt;/li&gt;
+&lt;li&gt;des réflexions&lt;/li&gt;
 &lt;li&gt;...&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Et je n'ai pas envie de m'imposer de façon "push". &lt;/p&gt;
-&lt;p&gt;Pour ces deux raisons, donc un site personnel me semble être une bonne solution.&lt;/p&gt;
+&lt;p&gt;Pour ces deux raisons, un site personnel me semble être une bonne solution.&lt;/p&gt;
 &lt;p&gt;En complément de The Developer's Brain, je veux réaliser 30 projets en Python. &lt;/p&gt;
 &lt;p&gt;Créer un site personnel en python apparaît comme bon challenge !&lt;/p&gt;
 &lt;h2&gt;Cadrer le projet&lt;/h2&gt;
-&lt;p&gt;Ma motivation est de "Claim a personal domain"&lt;/p&gt;
-&lt;p&gt;Ce qui est important pour moi est de :&lt;/p&gt;
+&lt;p&gt;Ma motivation est de "claim a personal domain", de m'installer dans un coin de la carte.&lt;/p&gt;
+&lt;p&gt;Ce qui va être important pour moi est de :&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;livrer&lt;/li&gt;
 &lt;li&gt;choisir une solution simple&lt;/li&gt;
@@ -41,7 +54,7 @@
 &lt;li&gt;de choisir un outil trop complexe pour mon besoin&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;OK.&lt;/p&gt;
-&lt;p&gt;À présent, je suis mis en garde !&lt;/p&gt;
+&lt;p&gt;À présent, je suis mis en garde.&lt;/p&gt;
 &lt;h2&gt;Choisir la technologie&lt;/h2&gt;
 &lt;p&gt;Pour créer un site avec Python, j'ai d'abord pensé aux technologies suivantes : &lt;/p&gt;
 &lt;ul&gt;
@@ -53,9 +66,10 @@
 &lt;p&gt;Quelle framework choisir pour créer un site personnel ?&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Je suis tombé sur ce fil Reddit &lt;a href="https://www.reddit.com/r/Python/comments/166xf22/best_framework_for_portfolio_website/"&gt;Best framework for portfolio website?&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Les réponses sont unanimes. Utiliser Django ou Flask revient à se compliquer la vie. Un générateur de site statique est plus simple, moins cher et plus rapide&lt;/p&gt;
-&lt;p&gt;En effet, les générateurs de site statique ont les avantages suivants : 
-- Simplicité : ils sont en général plus simple à utiliser que les frameworks fullstack complets
+&lt;p&gt;Les réponses sont unanimes : utiliser Django ou Flask revient à se compliquer la vie. Un générateur de site statique est plus simple, moins cher et plus rapide.&lt;/p&gt;
+&lt;p&gt;Un générateur de sites statique est une application qui prends en entrée des fichiers textes et les converti en fichiers HTML.&lt;/p&gt;
+&lt;p&gt;Les générateurs de site statique ont les avantages suivants : 
+- Simplicité : ils sont en général plus simple à appréhender que les frameworks Fullstack qui présentent davantage de fonctionnalités comme de l'authentification, des interactions avec une base de donnée. 
 - Prix : il existe de nombreuses solutions d'hébergement gratuit
 - SEO : les pages sont statiques et donc facilement indexables par les moteurs de recherche&lt;/p&gt;
 &lt;p&gt;Je me suis donc tourné vers les générateurs de site statique.&lt;/p&gt;
@@ -69,10 +83,10 @@
 &lt;p&gt;&lt;strong&gt;Astro&lt;/strong&gt; est un générateur de site statique qui permet de combiner Svelte, React et Vue. Je l'ai tout de suite écarté car un wrapper autour de frameworks indique une complexité élevée. &lt;/p&gt;
 &lt;p&gt;Et python ?&lt;/p&gt;
 &lt;p&gt;Il existe bien un générateur de sites statiques en python : Pelican.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Pelican&lt;/strong&gt; existe depuis 2010. Il est écrit en python et a été créé par &lt;a href="http://blog.notmyidea.org/"&gt;Alexis Metaireau&lt;/a&gt;. Il est utilisé par seulement &lt;a href="https://trends.builtwith.com/websitelist/Pelican"&gt;3500 sites&lt;/a&gt;, mais il dispose d'une documentation claire. Et comme il est écrit en python, je pourrai contribuer au code source ! &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Pelican&lt;/strong&gt; existe depuis 2010 et a été créé par &lt;a href="http://blog.notmyidea.org/"&gt;Alexis Metaireau&lt;/a&gt;. Il est utilisé par seulement &lt;a href="https://trends.builtwith.com/websitelist/Pelican"&gt;3500 sites&lt;/a&gt;, mais il dispose d'une documentation claire. Et comme il est écrit en python, je pourrai contribuer au code source au besoin. Au première abord, il dispose de toutes les fonctionnalités dont j'ai besoin : il y a une section blog, des pages on peut ajuster le style.&lt;/p&gt;
 &lt;p&gt;Je choisis donc Pelican.&lt;/p&gt;
 &lt;h2&gt;Choisir une solution de déploiement&lt;/h2&gt;
-&lt;p&gt;Il existe plusieurs solutions pour déployer un site statique :&lt;/p&gt;
+&lt;p&gt;Il existe des dizaines de solutions pour déployer un site statique, parmi lesquelles :&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;AWS&lt;/li&gt;
 &lt;li&gt;Netlify&lt;/li&gt;
@@ -82,18 +96,23 @@
 &lt;p&gt;Je veux une solution gratuite et simple.&lt;/p&gt;
 &lt;p&gt;J'ai entendu beaucoup de bien de Github Pages. &lt;/p&gt;
 &lt;p&gt;Je vais tester cette solution.&lt;/p&gt;
+&lt;p&gt;(Possibilité de détailler davantage chaque solution ici : date de création, complexité, coût)&lt;/p&gt;
 &lt;h2&gt;Créer le site&lt;/h2&gt;
 &lt;p&gt;Ok, on entre dans le vif du sujet.&lt;/p&gt;
-&lt;p&gt;Dans la suite de l'article, on va suivre ensemble les étapes que j'ai suivi pour construire mon site personnel &lt;code&gt;petitalx.io&lt;/code&gt;. &lt;code&gt;petitalx&lt;/code&gt; est mon username github. Naturellement, vous pouvez remplacer toutes les occurences de &lt;code&gt;petitalx&lt;/code&gt; par votre username.&lt;/p&gt;
+&lt;p&gt;Dans la suite de l'article, on va suivre ensemble les étapes que j'ai suivi pour construire mon site personnel https://petitalx.io. &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;petitalx&lt;/code&gt; est mon username Github. Naturellement, vous pouvez remplacer toutes les occurrences de &lt;code&gt;petitalx&lt;/code&gt; par votre username. Vous ne pourrez pas copier coller toutes les instructions. Mais cela fera travailler votre mémoire mécanique :).&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h3&gt;Créer un walking skeleton&lt;/h3&gt;
-&lt;p&gt;Notre premier objectif est de configurer et déployer un site le plus rapidement possible. On pourra ensuite itérer pour ajuster le style et simplifier le code.&lt;/p&gt;
-&lt;p&gt;Prérequis :&lt;/p&gt;
+&lt;p&gt;Notre premier objectif est de configurer et déployer un site le plus rapidement possible. On pourra ensuite itérer pour ajuster le style, ajouter du contenu, et simplifier le code.&lt;/p&gt;
+&lt;p&gt;Pré-requis :&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;avoir un terminal &lt;/li&gt;
-&lt;li&gt;avoir python installé&lt;/li&gt;
-&lt;li&gt;avoir un compte github&lt;/li&gt;
+&lt;li&gt;avoir un terminal unix&lt;/li&gt;
+&lt;li&gt;avoir Python installé&lt;/li&gt;
+&lt;li&gt;avoir un compte Github&lt;/li&gt;
 &lt;li&gt;connaître le ba-ba de git&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h4&gt;Initialisation du projet&lt;/h4&gt;
 &lt;p&gt;On commence par créer le projet en local.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nb"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;~/dev
 mkdir&lt;span class="w"&gt; &lt;/span&gt;petitalxio
@@ -104,8 +123,8 @@ python&lt;span class="w"&gt; &lt;/span&gt;-m&lt;span class="w"&gt; &lt;/span&gt;
 &lt;span class="nb"&gt;source&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;.venv/bin/activate
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;Créer le fichier requirements.txt suivant&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pelican[markdown]
+&lt;p&gt;Créer un fichier requirements.txt avec la ligne&lt;code&gt;pelican[markdown]&lt;/code&gt; :&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;echo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;pelican[markdown]&amp;quot;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;requirements&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;txt&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Puis installer les dépendances&lt;/p&gt;
@@ -119,31 +138,38 @@ python&lt;span class="w"&gt; &lt;/span&gt;-m&lt;span class="w"&gt; &lt;/span&gt;
 &lt;ul&gt;
 &lt;li&gt;créer le site dans un dossier &lt;code&gt;_pelican&lt;/code&gt; &lt;/li&gt;
 &lt;li&gt;choisir &lt;code&gt;fr&lt;/code&gt; comme langue par défaut&lt;/li&gt;
-&lt;li&gt;ne pas préciser de préfixe d'url&lt;/li&gt;
+&lt;li&gt;ne pas expliciter de préfixe d'url&lt;/li&gt;
 &lt;li&gt;désactiver la pagination&lt;/li&gt;
-&lt;li&gt;choisir 'Europe/Paris' comme timezone&lt;/li&gt;
+&lt;li&gt;renseigner &lt;code&gt;Europe/Paris&lt;/code&gt; comme timezone&lt;/li&gt;
 &lt;li&gt;demander à générer le fichier Makefile&lt;/li&gt;
+&lt;li&gt;répondre pour l'upload avec FTP, SSH, Dropbox, S3 et Rackspace&lt;/li&gt;
 &lt;li&gt;répondre oui à la question "Do you want to upload your website using GitHub Pages?"&lt;/li&gt;
+&lt;li&gt;répondre ui à la question "Is it your personal page" ?&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;OK ! &lt;/p&gt;
-&lt;p&gt;Pour visionner le site en local, lancer la commande&lt;/p&gt;
+&lt;p&gt;Pour visionner le site en local, lancer les commandes&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nb"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;~/dev/petitalxio/_pelican
 pelican&lt;span class="w"&gt; &lt;/span&gt;content
 pelican&lt;span class="w"&gt; &lt;/span&gt;--listen
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
+&lt;p&gt;&lt;img alt="" src="images/creer-son-site-personnel-avec-pelican-et-ghp-2.png"&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Remarque : vous pouvez ensuite supprimer le dossier &lt;code&gt;_pelican/output&lt;/code&gt; car dans la section suivante nous allons changer le chemin de sortie des fichiers.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h4&gt;Publier sur Github Pages&lt;/h4&gt;
-&lt;p&gt;Rendez-vous sur votre compte github : https://github.com/. &lt;/p&gt;
-&lt;p&gt;Créer un nouveau repository &lt;code&gt;username.github.io&lt;/code&gt; où &lt;code&gt;username&lt;/code&gt; est votre nom d'utilisateur github.&lt;/p&gt;
+&lt;p&gt;Rendez-vous sur votre compte Github : https://github.com/. &lt;/p&gt;
+&lt;p&gt;Créer un nouveau repository &lt;code&gt;username.github.io&lt;/code&gt; où &lt;code&gt;username&lt;/code&gt; est votre nom d'utilisateur Github. Ne pas initialiser le README ni le .gitignore à ce stade.&lt;/p&gt;
 &lt;p&gt;De retour sur votre poste, se replacer à la racine du projet&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nb"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;~/dev/petitalxio&lt;span class="sb"&gt;`&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;Créer un fichier .gitignore avec le contenu suivant&lt;/p&gt;
+&lt;p&gt;Créer un fichier &lt;code&gt;.gitignore&lt;/code&gt; avec le contenu suivant&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;.venv  
 **__pycache__**/
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
+&lt;p&gt;(par exemples avec la commande &lt;code&gt;echo ".venv \n**__pycache__**/" &amp;gt; .gitignore&lt;/code&gt;)&lt;/p&gt;
 &lt;p&gt;Initialiser le dépôt git&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nb"&gt;echo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;# petitalx.github.io&amp;quot;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&amp;gt;&amp;gt;&lt;span class="w"&gt; &lt;/span&gt;README.md
 git&lt;span class="w"&gt; &lt;/span&gt;init
@@ -154,20 +180,339 @@ git&lt;span class="w"&gt; &lt;/span&gt;remote&lt;span class="w"&gt; &lt;/span&gt
 git&lt;span class="w"&gt; &lt;/span&gt;push&lt;span class="w"&gt; &lt;/span&gt;-u&lt;span class="w"&gt; &lt;/span&gt;origin&lt;span class="w"&gt; &lt;/span&gt;main
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;La façon la plus simple de déployer le site est de générer le contenu du site à la racine du répertoire.&lt;/p&gt;
-&lt;p&gt;On va donc modifier le fichier &lt;code&gt;Makefile&lt;/code&gt; pour que la commande &lt;code&gt;make publish&lt;/code&gt; génère le site à la racine du répertoire.&lt;/p&gt;
-&lt;p&gt;Modifier le fichier &lt;code&gt;_pelican/Makefile&lt;/code&gt; pour que la variable &lt;code&gt;OUTPUTDIR&lt;/code&gt; soit égale à &lt;code&gt;$(BASEDIR)/..&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La façon la plus simple de déployer le site est de générer le contenu du site à la racine du répertoire. Pour faciliter les manipulations, on va modifier le &lt;code&gt;Makefile&lt;/code&gt; afin que la commande &lt;code&gt;make publish&lt;/code&gt; génère le site à la racine du répertoire.&lt;/p&gt;
+&lt;p&gt;Ouvrir le fichier &lt;code&gt;_pelican/Makefile&lt;/code&gt; et modifier la ligne &lt;code&gt;OUTPUTDIR&lt;/code&gt; tel que&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nv"&gt;OUTPUTDIR&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;BASEDIR&lt;span class="k"&gt;)&lt;/span&gt;/..
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
 &lt;p&gt;Lancer &lt;code&gt;make publish&lt;/code&gt; depuis &lt;code&gt;~/dev/petitalxio/_pelican&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Lancer &lt;code&gt;git add .&lt;/code&gt;, &lt;code&gt;git commit -m "generate content"&lt;/code&gt;, &lt;code&gt;git push&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Vérifier que le déploiement est en cours dans le volet https://github.com/petitalx/petitalx.github.io/actions.&lt;/p&gt;
-&lt;h1&gt;Brouillon&lt;/h1&gt;
+&lt;p&gt;Depuis la racine du répertoire, lancer &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git&lt;span class="w"&gt; &lt;/span&gt;status
+git&lt;span class="w"&gt; &lt;/span&gt;add&lt;span class="w"&gt; &lt;/span&gt;.
+git&lt;span class="w"&gt; &lt;/span&gt;commit&lt;span class="w"&gt; &lt;/span&gt;-m&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;generate content&amp;quot;&lt;/span&gt;
+git&lt;span class="w"&gt; &lt;/span&gt;push
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Vérifier que le déploiement est en cours dans le volet "&lt;strong&gt;Actions&lt;/strong&gt;" du répertoire Github :&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="images/creer-son-site-personnel-avec-pelican-et-ghp-3.png"&gt;&lt;/p&gt;
+&lt;p&gt;Une fois le déploiement terminé, votre site est accessible à l'adresse &lt;code&gt;https://username.github.io&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="images/premiere-mise-en-ligne.png"&gt;&lt;/p&gt;
+&lt;p&gt;Notre site personnel est en ligne ! &lt;/p&gt;
+&lt;p&gt;🚀&lt;/p&gt;
+&lt;h3&gt;Ajouter les premiers contenus&lt;/h3&gt;
+&lt;p&gt;Dans cette section, on va voir :&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Choisir la technologie&lt;/li&gt;
-&lt;li&gt;Choisir le solution de déploiement&lt;/li&gt;
-&lt;li&gt;Créer le site&lt;/li&gt;
-&lt;li&gt;Conclusion&lt;/li&gt;
+&lt;li&gt;comment créer une nouvelle page&lt;/li&gt;
+&lt;li&gt;comment créer un nouvel article&lt;/li&gt;
+&lt;li&gt;comment publier les mises à jour&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Depuis le dossier &lt;code&gt;_pelican&lt;/code&gt;, lancer la commande &lt;code&gt;make devserver&lt;/code&gt; afin de lancer le serveur et d'activer le mode auto-reload. Le mode auto-reload va générer les fichiers html locaux de façon automatique dès lors qu'un fichier est modifié.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4&gt;Création d'une page now&lt;/h4&gt;
+&lt;p&gt;À quoi bon créer un site personnel si l'on y met pas une page "now" ? 🤷‍♂️.&lt;/p&gt;
+&lt;p&gt;Une page now est une page qui indiquer au visiteur ce que l'on fait actuellement. Ton portfolio donne une bonne idée de ce que tu as réalisé par le passé. Ta page now donne un aperçu de ce qui t'occupe actuellement. &lt;/p&gt;
+&lt;p&gt;L'idée est de mettre dedans ce que tu raconterais à un amis que tu n'as pas vue depuis un an : &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;où est-ce que tu vis &lt;/li&gt;
+&lt;li&gt;quels sont tes challenges&lt;/li&gt;
+&lt;li&gt;sur quels projets est-ce que tu travailles&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Créer un fichier &lt;code&gt;now.md&lt;/code&gt; dans le dossier &lt;code&gt;~/dev/petitalxio/_pelican/content/pages&lt;/code&gt; : &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="o"&gt;---&lt;/span&gt;
+&lt;span class="n"&gt;Title&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Now&lt;/span&gt;
+&lt;span class="o"&gt;---&lt;/span&gt;
+
+&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Mis&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;à&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;jour&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;le&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;28&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;juillet&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;2024&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;à&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Rouen&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;France&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;
+
+&lt;span class="n"&gt;Je&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;travail&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;actuellement&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;pour&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;EDF&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;en&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;tant&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;que&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Software&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Engineer&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;où&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;je&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;développe&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;un&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;service&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;de&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;détection&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;d&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;anomalies sur des séries temporelles.&lt;/span&gt;
+
+&lt;span class="n"&gt;Mon&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;axe&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;de&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;travail&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;sur&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;les&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;prochains&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;mois&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;sont&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;de&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;rassembler&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;et&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;synthétiser&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;les&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;99&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;meilleurs&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;livres&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;sur&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;le&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Software&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Engineering&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;
+
+&lt;span class="n"&gt;En&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;complément&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;de&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;ce&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;projet&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;axé&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;sur&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;la&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;théorie&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;je&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;réalise&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;réaliser&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;challenges&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;en&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Python&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Ce&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;site&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;constitue&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;un des challenges.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Et regarder le résultat sur la page http://127.0.0.1:8000&lt;/p&gt;
+&lt;p&gt;Si vous cherchez des exemples de pages "now", consultez &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;https://sive.rs/now (la page du boss)&lt;/li&gt;
+&lt;li&gt;https://nownownow.com/ (l'annuaire des pages now)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Création d'un premier article&lt;/h4&gt;
+&lt;p&gt;Créer un fichier &lt;code&gt;mon-premier-article.md&lt;/code&gt; dans le dossier &lt;code&gt;~/dev/petitalxio/_pelican/content/&lt;/code&gt; : &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;Title&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;J&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;ai&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;publié&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;mon&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;premier&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;article&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;!&lt;/span&gt;
+&lt;span class="n"&gt;Date&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;2024&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;07&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;27&lt;/span&gt;
+
+&lt;span class="n"&gt;Hello&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;les&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;amis&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;
+
+&lt;span class="n"&gt;Voici&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;mon&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;premier&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;article&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;de&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;blog&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;
+
+&lt;span class="n"&gt;Il&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;est&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;expose&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;les&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;différents&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;formats&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;de&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;markdown&lt;/span&gt;
+
+&lt;span class="n"&gt;Une&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;liste&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;non&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;numérotée&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;
+
+&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;
+&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;b&lt;/span&gt;
+
+&lt;span class="n"&gt;Une&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;liste&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;numérotée&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;
+
+&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Cookie&lt;/span&gt;
+&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Beurre&lt;/span&gt;
+
+&lt;span class="n"&gt;Une&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;citation&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;
+
+&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;When&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;the&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;student&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;is&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;ready&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;the&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;master&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;will&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;appear&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Bruce&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Lee&lt;/span&gt;
+
+&lt;span class="n"&gt;Un&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;é&lt;/span&gt;&lt;span class="n"&gt;chantillon&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;de&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;code&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;`&lt;/span&gt;&lt;span class="n"&gt;print&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;hello&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;&lt;span class="err"&gt;`&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h4&gt;Visualiser et publier les mises à jour&lt;/h4&gt;
+&lt;p&gt;Pour visionner le résultat en local, lancer : &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;cd ~/dev/petitalxio/_pelican
+make devserver
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Pour déployer, lancer&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;cd ~/dev/petitalxio/_pelican
+make publish
+
+cd ~/dev/petitalxio/
+git add . ; git commit -m &amp;quot;update content&amp;quot;; git push
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Vous avez maintenant toutes les clés en main pour ajouter du contenu sur votre site. &lt;/p&gt;
+&lt;p&gt;Pour aller plus loin, &lt;a href="https://docs.getpelican.com/en/stable/content.html"&gt;la documentation&lt;/a&gt; est là pour vous aider.&lt;/p&gt;
+&lt;h3&gt;Mettre en forme&lt;/h3&gt;
+&lt;p&gt;À présent que l'on a travaillé le fond, passons à la forme. &lt;/p&gt;
+&lt;p&gt;Dans cette section, je te propose de faire évoluer le design de notre site personnel vers &lt;a href="https://petitalx.io/"&gt;ce style&lt;/a&gt;, qui est un mélange entre &lt;a href="https://sive.rs/"&gt;le site personnel de Derek Sivers&lt;/a&gt;, et la simplicité de http://bettermotherfuckingwebsite.com/&lt;/p&gt;
+&lt;p&gt;Pour cela, on va repartir d'un thème "simple".&lt;/p&gt;
+&lt;h4&gt;Mise en place d'un thème explicite&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;récupérer les fichiers suivants https://github.com/getpelican/pelican/tree/main/pelican/themes/simple/templates et les copier dans &lt;code&gt;_pelican/themes/petitalxio/templates&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;ajouter &lt;code&gt;THEME = "themes/petitalxio"&lt;/code&gt; dans &lt;code&gt;pelicanconf.py&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;régénérer le site &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Tout est à plat ! &lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="images/site-avec-theme-simple.png"&gt;&lt;/p&gt;
+&lt;h4&gt;Ajout d'une feuille de style CSS&lt;/h4&gt;
+&lt;p&gt;Coller le contenu suivant dans un fichier &lt;code&gt;_pelican/themes/petitalxio/static/style.css&lt;/code&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nt"&gt;body&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="k"&gt;max-width&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;650&lt;/span&gt;&lt;span class="kt"&gt;px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;40&lt;/span&gt;&lt;span class="kt"&gt;px&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;auto&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="kt"&gt;px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="k"&gt;font&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;18&lt;/span&gt;&lt;span class="kt"&gt;px&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="mf"&gt;1.5&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;apple-system&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;BlinkMacSystemFont&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Segoe UI&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Roboto&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Helvetica Neue&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Arial&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Noto Sans&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;sans-serif&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Apple Color Emoji&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Segoe UI Emoji&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Segoe UI Symbol&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Noto Color Emoji&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mh"&gt;#444&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nt"&gt;h1&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mh"&gt;#444&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="p"&gt;@&lt;/span&gt;&lt;span class="k"&gt;media&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;prefers-color-scheme&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;dark&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="nt"&gt;body&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mh"&gt;#c9d1d9&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mh"&gt;#0d1117&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="nd"&gt;link&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mh"&gt;#58a6ff&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Puis ajouter la référence à la feuille de style dans le fichier template &lt;code&gt;base.html&lt;/code&gt; :&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="cp"&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+&lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;html&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;head&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+    {% block head %}
+      &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;title&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;{{ SITENAME|striptags }}&lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;title&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;meta&lt;/span&gt; &lt;span class="na"&gt;charset&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;utf-8&amp;quot;&lt;/span&gt; &lt;span class="p"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;meta&lt;/span&gt; &lt;span class="na"&gt;name&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;generator&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;content&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Pelican&amp;quot;&lt;/span&gt; &lt;span class="p"&gt;/&amp;gt;&lt;/span&gt;
+
+      &lt;span class="cm"&gt;&amp;lt;!-- 👇👇👇👇👇👇👇 --&amp;gt;&lt;/span&gt;
+      &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;link&lt;/span&gt; &lt;span class="na"&gt;rel&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;stylesheet&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;type&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text/css&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;href&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;{{ SITEURL }}/theme/style.css&amp;quot;&lt;/span&gt; &lt;span class="p"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="cm"&gt;&amp;lt;!-- 👆👆👆👆👆👆👆 --&amp;gt;&lt;/span&gt;
+
+      &lt;span class="cm"&gt;&amp;lt;!-- ... suite du template --&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Régénérer, et le tour est joué.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="images/site-avec-theme-bettermotherfuckingwebsite.png"&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Attention, pour que pelican embarque la feuille de style sans configuration supplémentaire, il est nécessaire qu'elle se trouve dans un dossier qui soit nommé "static" placé à la racine du thème. L'exemple &lt;code&gt;themes/petitalxio/static/style.css&lt;/code&gt; valide ces conditions. &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Finalement, lancer les commandes suivantes afin de déployer votre site web :&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;shell
+&lt;span class="nb"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;~/dev/petitalxio/_pelican
+make&lt;span class="w"&gt; &lt;/span&gt;publish
+
+&lt;span class="nb"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;..
+git&lt;span class="w"&gt; &lt;/span&gt;status&lt;span class="w"&gt;  &lt;/span&gt;
+git&lt;span class="w"&gt; &lt;/span&gt;add&lt;span class="w"&gt; &lt;/span&gt;.
+git&lt;span class="w"&gt; &lt;/span&gt;commit&lt;span class="w"&gt; &lt;/span&gt;-m&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;update website&amp;quot;&lt;/span&gt;
+git&lt;span class="w"&gt; &lt;/span&gt;push
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h4&gt;Simplifier le template&lt;/h4&gt;
+&lt;p&gt;On va à présent simplifier les templates suivants : &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;base.html&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;index.html&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;page.html&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;article.html&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Commençons par le fichier &lt;code&gt;base.html&lt;/code&gt; : &lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="images/simplify-base-screenshot.jpg"&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;supprimer le bloc &lt;code&gt;&amp;lt;nav&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;supprimer le bloc &lt;code&gt;&amp;lt;footer&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Continuer avec &lt;code&gt;index.html&lt;/code&gt; : &lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="images/simplify-index-template.png"&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;remplacer le &lt;code&gt;{% block content_title %}&lt;/code&gt;par un simple &lt;code&gt;&amp;lt;h2&amp;gt;&lt;/code&gt; et en profiter pour traduire le texte&lt;/li&gt;
+&lt;li&gt;remplacer la liste de miniatures par une simple liste de titres d'articles&lt;/li&gt;
+&lt;li&gt;supprimer le bloc dédié à la pagination car on l'a désactivé pendant le quickstart&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Poursuivre avec le template article.html : &lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="images/simplify-article-template.png"&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;supprimer les directives liées à la traduction&lt;/li&gt;
+&lt;li&gt;simplifier l'affichage du titre pour utiliser une simple balise &lt;code&gt;&amp;lt;h2&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;supprimer les blocs de métadonnée du footer liée à l'auteur, à la catégorie et aux tags&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Et terminer avec &lt;code&gt;page.html&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="images/simplify-page-template.jpg"&gt;&lt;/p&gt;
+&lt;h4&gt;Création d'une page Home personnalisée&lt;/h4&gt;
+&lt;p&gt;Créer un fichier &lt;code&gt;home.md&lt;/code&gt; dans `_pelican/content/pages/&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;---  
+Title: Home
+---  
+
+&lt;span class="gu"&gt;## Moi en 10 secondes  &lt;/span&gt;
+
+Je suis un développeur Python.  
+
+Je suis né à Rouen.  
+
+Et j&amp;#39;habite actuellement à Rouen.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;[now](now)&lt;/code&gt; résulte en un lien html relatif à la l'url courante. Si on est à l'url &lt;code&gt;petitalx.io/pages/home.html&lt;/code&gt;, cela donne &lt;code&gt;petitalx.io/pages/now&lt;/code&gt;. Le pré-processeur &lt;code&gt;{filename}&lt;/code&gt; ne semble pas fonctionner chez moi.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Ajouter les lignes suivantes dans le fichier &lt;code&gt;pelicanconf.py&lt;/code&gt;. Cela va créer une variable globale &lt;code&gt;HOME&lt;/code&gt; qui va contenir le contenu HTML.  &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c1"&gt;# En tête de fichier :&lt;/span&gt;
+&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;pelican.readers&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;MarkdownReader&lt;/span&gt;  
+&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;pelican.settings&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;DEFAULT_CONFIG&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Plus bas :&lt;/span&gt;
+&lt;span class="n"&gt;config&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;DEFAULT_CONFIG&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;copy&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;  
+&lt;span class="n"&gt;HOME&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;_&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;MarkdownReader&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;config&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;read&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;content/pages/home.md&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;On peut à présent faire injecter le contenu de la variable HOME dans le template de l'index. Ajouter la ligne &lt;code&gt;{{ HOME }}&lt;/code&gt; à la suite de la ligne &lt;code&gt;{% block content %}&lt;/code&gt; dans le fichier &lt;code&gt;_pelican/themes/petitalxio/templates/index.html&lt;/code&gt;. Le début de votre fichier doit alors resembler à cela : &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;{% extends &amp;quot;base.html&amp;quot; %}  
+{% block content %}  
+
+    {{ HOME }}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Régénérer, et admirer le résultat.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="images/creer-son-site-personnel-avec-pelican-et-ghp-4.png"&gt;&lt;/p&gt;
+&lt;h3&gt;BONUS : Code minimalism&lt;/h3&gt;
+&lt;p&gt;Ok, on a bien simplifié le design ! &lt;/p&gt;
+&lt;p&gt;Maintenant, j'aimerais simplifier le code. &lt;/p&gt;
+&lt;p&gt;Cette étape peut paraître superflu. 
+Mais vous allez voir, après on se sent mieux.&lt;/p&gt;
+&lt;p&gt;Chaque fichier, chaque ligne de code qui est dans notre projet représente un cout. C'est une ligne de plus à lire lorsque l'on cherche à faire évoluer notre site, un fichier en plus à maintenir, une information supplémentaire à traiter.&lt;/p&gt;
+&lt;p&gt;Dans cette section, on va éliminer le code inutile. &lt;/p&gt;
+&lt;h4&gt;Ne plus générer les pages qui ne nous servent pas&lt;/h4&gt;
+&lt;p&gt;Commencer par désactiver la génération des pages "Author", "Authors", "Tag", ... en ajoutant ces lignes au fichier &lt;code&gt;pelicanconf.py&lt;/code&gt; :&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;TAG_SAVE_AS = &amp;#39;&amp;#39;  
+TAGS_SAVE_AS = &amp;#39;&amp;#39;  
+CATEGORY_SAVE_AS = &amp;#39;&amp;#39;  
+CATEGORIES_SAVE_AS = &amp;#39;&amp;#39;  
+AUTHOR_SAVE_AS = &amp;#39;&amp;#39;  
+AUTHORS_SAVE_AS = &amp;#39;&amp;#39;  
+ARCHIVES_SAVE_AS = &amp;#39;&amp;#39;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Nettoyer le dossier des templates pour ne conserver que les 4 fichiers suivants : &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;templates
+├── article.html
+├── base.html
+├── index.html
+├── page.html
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h4&gt;Nettoyer le fichier de configuration&lt;/h4&gt;
+&lt;p&gt;Nettoyer le fichier &lt;code&gt;pelicanconf.py&lt;/code&gt;
+&lt;img alt="" src="images/pelican-website-conf.jpg"&gt;
+- supprimer la variable &lt;code&gt;LINKS&lt;/code&gt; : c'était une variable custom du template initial
+- supprimer la variable &lt;code&gt;SOCIAL&lt;/code&gt; : idem, elle ne sert plus
+- supprimer la variable &lt;code&gt;DEFAULT_PAGINATION&lt;/code&gt; qui utilise déjà la valeur par défaut
+- supprimer le code commenté relatif à &lt;code&gt;RELATIVE_URLS&lt;/code&gt;
+- supprimer le lignes qui annulent la génération du feed&lt;/p&gt;
+&lt;h4&gt;Nettoyer le Makefile&lt;/h4&gt;
+&lt;p&gt;Le Makefile généré par &lt;code&gt;pelican-quickstart&lt;/code&gt; met à disposition des commandes utiles.&lt;/p&gt;
+&lt;p&gt;Je te propose de ne conserver que le strict minimum pour développer efficacement : 
+- &lt;code&gt;help&lt;/code&gt; : affiche l'aide du Makefile
+- &lt;code&gt;clean&lt;/code&gt; : supprime les fichiers HTML et XML de sortie
+- &lt;code&gt;devserver&lt;/code&gt; : lance le serveur local et le hot reload
+- &lt;code&gt;publish&lt;/code&gt; : génère le site la config serveur
+- &lt;code&gt;github&lt;/code&gt; : génère le site et upload notre repository sur Github&lt;/p&gt;
+&lt;p&gt;En regardant le détail de commande, on se rend compte que la commande &lt;code&gt;clean&lt;/code&gt; est dangereuse en l'état. Comme on génère le site à la racine du repo, lancer &lt;code&gt;make clean&lt;/code&gt; entraine la suppression de tous nos fichiers !&lt;/p&gt;
+&lt;p&gt;Aussi, la commande Github utilise &lt;code&gt;ghp&lt;/code&gt;. Ce n'est pas l'option que nous avons choisi pour déployer. &lt;/p&gt;
+&lt;p&gt;Voici la version du fichier mise à jour (à partir de la ligne help) : &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;help&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="err"&gt;@&lt;/span&gt;&lt;span class="n"&gt;echo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Makefile for a pelican Web site                                           &amp;#39;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="err"&gt;@&lt;/span&gt;&lt;span class="n"&gt;echo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;                                                                          &amp;#39;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="err"&gt;@&lt;/span&gt;&lt;span class="n"&gt;echo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Usage:                                                                    &amp;#39;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="err"&gt;@&lt;/span&gt;&lt;span class="n"&gt;echo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;   make clean                          remove the generated files         &amp;#39;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="err"&gt;@&lt;/span&gt;&lt;span class="n"&gt;echo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;   make publish                        generate using production settings &amp;#39;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="err"&gt;@&lt;/span&gt;&lt;span class="n"&gt;echo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;   make devserver [PORT=8000]          serve and regenerate together      &amp;#39;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="err"&gt;@&lt;/span&gt;&lt;span class="n"&gt;echo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;   make github                         upload the web site                &amp;#39;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="err"&gt;@&lt;/span&gt;&lt;span class="n"&gt;echo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;                                                                          &amp;#39;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="err"&gt;@&lt;/span&gt;&lt;span class="n"&gt;echo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Set the DEBUG variable to 1 to enable debugging, e.g. make DEBUG=1 html   &amp;#39;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="err"&gt;@&lt;/span&gt;&lt;span class="n"&gt;echo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Set the RELATIVE variable to 1 to enable relative urls                    &amp;#39;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="err"&gt;@&lt;/span&gt;&lt;span class="n"&gt;echo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;                                                                          &amp;#39;&lt;/span&gt;
+
+&lt;span class="n"&gt;clean&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;rm&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;OUTPUTDIR&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;/**.&lt;/span&gt;&lt;span class="n"&gt;html&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;rm&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;rf&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;$(OUTPUTDIR)/feeds&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;rm&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;rf&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;$(OUTPUTDIR)/pages&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;rm&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;rf&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;$(OUTPUTDIR)/theme&amp;quot;&lt;/span&gt;
+
+&lt;span class="n"&gt;devserver&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;$(PELICAN)&amp;quot;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;lr&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;$(INPUTDIR)&amp;quot;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;o&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;$(OUTPUTDIR)&amp;quot;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;$(CONFFILE)&amp;quot;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;PELICANOPTS&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="n"&gt;publish&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;$(PELICAN)&amp;quot;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;$(INPUTDIR)&amp;quot;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;o&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;$(OUTPUTDIR)&amp;quot;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;$(PUBLISHCONF)&amp;quot;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;PELICANOPTS&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="n"&gt;github&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;publish&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;add&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;u&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;commit&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;m&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Update site&amp;quot;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;push&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;origin&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;GITHUB_PAGES_BRANCH&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+
+&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;PHONY&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;help&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;clean&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;devserver&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;publish&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;github&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Enfin, il est aussi possible de supprimer le fichier &lt;code&gt;_pelican/tasks.py&lt;/code&gt; qui fait doublon avec notre Makefile.&lt;/p&gt;
+&lt;p&gt;Et voilà.&lt;/p&gt;
+&lt;p&gt;Le projet est finalement très simple :)&lt;/p&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;ul&gt;
 &lt;li&gt;Ressources&lt;/li&gt;
 &lt;li&gt;Mes notes de second cerveau&lt;/li&gt;
 &lt;li&gt;J'ai pris une décision confiant !!&lt;/li&gt;
-&lt;li&gt;Pistes pour aller plus loin : créer mon propre générateur, crééer un thème, contribuer à la doc de Pelican, prendre une issue&lt;/li&gt;
+&lt;li&gt;Pistes pour aller plus loin : &lt;ul&gt;
+&lt;li&gt;créer mon propre générateur&lt;/li&gt;
+&lt;li&gt;créér le thème bettermotherfuckingwebsite pour contribuer (ma première contrib opensource !)&lt;/li&gt;
+&lt;li&gt;prendre une issue&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ressources utiles &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;La documentation de Pelican : https://docs.getpelican.com/en/stable/index.html&lt;/li&gt;
+&lt;li&gt;La documentation de Github Pages : https://pages.github.com/&lt;/li&gt;
 &lt;/ul&gt;</content><category term="misc"></category></entry><entry><title>4-4-4</title><link href="https://petitalx.github.io/4-4-4.html" rel="alternate"></link><published>2012-05-20T00:00:00+02:00</published><updated>2012-05-20T00:00:00+02:00</updated><author><name>Alexandre Petit</name></author><id>tag:petitalx.github.io,2012-05-20:/4-4-4.html</id><content type="html">&lt;p&gt;This is the fourth article written in markdown.&lt;/p&gt;</content><category term="misc"></category></entry><entry><title>500</title><link href="https://petitalx.github.io/500.html" rel="alternate"></link><published>2012-05-20T00:00:00+02:00</published><updated>2012-05-20T00:00:00+02:00</updated><author><name>Alexandre Petit</name></author><id>tag:petitalx.github.io,2012-05-20:/500.html</id><content type="html">&lt;p&gt;This is the fifth article written in markdown.&lt;/p&gt;</content><category term="misc"></category></entry><entry><title>3rd markdown powered article</title><link href="https://petitalx.github.io/3rd-markdown-powered-article.html" rel="alternate"></link><published>2012-04-20T00:00:00+02:00</published><updated>2012-04-20T00:00:00+02:00</updated><author><name>Alexandre Petit</name></author><id>tag:petitalx.github.io,2012-04-20:/3rd-markdown-powered-article.html</id><content type="html">&lt;p&gt;This is the third article written in markdown.&lt;/p&gt;</content><category term="misc"></category></entry><entry><title>Another markdown powered article</title><link href="https://petitalx.github.io/another-markdown-powered-article.html" rel="alternate"></link><published>2012-04-20T00:00:00+02:00</published><updated>2012-04-20T00:00:00+02:00</updated><author><name>Alexandre Petit</name></author><id>tag:petitalx.github.io,2012-04-20:/another-markdown-powered-article.html</id><content type="html">&lt;p&gt;This is another article written in markdown.&lt;/p&gt;</content><category term="misc"></category></entry></feed>
