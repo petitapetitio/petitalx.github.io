@@ -51,7 +51,7 @@ publish:
 	"$(PELICAN)" "$(INPUTDIR)" -o "$(OUTPUTDIR)" -s "$(PUBLISHCONF)" $(PELICANOPTS)
 
 github: publish
-	git add -A .
+	git add -A ..
 	git commit -m "Update site"
 	git push origin $(GITHUB_PAGES_BRANCH)
 
