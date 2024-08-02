@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>petitalxio</title><link href="https://petitalx.github.io/" rel="alternate"></link><link href="https://petitalx.github.io/feeds/all.atom.xml" rel="self"></link><id>https://petitalx.github.io/</id><updated>2024-07-27T00:00:00+02:00</updated><entry><title>Créer son site personnel gratuitement avec Githbub Pages et Python, et Pelican</title><link href="https://petitalx.github.io/creer-son-site-personnel-gratuitement-avec-githbub-pages-et-python-et-pelican.html" rel="alternate"></link><published>2024-07-27T00:00:00+02:00</published><updated>2024-07-27T00:00:00+02:00</updated><author><name>Alexandre Petit</name></author><id>tag:petitalx.github.io,2024-07-27:/creer-son-site-personnel-gratuitement-avec-githbub-pages-et-python-et-pelican.html</id><summary type="html">&lt;p&gt;Hello ! &lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>petitalxio</title><link href="https://petitalx.github.io/" rel="alternate"></link><link href="https://petitalx.github.io/feeds/all.atom.xml" rel="self"></link><id>https://petitalx.github.io/</id><updated>2024-07-27T00:00:00+02:00</updated><entry><title>Créer son site personnel avec Githbub Pages et Python, et Pelican</title><link href="https://petitalx.github.io/creer-son-site-personnel-avec-githbub-pages-et-python-et-pelican.html" rel="alternate"></link><published>2024-07-27T00:00:00+02:00</published><updated>2024-07-27T00:00:00+02:00</updated><author><name>Alexandre Petit</name></author><id>tag:petitalx.github.io,2024-07-27:/creer-son-site-personnel-avec-githbub-pages-et-python-et-pelican.html</id><summary type="html">&lt;p&gt;Hello ! &lt;/p&gt;
 &lt;p&gt;Dans cet article, on va voir comment créer un site personnel :&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;avec le générateur de site statique Pelican (écrit en Python)&lt;/li&gt;
@@ -488,7 +488,7 @@ ARCHIVES_SAVE_AS = &amp;#39;&amp;#39;
 &lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;$(PELICAN)&amp;quot;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;$(INPUTDIR)&amp;quot;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;o&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;$(OUTPUTDIR)&amp;quot;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;$(PUBLISHCONF)&amp;quot;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;PELICANOPTS&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 
 &lt;span class="n"&gt;github&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;publish&lt;/span&gt;
-&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;add&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;A&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;..&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;add&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;A&lt;/span&gt;
 &lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;commit&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;m&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Update site&amp;quot;&lt;/span&gt;
 &lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;push&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;origin&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;GITHUB_PAGES_BRANCH&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 
@@ -501,18 +501,18 @@ ARCHIVES_SAVE_AS = &amp;#39;&amp;#39;
 &lt;p&gt;Le projet est finalement très simple :)&lt;/p&gt;
 &lt;h2&gt;Conclusion&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Ressources&lt;/li&gt;
 &lt;li&gt;Mes notes de second cerveau&lt;/li&gt;
 &lt;li&gt;J'ai pris une décision confiant !!&lt;/li&gt;
-&lt;li&gt;Pistes pour aller plus loin : &lt;ul&gt;
-&lt;li&gt;créer mon propre générateur&lt;/li&gt;
-&lt;li&gt;créér le thème bettermotherfuckingwebsite pour contribuer (ma première contrib opensource !)&lt;/li&gt;
-&lt;li&gt;prendre une issue&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Ressources utiles &lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;La documentation de Pelican : https://docs.getpelican.com/en/stable/index.html&lt;/li&gt;
 &lt;li&gt;La documentation de Github Pages : https://pages.github.com/&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Je pose ici quelques pistes pour aller plus loin avec Pelican : &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;créer son propre générateur&lt;/li&gt;
+&lt;li&gt;créer son propre plugin&lt;/li&gt;
+&lt;li&gt;créer le thème &lt;em&gt;bettermotherfuckingwebsite&lt;/em&gt; pour contribuer&lt;/li&gt;
+&lt;li&gt;prendre une &lt;a href="https://github.com/getpelican/pelican/issues"&gt;issue&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</content><category term="misc"></category></entry><entry><title>4-4-4</title><link href="https://petitalx.github.io/4-4-4.html" rel="alternate"></link><published>2012-05-20T00:00:00+02:00</published><updated>2012-05-20T00:00:00+02:00</updated><author><name>Alexandre Petit</name></author><id>tag:petitalx.github.io,2012-05-20:/4-4-4.html</id><content type="html">&lt;p&gt;This is the fourth article written in markdown.&lt;/p&gt;</content><category term="misc"></category></entry><entry><title>500</title><link href="https://petitalx.github.io/500.html" rel="alternate"></link><published>2012-05-20T00:00:00+02:00</published><updated>2012-05-20T00:00:00+02:00</updated><author><name>Alexandre Petit</name></author><id>tag:petitalx.github.io,2012-05-20:/500.html</id><content type="html">&lt;p&gt;This is the fifth article written in markdown.&lt;/p&gt;</content><category term="misc"></category></entry><entry><title>3rd markdown powered article</title><link href="https://petitalx.github.io/3rd-markdown-powered-article.html" rel="alternate"></link><published>2012-04-20T00:00:00+02:00</published><updated>2012-04-20T00:00:00+02:00</updated><author><name>Alexandre Petit</name></author><id>tag:petitalx.github.io,2012-04-20:/3rd-markdown-powered-article.html</id><content type="html">&lt;p&gt;This is the third article written in markdown.&lt;/p&gt;</content><category term="misc"></category></entry><entry><title>Another markdown powered article</title><link href="https://petitalx.github.io/another-markdown-powered-article.html" rel="alternate"></link><published>2012-04-20T00:00:00+02:00</published><updated>2012-04-20T00:00:00+02:00</updated><author><name>Alexandre Petit</name></author><id>tag:petitalx.github.io,2012-04-20:/another-markdown-powered-article.html</id><content type="html">&lt;p&gt;This is another article written in markdown.&lt;/p&gt;</content><category term="misc"></category></entry></feed>

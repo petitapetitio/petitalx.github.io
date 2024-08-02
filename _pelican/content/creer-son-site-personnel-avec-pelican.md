@@ -1,4 +1,4 @@
-Title: Créer son site personnel gratuitement avec Githbub Pages et Python, et Pelican
+Title: Créer son site personnel avec Githbub Pages et Python, et Pelican
 Date: 2024-07-27
 
 
@@ -604,7 +604,7 @@ publish:
 	"$(PELICAN)" "$(INPUTDIR)" -o "$(OUTPUTDIR)" -s "$(PUBLISHCONF)" $(PELICANOPTS)
 
 github: publish
-	git add -A ..
+	git add -A
 	git commit -m "Update site"
 	git push origin $(GITHUB_PAGES_BRANCH)
 
@@ -621,13 +621,9 @@ Le projet est finalement très simple :)
 
 ## Conclusion
 
-- Ressources
 - Mes notes de second cerveau
 - J'ai pris une décision confiant !!
-- Pistes pour aller plus loin : 
-	- créer mon propre générateur
-	- créér le thème bettermotherfuckingwebsite pour contribuer (ma première contrib opensource !)
-	- prendre une issue
+
 
 Ressources utiles 
 
@@ -635,5 +631,10 @@ Ressources utiles
 - La documentation de Github Pages : https://pages.github.com/
 
 
+Je pose ici quelques pistes pour aller plus loin avec Pelican : 
 
+- créer son propre générateur
+- créer son propre plugin
+- créer le thème *bettermotherfuckingwebsite* pour contribuer
+- prendre une [issue](https://github.com/getpelican/pelican/issues)
 
