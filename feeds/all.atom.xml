@@ -74,10 +74,12 @@
 - SEO : les pages sont statiques et donc facilement indexables par les moteurs de recherche&lt;/p&gt;
 &lt;p&gt;Je me suis donc tourné vers les générateurs de site statique.&lt;/p&gt;
 &lt;h2&gt;Choisir un générateur de site statique&lt;/h2&gt;
-&lt;p&gt;Les solutions les plus tendances sont : 
-- Jekyll
-- Hugo
-- Astro&lt;/p&gt;
+&lt;p&gt;Les solutions les plus tendances sont : &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Jekyll&lt;/li&gt;
+&lt;li&gt;Hugo&lt;/li&gt;
+&lt;li&gt;Astro&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;Jekyll&lt;/strong&gt; existe depuis 2008. L'outil est écrit en Ruby. Plus de &lt;a href="https://trends.builtwith.com/fr/cms/Jekyll"&gt;180k&lt;/a&gt; sites web sont construit avec, et c'est la technologie qui est proposée par défaut pour Github Pages. Il bénéficie communauté, d'un écosystème de plugins. La &lt;a href="https://jekyllrb.com/showcase/"&gt;galerie&lt;/a&gt; démontre qu'il est possible de faire des sites esthétiques et complets avec. &lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Hugo&lt;/strong&gt; existe depuis 2013. Il est écrit en Go et se veut le générateur statique le plus rapide (en termes de compilation). Il est utilisé par &lt;a href="https://trends.builtwith.com/fr/cms/Hugo"&gt;presque 300k sites&lt;/a&gt;. Il dispose de fonctionnalités de localisation, et peut être associé à des frameworks CSS comme Tailwind. &lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Astro&lt;/strong&gt; est un générateur de site statique qui permet de combiner Svelte, React et Vue. Je l'ai tout de suite écarté car un wrapper autour de frameworks indique une complexité élevée. &lt;/p&gt;
@@ -96,7 +98,6 @@
 &lt;p&gt;Je veux une solution gratuite et simple.&lt;/p&gt;
 &lt;p&gt;J'ai entendu beaucoup de bien de Github Pages. &lt;/p&gt;
 &lt;p&gt;Je vais tester cette solution.&lt;/p&gt;
-&lt;p&gt;(Possibilité de détailler davantage chaque solution ici : date de création, complexité, coût)&lt;/p&gt;
 &lt;h2&gt;Créer le site&lt;/h2&gt;
 &lt;p&gt;Ok, on entre dans le vif du sujet.&lt;/p&gt;
 &lt;p&gt;Dans la suite de l'article, on va suivre ensemble les étapes que j'ai suivi pour construire mon site personnel https://petitalx.io. &lt;/p&gt;
@@ -219,17 +220,17 @@ git&lt;span class="w"&gt; &lt;/span&gt;push
 &lt;li&gt;sur quels projets est-ce que tu travailles&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Créer un fichier &lt;code&gt;now.md&lt;/code&gt; dans le dossier &lt;code&gt;~/dev/petitalxio/_pelican/content/pages&lt;/code&gt; : &lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="o"&gt;---&lt;/span&gt;
-&lt;span class="n"&gt;Title&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Now&lt;/span&gt;
-&lt;span class="o"&gt;---&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;---
+&lt;span class="gu"&gt;Title: Now&lt;/span&gt;
+&lt;span class="gu"&gt;---&lt;/span&gt;
 
-&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Mis&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;à&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;jour&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;le&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;28&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;juillet&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;2024&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;à&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Rouen&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;France&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;
+&lt;span class="k"&gt;&amp;gt; &lt;/span&gt;&lt;span class="ge"&gt;Mis à jour le 28 juillet 2024 à Rouen, France.&lt;/span&gt;
 
-&lt;span class="n"&gt;Je&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;travail&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;actuellement&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;pour&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;EDF&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;en&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;tant&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;que&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Software&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Engineer&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;où&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;je&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;développe&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;un&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;service&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;de&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;détection&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;d&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;anomalies sur des séries temporelles.&lt;/span&gt;
+Je travail actuellement pour EDF en tant que Software Engineer où je développe un service de détection d&amp;#39;anomalies sur des séries temporelles.
 
-&lt;span class="n"&gt;Mon&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;axe&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;de&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;travail&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;sur&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;les&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;prochains&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;mois&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;sont&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;de&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;rassembler&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;et&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;synthétiser&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;les&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;99&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;meilleurs&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;livres&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;sur&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;le&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Software&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Engineering&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;
+Mon axe de travail sur les prochains mois sont de rassembler et synthétiser les 99 meilleurs livres sur le Software Engineering. 
 
-&lt;span class="n"&gt;En&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;complément&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;de&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;ce&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;projet&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;axé&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;sur&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;la&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;théorie&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;je&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;réalise&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;réaliser&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;challenges&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;en&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Python&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Ce&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;site&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;constitue&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;un des challenges.&lt;/span&gt;
+En complément de ce projet axé sur la théorie, je réalise réaliser 100 challenges en Python. Ce site constitue l&amp;#39;un des challenges.
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Et regarder le résultat sur la page http://127.0.0.1:8000&lt;/p&gt;
@@ -240,44 +241,44 @@ git&lt;span class="w"&gt; &lt;/span&gt;push
 &lt;/ul&gt;
 &lt;h4&gt;Création d'un premier article&lt;/h4&gt;
 &lt;p&gt;Créer un fichier &lt;code&gt;mon-premier-article.md&lt;/code&gt; dans le dossier &lt;code&gt;~/dev/petitalxio/_pelican/content/&lt;/code&gt; : &lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;Title&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;J&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;ai&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;publié&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;mon&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;premier&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;article&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;!&lt;/span&gt;
-&lt;span class="n"&gt;Date&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;2024&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;07&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;27&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;Title: J&amp;#39;ai publié mon premier article !
+Date: 2024-07-27
 
-&lt;span class="n"&gt;Hello&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;les&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;amis&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;
+Hello les amis.
 
-&lt;span class="n"&gt;Voici&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;mon&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;premier&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;article&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;de&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;blog&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;
+Voici mon premier article de blog. 
 
-&lt;span class="n"&gt;Il&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;est&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;expose&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;les&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;différents&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;formats&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;de&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;markdown&lt;/span&gt;
+Il est expose les différents formats de markdown
 
-&lt;span class="n"&gt;Une&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;liste&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;non&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;numérotée&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;
+Une liste non numérotée : 
 
-&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;
-&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;b&lt;/span&gt;
+&lt;span class="k"&gt;-&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;a
+&lt;span class="k"&gt;-&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;b
 
-&lt;span class="n"&gt;Une&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;liste&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;numérotée&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;
+Une liste numérotée : 
 
-&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Cookie&lt;/span&gt;
-&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Beurre&lt;/span&gt;
+&lt;span class="k"&gt;1.&lt;/span&gt; Cookie
+&lt;span class="k"&gt;2.&lt;/span&gt; Beurre
 
-&lt;span class="n"&gt;Une&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;citation&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;
+Une citation 
 
-&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;When&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;the&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;student&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;is&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;ready&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;the&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;master&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;will&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;appear&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Bruce&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Lee&lt;/span&gt;
+&lt;span class="k"&gt;&amp;gt; &lt;/span&gt;&lt;span class="ge"&gt;When the student is ready, the master will appear - Bruce Lee&lt;/span&gt;
 
-&lt;span class="n"&gt;Un&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;é&lt;/span&gt;&lt;span class="n"&gt;chantillon&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;de&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;code&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;`&lt;/span&gt;&lt;span class="n"&gt;print&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;hello&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;&lt;span class="err"&gt;`&lt;/span&gt;
+Un échantillon de code &lt;span class="sb"&gt;`print(&amp;quot;hello&amp;quot;)`&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;h4&gt;Visualiser et publier les mises à jour&lt;/h4&gt;
 &lt;p&gt;Pour visionner le résultat en local, lancer : &lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;cd ~/dev/petitalxio/_pelican
-make devserver
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nb"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;~/dev/petitalxio/_pelican
+make&lt;span class="w"&gt; &lt;/span&gt;devserver
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Pour déployer, lancer&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;cd ~/dev/petitalxio/_pelican
-make publish
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nb"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;~/dev/petitalxio/_pelican
+make&lt;span class="w"&gt; &lt;/span&gt;publish
 
-cd ~/dev/petitalxio/
-git add . ; git commit -m &amp;quot;update content&amp;quot;; git push
+&lt;span class="nb"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;~/dev/petitalxio/
+git&lt;span class="w"&gt; &lt;/span&gt;add&lt;span class="w"&gt; &lt;/span&gt;.&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;git&lt;span class="w"&gt; &lt;/span&gt;commit&lt;span class="w"&gt; &lt;/span&gt;-m&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;update content&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;git&lt;span class="w"&gt; &lt;/span&gt;push
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Vous avez maintenant toutes les clés en main pour ajouter du contenu sur votre site. &lt;/p&gt;
@@ -515,4 +516,15 @@ ARCHIVES_SAVE_AS = &amp;#39;&amp;#39;
 &lt;li&gt;créer son propre plugin&lt;/li&gt;
 &lt;li&gt;créer le thème &lt;em&gt;bettermotherfuckingwebsite&lt;/em&gt; pour contribuer&lt;/li&gt;
 &lt;li&gt;prendre une &lt;a href="https://github.com/getpelican/pelican/issues"&gt;issue&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><category term="misc"></category></entry><entry><title>4-4-4</title><link href="https://petitalx.github.io/4-4-4.html" rel="alternate"></link><published>2012-05-20T00:00:00+02:00</published><updated>2012-05-20T00:00:00+02:00</updated><author><name>Alexandre Petit</name></author><id>tag:petitalx.github.io,2012-05-20:/4-4-4.html</id><content type="html">&lt;p&gt;This is the fourth article written in markdown.&lt;/p&gt;</content><category term="misc"></category></entry><entry><title>500</title><link href="https://petitalx.github.io/500.html" rel="alternate"></link><published>2012-05-20T00:00:00+02:00</published><updated>2012-05-20T00:00:00+02:00</updated><author><name>Alexandre Petit</name></author><id>tag:petitalx.github.io,2012-05-20:/500.html</id><content type="html">&lt;p&gt;This is the fifth article written in markdown.&lt;/p&gt;</content><category term="misc"></category></entry><entry><title>3rd markdown powered article</title><link href="https://petitalx.github.io/3rd-markdown-powered-article.html" rel="alternate"></link><published>2012-04-20T00:00:00+02:00</published><updated>2012-04-20T00:00:00+02:00</updated><author><name>Alexandre Petit</name></author><id>tag:petitalx.github.io,2012-04-20:/3rd-markdown-powered-article.html</id><content type="html">&lt;p&gt;This is the third article written in markdown.&lt;/p&gt;</content><category term="misc"></category></entry><entry><title>Another markdown powered article</title><link href="https://petitalx.github.io/another-markdown-powered-article.html" rel="alternate"></link><published>2012-04-20T00:00:00+02:00</published><updated>2012-04-20T00:00:00+02:00</updated><author><name>Alexandre Petit</name></author><id>tag:petitalx.github.io,2012-04-20:/another-markdown-powered-article.html</id><content type="html">&lt;p&gt;This is another article written in markdown.&lt;/p&gt;</content><category term="misc"></category></entry></feed>
+&lt;/ul&gt;</content><category term="misc"></category></entry><entry><title>4-4-4</title><link href="https://petitalx.github.io/4-4-4.html" rel="alternate"></link><published>2012-05-20T00:00:00+02:00</published><updated>2012-05-20T00:00:00+02:00</updated><author><name>Alexandre Petit</name></author><id>tag:petitalx.github.io,2012-05-20:/4-4-4.html</id><content type="html">&lt;p&gt;This is the fourth article written in markdown.&lt;/p&gt;</content><category term="misc"></category></entry><entry><title>500</title><link href="https://petitalx.github.io/500.html" rel="alternate"></link><published>2012-05-20T00:00:00+02:00</published><updated>2012-05-20T00:00:00+02:00</updated><author><name>Alexandre Petit</name></author><id>tag:petitalx.github.io,2012-05-20:/500.html</id><content type="html">&lt;p&gt;This is the fifth article written in markdown.&lt;/p&gt;</content><category term="misc"></category></entry><entry><title>3rd markdown powered article</title><link href="https://petitalx.github.io/3rd-markdown-powered-article.html" rel="alternate"></link><published>2012-04-20T00:00:00+02:00</published><updated>2012-04-20T00:00:00+02:00</updated><author><name>Alexandre Petit</name></author><id>tag:petitalx.github.io,2012-04-20:/3rd-markdown-powered-article.html</id><content type="html">&lt;p&gt;This is the third article written in markdown.&lt;/p&gt;</content><category term="misc"></category></entry><entry><title>Another markdown powered article</title><link href="https://petitalx.github.io/another-markdown-powered-article.html" rel="alternate"></link><published>2012-04-20T00:00:00+02:00</published><updated>2012-04-20T00:00:00+02:00</updated><author><name>Alexandre Petit</name></author><id>tag:petitalx.github.io,2012-04-20:/another-markdown-powered-article.html</id><content type="html">&lt;p&gt;This is another article written in markdown.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;hello&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Hello, world!&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;bis&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Bis, world!&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Et plus long : &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;hello&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Hello, woooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooorld!&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="misc"></category></entry></feed>

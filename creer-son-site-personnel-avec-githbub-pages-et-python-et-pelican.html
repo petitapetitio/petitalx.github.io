@@ -6,6 +6,7 @@
       <meta name="generator" content="Pelican" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" type="text/css" href="https://petitalx.github.io/theme/css/style.css" />
+      <link rel="stylesheet" type="text/css" href="https://petitalx.github.io/theme/css/code.css" />
         <link href="https://petitalx.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="petitalxio Full Atom Feed" />
 
 
@@ -89,10 +90,12 @@
 - SEO : les pages sont statiques et donc facilement indexables par les moteurs de recherche</p>
 <p>Je me suis donc tourné vers les générateurs de site statique.</p>
 <h2>Choisir un générateur de site statique</h2>
-<p>Les solutions les plus tendances sont : 
-- Jekyll
-- Hugo
-- Astro</p>
+<p>Les solutions les plus tendances sont : </p>
+<ul>
+<li>Jekyll</li>
+<li>Hugo</li>
+<li>Astro</li>
+</ul>
 <p><strong>Jekyll</strong> existe depuis 2008. L'outil est écrit en Ruby. Plus de <a href="https://trends.builtwith.com/fr/cms/Jekyll">180k</a> sites web sont construit avec, et c'est la technologie qui est proposée par défaut pour Github Pages. Il bénéficie communauté, d'un écosystème de plugins. La <a href="https://jekyllrb.com/showcase/">galerie</a> démontre qu'il est possible de faire des sites esthétiques et complets avec. </p>
 <p><strong>Hugo</strong> existe depuis 2013. Il est écrit en Go et se veut le générateur statique le plus rapide (en termes de compilation). Il est utilisé par <a href="https://trends.builtwith.com/fr/cms/Hugo">presque 300k sites</a>. Il dispose de fonctionnalités de localisation, et peut être associé à des frameworks CSS comme Tailwind. </p>
 <p><strong>Astro</strong> est un générateur de site statique qui permet de combiner Svelte, React et Vue. Je l'ai tout de suite écarté car un wrapper autour de frameworks indique une complexité élevée. </p>
@@ -111,7 +114,6 @@
 <p>Je veux une solution gratuite et simple.</p>
 <p>J'ai entendu beaucoup de bien de Github Pages. </p>
 <p>Je vais tester cette solution.</p>
-<p>(Possibilité de détailler davantage chaque solution ici : date de création, complexité, coût)</p>
 <h2>Créer le site</h2>
 <p>Ok, on entre dans le vif du sujet.</p>
 <p>Dans la suite de l'article, on va suivre ensemble les étapes que j'ai suivi pour construire mon site personnel https://petitalx.io. </p>
@@ -234,17 +236,17 @@ git<span class="w"> </span>push
 <li>sur quels projets est-ce que tu travailles</li>
 </ul>
 <p>Créer un fichier <code>now.md</code> dans le dossier <code>~/dev/petitalxio/_pelican/content/pages</code> : </p>
-<div class="highlight"><pre><span></span><code><span class="o">---</span>
-<span class="n">Title</span><span class="p">:</span><span class="w"> </span><span class="n">Now</span>
-<span class="o">---</span>
+<div class="highlight"><pre><span></span><code>---
+<span class="gu">Title: Now</span>
+<span class="gu">---</span>
 
-<span class="o">&gt;</span><span class="w"> </span><span class="n">Mis</span><span class="w"> </span><span class="err">à</span><span class="w"> </span><span class="n">jour</span><span class="w"> </span><span class="n">le</span><span class="w"> </span><span class="mi">28</span><span class="w"> </span><span class="n">juillet</span><span class="w"> </span><span class="mi">2024</span><span class="w"> </span><span class="err">à</span><span class="w"> </span><span class="n">Rouen</span><span class="p">,</span><span class="w"> </span><span class="n">France</span><span class="o">.</span>
+<span class="k">&gt; </span><span class="ge">Mis à jour le 28 juillet 2024 à Rouen, France.</span>
 
-<span class="n">Je</span><span class="w"> </span><span class="n">travail</span><span class="w"> </span><span class="n">actuellement</span><span class="w"> </span><span class="n">pour</span><span class="w"> </span><span class="n">EDF</span><span class="w"> </span><span class="n">en</span><span class="w"> </span><span class="n">tant</span><span class="w"> </span><span class="n">que</span><span class="w"> </span><span class="n">Software</span><span class="w"> </span><span class="n">Engineer</span><span class="w"> </span><span class="n">où</span><span class="w"> </span><span class="n">je</span><span class="w"> </span><span class="n">développe</span><span class="w"> </span><span class="n">un</span><span class="w"> </span><span class="n">service</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">détection</span><span class="w"> </span><span class="n">d</span><span class="s1">&#39;anomalies sur des séries temporelles.</span>
+Je travail actuellement pour EDF en tant que Software Engineer où je développe un service de détection d&#39;anomalies sur des séries temporelles.
 
-<span class="n">Mon</span><span class="w"> </span><span class="n">axe</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">travail</span><span class="w"> </span><span class="n">sur</span><span class="w"> </span><span class="n">les</span><span class="w"> </span><span class="n">prochains</span><span class="w"> </span><span class="n">mois</span><span class="w"> </span><span class="n">sont</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">rassembler</span><span class="w"> </span><span class="n">et</span><span class="w"> </span><span class="n">synthétiser</span><span class="w"> </span><span class="n">les</span><span class="w"> </span><span class="mi">99</span><span class="w"> </span><span class="n">meilleurs</span><span class="w"> </span><span class="n">livres</span><span class="w"> </span><span class="n">sur</span><span class="w"> </span><span class="n">le</span><span class="w"> </span><span class="n">Software</span><span class="w"> </span><span class="n">Engineering</span><span class="o">.</span><span class="w"> </span>
+Mon axe de travail sur les prochains mois sont de rassembler et synthétiser les 99 meilleurs livres sur le Software Engineering. 
 
-<span class="n">En</span><span class="w"> </span><span class="n">complément</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">ce</span><span class="w"> </span><span class="n">projet</span><span class="w"> </span><span class="n">axé</span><span class="w"> </span><span class="n">sur</span><span class="w"> </span><span class="n">la</span><span class="w"> </span><span class="n">théorie</span><span class="p">,</span><span class="w"> </span><span class="n">je</span><span class="w"> </span><span class="n">réalise</span><span class="w"> </span><span class="n">réaliser</span><span class="w"> </span><span class="mi">100</span><span class="w"> </span><span class="n">challenges</span><span class="w"> </span><span class="n">en</span><span class="w"> </span><span class="n">Python</span><span class="o">.</span><span class="w"> </span><span class="n">Ce</span><span class="w"> </span><span class="n">site</span><span class="w"> </span><span class="n">constitue</span><span class="w"> </span><span class="n">l</span><span class="s1">&#39;un des challenges.</span>
+En complément de ce projet axé sur la théorie, je réalise réaliser 100 challenges en Python. Ce site constitue l&#39;un des challenges.
 </code></pre></div>
 
 <p>Et regarder le résultat sur la page http://127.0.0.1:8000</p>
@@ -255,44 +257,44 @@ git<span class="w"> </span>push
 </ul>
 <h4>Création d'un premier article</h4>
 <p>Créer un fichier <code>mon-premier-article.md</code> dans le dossier <code>~/dev/petitalxio/_pelican/content/</code> : </p>
-<div class="highlight"><pre><span></span><code><span class="n">Title</span><span class="o">:</span><span class="w"> </span><span class="n">J</span><span class="err">&#39;</span><span class="n">ai</span><span class="w"> </span><span class="n">publié</span><span class="w"> </span><span class="n">mon</span><span class="w"> </span><span class="n">premier</span><span class="w"> </span><span class="n">article</span><span class="w"> </span><span class="o">!</span>
-<span class="n">Date</span><span class="o">:</span><span class="w"> </span><span class="mi">2024</span><span class="o">-</span><span class="mi">07</span><span class="o">-</span><span class="mi">27</span>
+<div class="highlight"><pre><span></span><code>Title: J&#39;ai publié mon premier article !
+Date: 2024-07-27
 
-<span class="n">Hello</span><span class="w"> </span><span class="n">les</span><span class="w"> </span><span class="n">amis</span><span class="o">.</span>
+Hello les amis.
 
-<span class="n">Voici</span><span class="w"> </span><span class="n">mon</span><span class="w"> </span><span class="n">premier</span><span class="w"> </span><span class="n">article</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">blog</span><span class="o">.</span><span class="w"> </span>
+Voici mon premier article de blog. 
 
-<span class="n">Il</span><span class="w"> </span><span class="n">est</span><span class="w"> </span><span class="n">expose</span><span class="w"> </span><span class="n">les</span><span class="w"> </span><span class="n">différents</span><span class="w"> </span><span class="n">formats</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">markdown</span>
+Il est expose les différents formats de markdown
 
-<span class="n">Une</span><span class="w"> </span><span class="n">liste</span><span class="w"> </span><span class="n">non</span><span class="w"> </span><span class="n">numérotée</span><span class="w"> </span><span class="o">:</span><span class="w"> </span>
+Une liste non numérotée : 
 
-<span class="o">-</span><span class="w"> </span><span class="n">a</span>
-<span class="o">-</span><span class="w"> </span><span class="n">b</span>
+<span class="k">-</span><span class="w"> </span>a
+<span class="k">-</span><span class="w"> </span>b
 
-<span class="n">Une</span><span class="w"> </span><span class="n">liste</span><span class="w"> </span><span class="n">numérotée</span><span class="w"> </span><span class="o">:</span><span class="w"> </span>
+Une liste numérotée : 
 
-<span class="mi">1</span><span class="o">.</span><span class="w"> </span><span class="n">Cookie</span>
-<span class="mi">2</span><span class="o">.</span><span class="w"> </span><span class="n">Beurre</span>
+<span class="k">1.</span> Cookie
+<span class="k">2.</span> Beurre
 
-<span class="n">Une</span><span class="w"> </span><span class="n">citation</span><span class="w"> </span>
+Une citation 
 
-<span class="o">&gt;</span><span class="w"> </span><span class="n">When</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">student</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="n">ready</span><span class="o">,</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">master</span><span class="w"> </span><span class="n">will</span><span class="w"> </span><span class="n">appear</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">Bruce</span><span class="w"> </span><span class="n">Lee</span>
+<span class="k">&gt; </span><span class="ge">When the student is ready, the master will appear - Bruce Lee</span>
 
-<span class="n">Un</span><span class="w"> </span><span class="err">é</span><span class="n">chantillon</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">code</span><span class="w"> </span><span class="err">`</span><span class="n">print</span><span class="o">(</span><span class="s2">&quot;hello&quot;</span><span class="o">)</span><span class="err">`</span>
+Un échantillon de code <span class="sb">`print(&quot;hello&quot;)`</span>
 </code></pre></div>
 
 <h4>Visualiser et publier les mises à jour</h4>
 <p>Pour visionner le résultat en local, lancer : </p>
-<div class="highlight"><pre><span></span><code>cd ~/dev/petitalxio/_pelican
-make devserver
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/dev/petitalxio/_pelican
+make<span class="w"> </span>devserver
 </code></pre></div>
 
 <p>Pour déployer, lancer</p>
-<div class="highlight"><pre><span></span><code>cd ~/dev/petitalxio/_pelican
-make publish
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/dev/petitalxio/_pelican
+make<span class="w"> </span>publish
 
-cd ~/dev/petitalxio/
-git add . ; git commit -m &quot;update content&quot;; git push
+<span class="nb">cd</span><span class="w"> </span>~/dev/petitalxio/
+git<span class="w"> </span>add<span class="w"> </span>.<span class="w"> </span><span class="p">;</span><span class="w"> </span>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;update content&quot;</span><span class="p">;</span><span class="w"> </span>git<span class="w"> </span>push
 </code></pre></div>
 
 <p>Vous avez maintenant toutes les clés en main pour ajouter du contenu sur votre site. </p>

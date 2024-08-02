@@ -90,6 +90,7 @@ Je me suis donc tourné vers les générateurs de site statique.
 ## Choisir un générateur de site statique
 
 Les solutions les plus tendances sont : 
+
 - Jekyll
 - Hugo
 - Astro
@@ -123,7 +124,6 @@ J'ai entendu beaucoup de bien de Github Pages.
 
 Je vais tester cette solution.
 
-(Possibilité de détailler davantage chaque solution ici : date de création, complexité, coût)
 
 ## Créer le site
 
@@ -279,7 +279,7 @@ L'idée est de mettre dedans ce que tu raconterais à un amis que tu n'as pas vu
 - sur quels projets est-ce que tu travailles
 
 Créer un fichier `now.md` dans le dossier `~/dev/petitalxio/_pelican/content/pages` : 
-```
+```markdown
 ---
 Title: Now
 ---
@@ -304,7 +304,7 @@ Si vous cherchez des exemples de pages "now", consultez
 #### Création d'un premier article
 
 Créer un fichier `mon-premier-article.md` dans le dossier `~/dev/petitalxio/_pelican/content/` : 
-```
+```markdown
 Title: J'ai publié mon premier article !
 Date: 2024-07-27
 
@@ -334,13 +334,13 @@ Un échantillon de code `print("hello")`
 #### Visualiser et publier les mises à jour
 
 Pour visionner le résultat en local, lancer : 
-```
+```shell
 cd ~/dev/petitalxio/_pelican
 make devserver
 ```
 
 Pour déployer, lancer
-```
+```shell
 cd ~/dev/petitalxio/_pelican
 make publish
 
@@ -375,7 +375,7 @@ Tout est à plat !
 
 Coller le contenu suivant dans un fichier `_pelican/themes/petitalxio/static/style.css`
 
-```
+```css
 body {
   max-width: 650px;
   margin: 40px auto;

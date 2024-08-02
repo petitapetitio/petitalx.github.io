@@ -26,3 +26,39 @@ h1 > a {
 img {
     width: 100%;
 }
+
+/* Style pour les échantillons de code */
+
+.highlight {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent line breaks inside the code */
+    max-width: 100%; /* Make sure it doesn’t exceed the container's width */
+    border-radius: 6px;
+    padding: 10px;
+    background-color: #f7f7f7;
+}
+
+pre {
+    margin: 0; /* Remove margin for the pre element */
+}
+
+code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace; /* Use a monospace font */
+    font-size: 14px; /* Set a comfortable font size */
+    line-height: 1.5; /* Set line height for readability */
+}
+
+/* Style pour les citations */
+
+blockquote {
+    font-style: italic; /* Italicize the text for a classic quote look */
+    border-left: 3px solid #ccc; /* Light grey left border for emphasis */
+    margin: 10px 0; /* Top and bottom margin to separate from other content */
+    padding: 10px 15px; /* Padding to give space around the text */
+    background-color: #f9f9f9; /* Light grey background for subtle contrast */
+    color: #333; /* Dark grey text for readability */
+}
+
+blockquote p {
+    margin: 0; /* Remove default paragraph margin inside blockquote */
+}
