@@ -115,7 +115,8 @@
 &lt;/ul&gt;
 &lt;h4&gt;Initialisation du projet&lt;/h4&gt;
 &lt;p&gt;On commence par créer le projet en local.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nb"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;~/dev
+&lt;div class="highlight"&gt;
+&lt;button class="copy-button" onclick="copyToClipboard(this)"&gt;Copy code&lt;/button&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nb"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;~/dev
 mkdir&lt;span class="w"&gt; &lt;/span&gt;petitalxio
 &lt;span class="nb"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;petitalxio
 
@@ -125,15 +126,18 @@ python&lt;span class="w"&gt; &lt;/span&gt;-m&lt;span class="w"&gt; &lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Créer un fichier requirements.txt avec la ligne&lt;code&gt;pelican[markdown]&lt;/code&gt; :&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;echo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;pelican[markdown]&amp;quot;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;requirements&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;txt&lt;/span&gt;
+&lt;div class="highlight"&gt;
+&lt;button class="copy-button" onclick="copyToClipboard(this)"&gt;Copy code&lt;/button&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;echo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;pelican[markdown]&amp;quot;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;requirements&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;txt&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Puis installer les dépendances&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip&lt;span class="w"&gt; &lt;/span&gt;install&lt;span class="w"&gt; &lt;/span&gt;-r&lt;span class="w"&gt; &lt;/span&gt;requirements.txt
+&lt;div class="highlight"&gt;
+&lt;button class="copy-button" onclick="copyToClipboard(this)"&gt;Copy code&lt;/button&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip&lt;span class="w"&gt; &lt;/span&gt;install&lt;span class="w"&gt; &lt;/span&gt;-r&lt;span class="w"&gt; &lt;/span&gt;requirements.txt
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Lancer l'assistant de création de site&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pelican-quickstart
+&lt;div class="highlight"&gt;
+&lt;button class="copy-button" onclick="copyToClipboard(this)"&gt;Copy code&lt;/button&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pelican-quickstart
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;ul&gt;
@@ -149,7 +153,8 @@ python&lt;span class="w"&gt; &lt;/span&gt;-m&lt;span class="w"&gt; &lt;/span&gt;
 &lt;/ul&gt;
 &lt;p&gt;OK ! &lt;/p&gt;
 &lt;p&gt;Pour visionner le site en local, lancer les commandes&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nb"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;~/dev/petitalxio/_pelican
+&lt;div class="highlight"&gt;
+&lt;button class="copy-button" onclick="copyToClipboard(this)"&gt;Copy code&lt;/button&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nb"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;~/dev/petitalxio/_pelican
 pelican&lt;span class="w"&gt; &lt;/span&gt;content
 pelican&lt;span class="w"&gt; &lt;/span&gt;--listen
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -162,17 +167,20 @@ pelican&lt;span class="w"&gt; &lt;/span&gt;--listen
 &lt;p&gt;Rendez-vous sur votre compte Github : https://github.com/. &lt;/p&gt;
 &lt;p&gt;Créer un nouveau repository &lt;code&gt;username.github.io&lt;/code&gt; où &lt;code&gt;username&lt;/code&gt; est votre nom d'utilisateur Github. Ne pas initialiser le README ni le .gitignore à ce stade.&lt;/p&gt;
 &lt;p&gt;De retour sur votre poste, se replacer à la racine du projet&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nb"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;~/dev/petitalxio&lt;span class="sb"&gt;`&lt;/span&gt;
+&lt;div class="highlight"&gt;
+&lt;button class="copy-button" onclick="copyToClipboard(this)"&gt;Copy code&lt;/button&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nb"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;~/dev/petitalxio&lt;span class="sb"&gt;`&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Créer un fichier &lt;code&gt;.gitignore&lt;/code&gt; avec le contenu suivant&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;.venv  
+&lt;div class="highlight"&gt;
+&lt;button class="copy-button" onclick="copyToClipboard(this)"&gt;Copy code&lt;/button&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;.venv  
 **__pycache__**/
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;(par exemples avec la commande &lt;code&gt;echo ".venv \n**__pycache__**/" &amp;gt; .gitignore&lt;/code&gt;)&lt;/p&gt;
 &lt;p&gt;Initialiser le dépôt git&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nb"&gt;echo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;# petitalx.github.io&amp;quot;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&amp;gt;&amp;gt;&lt;span class="w"&gt; &lt;/span&gt;README.md
+&lt;div class="highlight"&gt;
+&lt;button class="copy-button" onclick="copyToClipboard(this)"&gt;Copy code&lt;/button&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nb"&gt;echo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;# petitalx.github.io&amp;quot;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&amp;gt;&amp;gt;&lt;span class="w"&gt; &lt;/span&gt;README.md
 git&lt;span class="w"&gt; &lt;/span&gt;init
 git&lt;span class="w"&gt; &lt;/span&gt;add&lt;span class="w"&gt; &lt;/span&gt;README.md
 git&lt;span class="w"&gt; &lt;/span&gt;commit&lt;span class="w"&gt; &lt;/span&gt;-m&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;first commit&amp;quot;&lt;/span&gt;
@@ -183,12 +191,14 @@ git&lt;span class="w"&gt; &lt;/span&gt;push&lt;span class="w"&gt; &lt;/span&gt;-
 
 &lt;p&gt;La façon la plus simple de déployer le site est de générer le contenu du site à la racine du répertoire. Pour faciliter les manipulations, on va modifier le &lt;code&gt;Makefile&lt;/code&gt; afin que la commande &lt;code&gt;make publish&lt;/code&gt; génère le site à la racine du répertoire.&lt;/p&gt;
 &lt;p&gt;Ouvrir le fichier &lt;code&gt;_pelican/Makefile&lt;/code&gt; et modifier la ligne &lt;code&gt;OUTPUTDIR&lt;/code&gt; tel que&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nv"&gt;OUTPUTDIR&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;BASEDIR&lt;span class="k"&gt;)&lt;/span&gt;/..
+&lt;div class="highlight"&gt;
+&lt;button class="copy-button" onclick="copyToClipboard(this)"&gt;Copy code&lt;/button&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nv"&gt;OUTPUTDIR&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;BASEDIR&lt;span class="k"&gt;)&lt;/span&gt;/..
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Lancer &lt;code&gt;make publish&lt;/code&gt; depuis &lt;code&gt;~/dev/petitalxio/_pelican&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Depuis la racine du répertoire, lancer &lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git&lt;span class="w"&gt; &lt;/span&gt;status
+&lt;div class="highlight"&gt;
+&lt;button class="copy-button" onclick="copyToClipboard(this)"&gt;Copy code&lt;/button&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git&lt;span class="w"&gt; &lt;/span&gt;status
 git&lt;span class="w"&gt; &lt;/span&gt;add&lt;span class="w"&gt; &lt;/span&gt;.
 git&lt;span class="w"&gt; &lt;/span&gt;commit&lt;span class="w"&gt; &lt;/span&gt;-m&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;generate content&amp;quot;&lt;/span&gt;
 git&lt;span class="w"&gt; &lt;/span&gt;push
@@ -220,7 +230,8 @@ git&lt;span class="w"&gt; &lt;/span&gt;push
 &lt;li&gt;sur quels projets est-ce que tu travailles&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Créer un fichier &lt;code&gt;now.md&lt;/code&gt; dans le dossier &lt;code&gt;~/dev/petitalxio/_pelican/content/pages&lt;/code&gt; : &lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;---
+&lt;div class="highlight"&gt;
+&lt;button class="copy-button" onclick="copyToClipboard(this)"&gt;Copy code&lt;/button&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;---
 &lt;span class="gu"&gt;Title: Now&lt;/span&gt;
 &lt;span class="gu"&gt;---&lt;/span&gt;
 
@@ -241,7 +252,8 @@ En complément de ce projet axé sur la théorie, je réalise réaliser 100 chal
 &lt;/ul&gt;
 &lt;h4&gt;Création d'un premier article&lt;/h4&gt;
 &lt;p&gt;Créer un fichier &lt;code&gt;mon-premier-article.md&lt;/code&gt; dans le dossier &lt;code&gt;~/dev/petitalxio/_pelican/content/&lt;/code&gt; : &lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;Title: J&amp;#39;ai publié mon premier article !
+&lt;div class="highlight"&gt;
+&lt;button class="copy-button" onclick="copyToClipboard(this)"&gt;Copy code&lt;/button&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;Title: J&amp;#39;ai publié mon premier article !
 Date: 2024-07-27
 
 Hello les amis.
@@ -269,12 +281,14 @@ Un échantillon de code &lt;span class="sb"&gt;`print(&amp;quot;hello&amp;quot;)
 
 &lt;h4&gt;Visualiser et publier les mises à jour&lt;/h4&gt;
 &lt;p&gt;Pour visionner le résultat en local, lancer : &lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nb"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;~/dev/petitalxio/_pelican
+&lt;div class="highlight"&gt;
+&lt;button class="copy-button" onclick="copyToClipboard(this)"&gt;Copy code&lt;/button&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nb"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;~/dev/petitalxio/_pelican
 make&lt;span class="w"&gt; &lt;/span&gt;devserver
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Pour déployer, lancer&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nb"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;~/dev/petitalxio/_pelican
+&lt;div class="highlight"&gt;
+&lt;button class="copy-button" onclick="copyToClipboard(this)"&gt;Copy code&lt;/button&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nb"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;~/dev/petitalxio/_pelican
 make&lt;span class="w"&gt; &lt;/span&gt;publish
 
 &lt;span class="nb"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;~/dev/petitalxio/
@@ -297,7 +311,8 @@ git&lt;span class="w"&gt; &lt;/span&gt;add&lt;span class="w"&gt; &lt;/span&gt;.&
 &lt;p&gt;&lt;img alt="" src="images/site-avec-theme-simple.png"&gt;&lt;/p&gt;
 &lt;h4&gt;Ajout d'une feuille de style CSS&lt;/h4&gt;
 &lt;p&gt;Coller le contenu suivant dans un fichier &lt;code&gt;_pelican/themes/petitalxio/static/style.css&lt;/code&gt;&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nt"&gt;body&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+&lt;div class="highlight"&gt;
+&lt;button class="copy-button" onclick="copyToClipboard(this)"&gt;Copy code&lt;/button&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nt"&gt;body&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
 &lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="k"&gt;max-width&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;650&lt;/span&gt;&lt;span class="kt"&gt;px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;40&lt;/span&gt;&lt;span class="kt"&gt;px&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;auto&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="kt"&gt;px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
@@ -322,7 +337,8 @@ git&lt;span class="w"&gt; &lt;/span&gt;add&lt;span class="w"&gt; &lt;/span&gt;.&
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Puis ajouter la référence à la feuille de style dans le fichier template &lt;code&gt;base.html&lt;/code&gt; :&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="cp"&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+&lt;div class="highlight"&gt;
+&lt;button class="copy-button" onclick="copyToClipboard(this)"&gt;Copy code&lt;/button&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="cp"&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
 &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;html&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
   &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;head&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
     {% block head %}
@@ -343,7 +359,8 @@ git&lt;span class="w"&gt; &lt;/span&gt;add&lt;span class="w"&gt; &lt;/span&gt;.&
 &lt;p&gt;Attention, pour que pelican embarque la feuille de style sans configuration supplémentaire, il est nécessaire qu'elle se trouve dans un dossier qui soit nommé "static" placé à la racine du thème. L'exemple &lt;code&gt;themes/petitalxio/static/style.css&lt;/code&gt; valide ces conditions. &lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Finalement, lancer les commandes suivantes afin de déployer votre site web :&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;shell
+&lt;div class="highlight"&gt;
+&lt;button class="copy-button" onclick="copyToClipboard(this)"&gt;Copy code&lt;/button&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;shell
 &lt;span class="nb"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;~/dev/petitalxio/_pelican
 make&lt;span class="w"&gt; &lt;/span&gt;publish
 
@@ -386,7 +403,8 @@ git&lt;span class="w"&gt; &lt;/span&gt;push
 &lt;p&gt;&lt;img alt="" src="images/simplify-page-template.jpg"&gt;&lt;/p&gt;
 &lt;h4&gt;Création d'une page Home personnalisée&lt;/h4&gt;
 &lt;p&gt;Créer un fichier &lt;code&gt;home.md&lt;/code&gt; dans `_pelican/content/pages/&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;---  
+&lt;div class="highlight"&gt;
+&lt;button class="copy-button" onclick="copyToClipboard(this)"&gt;Copy code&lt;/button&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;---  
 Title: Home
 ---  
 
@@ -403,7 +421,8 @@ Et j&amp;#39;habite actuellement à Rouen.
 &lt;p&gt;&lt;code&gt;[now](now)&lt;/code&gt; résulte en un lien html relatif à la l'url courante. Si on est à l'url &lt;code&gt;petitalx.io/pages/home.html&lt;/code&gt;, cela donne &lt;code&gt;petitalx.io/pages/now&lt;/code&gt;. Le pré-processeur &lt;code&gt;{filename}&lt;/code&gt; ne semble pas fonctionner chez moi.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Ajouter les lignes suivantes dans le fichier &lt;code&gt;pelicanconf.py&lt;/code&gt;. Cela va créer une variable globale &lt;code&gt;HOME&lt;/code&gt; qui va contenir le contenu HTML.  &lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c1"&gt;# En tête de fichier :&lt;/span&gt;
+&lt;div class="highlight"&gt;
+&lt;button class="copy-button" onclick="copyToClipboard(this)"&gt;Copy code&lt;/button&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c1"&gt;# En tête de fichier :&lt;/span&gt;
 &lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;pelican.readers&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;MarkdownReader&lt;/span&gt;  
 &lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;pelican.settings&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;DEFAULT_CONFIG&lt;/span&gt;
 
@@ -413,7 +432,8 @@ Et j&amp;#39;habite actuellement à Rouen.
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;On peut à présent faire injecter le contenu de la variable HOME dans le template de l'index. Ajouter la ligne &lt;code&gt;{{ HOME }}&lt;/code&gt; à la suite de la ligne &lt;code&gt;{% block content %}&lt;/code&gt; dans le fichier &lt;code&gt;_pelican/themes/petitalxio/templates/index.html&lt;/code&gt;. Le début de votre fichier doit alors resembler à cela : &lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;{% extends &amp;quot;base.html&amp;quot; %}  
+&lt;div class="highlight"&gt;
+&lt;button class="copy-button" onclick="copyToClipboard(this)"&gt;Copy code&lt;/button&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;{% extends &amp;quot;base.html&amp;quot; %}  
 {% block content %}  
 
     {{ HOME }}
@@ -430,7 +450,8 @@ Mais vous allez voir, après on se sent mieux.&lt;/p&gt;
 &lt;p&gt;Dans cette section, on va éliminer le code inutile. &lt;/p&gt;
 &lt;h4&gt;Ne plus générer les pages qui ne nous servent pas&lt;/h4&gt;
 &lt;p&gt;Commencer par désactiver la génération des pages "Author", "Authors", "Tag", ... en ajoutant ces lignes au fichier &lt;code&gt;pelicanconf.py&lt;/code&gt; :&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;TAG_SAVE_AS = &amp;#39;&amp;#39;  
+&lt;div class="highlight"&gt;
+&lt;button class="copy-button" onclick="copyToClipboard(this)"&gt;Copy code&lt;/button&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;TAG_SAVE_AS = &amp;#39;&amp;#39;  
 TAGS_SAVE_AS = &amp;#39;&amp;#39;  
 CATEGORY_SAVE_AS = &amp;#39;&amp;#39;  
 CATEGORIES_SAVE_AS = &amp;#39;&amp;#39;  
@@ -440,7 +461,8 @@ ARCHIVES_SAVE_AS = &amp;#39;&amp;#39;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Nettoyer le dossier des templates pour ne conserver que les 4 fichiers suivants : &lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;templates
+&lt;div class="highlight"&gt;
+&lt;button class="copy-button" onclick="copyToClipboard(this)"&gt;Copy code&lt;/button&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;templates
 ├── article.html
 ├── base.html
 ├── index.html
@@ -466,7 +488,8 @@ ARCHIVES_SAVE_AS = &amp;#39;&amp;#39;
 &lt;p&gt;En regardant le détail de commande, on se rend compte que la commande &lt;code&gt;clean&lt;/code&gt; est dangereuse en l'état. Comme on génère le site à la racine du repo, lancer &lt;code&gt;make clean&lt;/code&gt; entraine la suppression de tous nos fichiers !&lt;/p&gt;
 &lt;p&gt;Aussi, la commande Github utilise &lt;code&gt;ghp&lt;/code&gt;. Ce n'est pas l'option que nous avons choisi pour déployer. &lt;/p&gt;
 &lt;p&gt;Voici la version du fichier mise à jour (à partir de la ligne help) : &lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;help&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;div class="highlight"&gt;
+&lt;button class="copy-button" onclick="copyToClipboard(this)"&gt;Copy code&lt;/button&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;help&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
 &lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="err"&gt;@&lt;/span&gt;&lt;span class="n"&gt;echo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Makefile for a pelican Web site                                           &amp;#39;&lt;/span&gt;
 &lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="err"&gt;@&lt;/span&gt;&lt;span class="n"&gt;echo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;                                                                          &amp;#39;&lt;/span&gt;
 &lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="err"&gt;@&lt;/span&gt;&lt;span class="n"&gt;echo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Usage:                                                                    &amp;#39;&lt;/span&gt;
@@ -517,7 +540,8 @@ ARCHIVES_SAVE_AS = &amp;#39;&amp;#39;
 &lt;li&gt;créer le thème &lt;em&gt;bettermotherfuckingwebsite&lt;/em&gt; pour contribuer&lt;/li&gt;
 &lt;li&gt;prendre une &lt;a href="https://github.com/getpelican/pelican/issues"&gt;issue&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</content><category term="misc"></category></entry><entry><title>4-4-4</title><link href="https://petitalx.github.io/4-4-4.html" rel="alternate"></link><published>2012-05-20T00:00:00+02:00</published><updated>2012-05-20T00:00:00+02:00</updated><author><name>Alexandre Petit</name></author><id>tag:petitalx.github.io,2012-05-20:/4-4-4.html</id><content type="html">&lt;p&gt;This is the fourth article written in markdown.&lt;/p&gt;</content><category term="misc"></category></entry><entry><title>500</title><link href="https://petitalx.github.io/500.html" rel="alternate"></link><published>2012-05-20T00:00:00+02:00</published><updated>2012-05-20T00:00:00+02:00</updated><author><name>Alexandre Petit</name></author><id>tag:petitalx.github.io,2012-05-20:/500.html</id><content type="html">&lt;p&gt;This is the fifth article written in markdown.&lt;/p&gt;</content><category term="misc"></category></entry><entry><title>3rd markdown powered article</title><link href="https://petitalx.github.io/3rd-markdown-powered-article.html" rel="alternate"></link><published>2012-04-20T00:00:00+02:00</published><updated>2012-04-20T00:00:00+02:00</updated><author><name>Alexandre Petit</name></author><id>tag:petitalx.github.io,2012-04-20:/3rd-markdown-powered-article.html</id><content type="html">&lt;p&gt;This is the third article written in markdown.&lt;/p&gt;</content><category term="misc"></category></entry><entry><title>Another markdown powered article</title><link href="https://petitalx.github.io/another-markdown-powered-article.html" rel="alternate"></link><published>2012-04-20T00:00:00+02:00</published><updated>2012-04-20T00:00:00+02:00</updated><author><name>Alexandre Petit</name></author><id>tag:petitalx.github.io,2012-04-20:/another-markdown-powered-article.html</id><content type="html">&lt;p&gt;This is another article written in markdown.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;hello&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+&lt;div class="highlight"&gt;
+&lt;button class="copy-button" onclick="copyToClipboard(this)"&gt;Copy code&lt;/button&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;hello&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
     &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Hello, world!&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 
 &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;bis&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
@@ -525,6 +549,7 @@ ARCHIVES_SAVE_AS = &amp;#39;&amp;#39;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Et plus long : &lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;hello&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+&lt;div class="highlight"&gt;
+&lt;button class="copy-button" onclick="copyToClipboard(this)"&gt;Copy code&lt;/button&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;hello&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
     &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Hello, woooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooorld!&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="misc"></category></entry></feed>

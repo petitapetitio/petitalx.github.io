@@ -7,6 +7,22 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" type="text/css" href="https://petitalx.github.io/theme/css/style.css" />
       <link rel="stylesheet" type="text/css" href="https://petitalx.github.io/theme/css/code.css" />
+      <script>
+      function copyToClipboard(button) {
+          const codeElement = button.nextElementSibling.querySelector('code');
+          const codeText = codeElement.innerText || codeElement.textContent;
+
+          navigator.clipboard.writeText(codeText).then(() => {
+              // Provide feedback to the user
+              button.textContent = 'Copied!';
+              setTimeout(() => {
+                  button.textContent = 'Copy code';
+              }, 2000);
+          }).catch(err => {
+              console.error('Could not copy text: ', err);
+          });
+      }
+      </script>
         <link href="https://petitalx.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="petitalxio Full Atom Feed" />
 
 

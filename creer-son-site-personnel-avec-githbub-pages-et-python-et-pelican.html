@@ -7,6 +7,22 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" type="text/css" href="https://petitalx.github.io/theme/css/style.css" />
       <link rel="stylesheet" type="text/css" href="https://petitalx.github.io/theme/css/code.css" />
+      <script>
+      function copyToClipboard(button) {
+          const codeElement = button.nextElementSibling.querySelector('code');
+          const codeText = codeElement.innerText || codeElement.textContent;
+
+          navigator.clipboard.writeText(codeText).then(() => {
+              // Provide feedback to the user
+              button.textContent = 'Copied!';
+              setTimeout(() => {
+                  button.textContent = 'Copy code';
+              }, 2000);
+          }).catch(err => {
+              console.error('Could not copy text: ', err);
+          });
+      }
+      </script>
         <link href="https://petitalx.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="petitalxio Full Atom Feed" />
 
 
@@ -131,7 +147,8 @@
 </ul>
 <h4>Initialisation du projet</h4>
 <p>On commence par créer le projet en local.</p>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/dev
+<div class="highlight">
+<button class="copy-button" onclick="copyToClipboard(this)">Copy code</button><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/dev
 mkdir<span class="w"> </span>petitalxio
 <span class="nb">cd</span><span class="w"> </span>petitalxio
 
@@ -141,15 +158,18 @@ python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </s
 </code></pre></div>
 
 <p>Créer un fichier requirements.txt avec la ligne<code>pelican[markdown]</code> :</p>
-<div class="highlight"><pre><span></span><code><span class="n">echo</span><span class="w"> </span><span class="ss">&quot;pelican[markdown]&quot;</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">requirements</span><span class="p">.</span><span class="n">txt</span>
+<div class="highlight">
+<button class="copy-button" onclick="copyToClipboard(this)">Copy code</button><pre><span></span><code><span class="n">echo</span><span class="w"> </span><span class="ss">&quot;pelican[markdown]&quot;</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">requirements</span><span class="p">.</span><span class="n">txt</span>
 </code></pre></div>
 
 <p>Puis installer les dépendances</p>
-<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+<div class="highlight">
+<button class="copy-button" onclick="copyToClipboard(this)">Copy code</button><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
 </code></pre></div>
 
 <p>Lancer l'assistant de création de site</p>
-<div class="highlight"><pre><span></span><code>pelican-quickstart
+<div class="highlight">
+<button class="copy-button" onclick="copyToClipboard(this)">Copy code</button><pre><span></span><code>pelican-quickstart
 </code></pre></div>
 
 <ul>
@@ -165,7 +185,8 @@ python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </s
 </ul>
 <p>OK ! </p>
 <p>Pour visionner le site en local, lancer les commandes</p>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/dev/petitalxio/_pelican
+<div class="highlight">
+<button class="copy-button" onclick="copyToClipboard(this)">Copy code</button><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/dev/petitalxio/_pelican
 pelican<span class="w"> </span>content
 pelican<span class="w"> </span>--listen
 </code></pre></div>
@@ -178,17 +199,20 @@ pelican<span class="w"> </span>--listen
 <p>Rendez-vous sur votre compte Github : https://github.com/. </p>
 <p>Créer un nouveau repository <code>username.github.io</code> où <code>username</code> est votre nom d'utilisateur Github. Ne pas initialiser le README ni le .gitignore à ce stade.</p>
 <p>De retour sur votre poste, se replacer à la racine du projet</p>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/dev/petitalxio<span class="sb">`</span>
+<div class="highlight">
+<button class="copy-button" onclick="copyToClipboard(this)">Copy code</button><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/dev/petitalxio<span class="sb">`</span>
 </code></pre></div>
 
 <p>Créer un fichier <code>.gitignore</code> avec le contenu suivant</p>
-<div class="highlight"><pre><span></span><code>.venv  
+<div class="highlight">
+<button class="copy-button" onclick="copyToClipboard(this)">Copy code</button><pre><span></span><code>.venv  
 **__pycache__**/
 </code></pre></div>
 
 <p>(par exemples avec la commande <code>echo ".venv \n**__pycache__**/" &gt; .gitignore</code>)</p>
 <p>Initialiser le dépôt git</p>
-<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;# petitalx.github.io&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>README.md
+<div class="highlight">
+<button class="copy-button" onclick="copyToClipboard(this)">Copy code</button><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;# petitalx.github.io&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>README.md
 git<span class="w"> </span>init
 git<span class="w"> </span>add<span class="w"> </span>README.md
 git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;first commit&quot;</span>
@@ -199,12 +223,14 @@ git<span class="w"> </span>push<span class="w"> </span>-u<span class="w"> </span
 
 <p>La façon la plus simple de déployer le site est de générer le contenu du site à la racine du répertoire. Pour faciliter les manipulations, on va modifier le <code>Makefile</code> afin que la commande <code>make publish</code> génère le site à la racine du répertoire.</p>
 <p>Ouvrir le fichier <code>_pelican/Makefile</code> et modifier la ligne <code>OUTPUTDIR</code> tel que</p>
-<div class="highlight"><pre><span></span><code><span class="nv">OUTPUTDIR</span><span class="o">=</span><span class="k">$(</span>BASEDIR<span class="k">)</span>/..
+<div class="highlight">
+<button class="copy-button" onclick="copyToClipboard(this)">Copy code</button><pre><span></span><code><span class="nv">OUTPUTDIR</span><span class="o">=</span><span class="k">$(</span>BASEDIR<span class="k">)</span>/..
 </code></pre></div>
 
 <p>Lancer <code>make publish</code> depuis <code>~/dev/petitalxio/_pelican</code>.</p>
 <p>Depuis la racine du répertoire, lancer </p>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>status
+<div class="highlight">
+<button class="copy-button" onclick="copyToClipboard(this)">Copy code</button><pre><span></span><code>git<span class="w"> </span>status
 git<span class="w"> </span>add<span class="w"> </span>.
 git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;generate content&quot;</span>
 git<span class="w"> </span>push
@@ -236,7 +262,8 @@ git<span class="w"> </span>push
 <li>sur quels projets est-ce que tu travailles</li>
 </ul>
 <p>Créer un fichier <code>now.md</code> dans le dossier <code>~/dev/petitalxio/_pelican/content/pages</code> : </p>
-<div class="highlight"><pre><span></span><code>---
+<div class="highlight">
+<button class="copy-button" onclick="copyToClipboard(this)">Copy code</button><pre><span></span><code>---
 <span class="gu">Title: Now</span>
 <span class="gu">---</span>
 
@@ -257,7 +284,8 @@ En complément de ce projet axé sur la théorie, je réalise réaliser 100 chal
 </ul>
 <h4>Création d'un premier article</h4>
 <p>Créer un fichier <code>mon-premier-article.md</code> dans le dossier <code>~/dev/petitalxio/_pelican/content/</code> : </p>
-<div class="highlight"><pre><span></span><code>Title: J&#39;ai publié mon premier article !
+<div class="highlight">
+<button class="copy-button" onclick="copyToClipboard(this)">Copy code</button><pre><span></span><code>Title: J&#39;ai publié mon premier article !
 Date: 2024-07-27
 
 Hello les amis.
@@ -285,12 +313,14 @@ Un échantillon de code <span class="sb">`print(&quot;hello&quot;)`</span>
 
 <h4>Visualiser et publier les mises à jour</h4>
 <p>Pour visionner le résultat en local, lancer : </p>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/dev/petitalxio/_pelican
+<div class="highlight">
+<button class="copy-button" onclick="copyToClipboard(this)">Copy code</button><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/dev/petitalxio/_pelican
 make<span class="w"> </span>devserver
 </code></pre></div>
 
 <p>Pour déployer, lancer</p>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/dev/petitalxio/_pelican
+<div class="highlight">
+<button class="copy-button" onclick="copyToClipboard(this)">Copy code</button><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/dev/petitalxio/_pelican
 make<span class="w"> </span>publish
 
 <span class="nb">cd</span><span class="w"> </span>~/dev/petitalxio/
@@ -313,7 +343,8 @@ git<span class="w"> </span>add<span class="w"> </span>.<span class="w"> </span><
 <p><img alt="" src="images/site-avec-theme-simple.png"></p>
 <h4>Ajout d'une feuille de style CSS</h4>
 <p>Coller le contenu suivant dans un fichier <code>_pelican/themes/petitalxio/static/style.css</code></p>
-<div class="highlight"><pre><span></span><code><span class="nt">body</span><span class="w"> </span><span class="p">{</span>
+<div class="highlight">
+<button class="copy-button" onclick="copyToClipboard(this)">Copy code</button><pre><span></span><code><span class="nt">body</span><span class="w"> </span><span class="p">{</span>
 <span class="w">  </span><span class="k">max-width</span><span class="p">:</span><span class="w"> </span><span class="mi">650</span><span class="kt">px</span><span class="p">;</span>
 <span class="w">  </span><span class="k">margin</span><span class="p">:</span><span class="w"> </span><span class="mi">40</span><span class="kt">px</span><span class="w"> </span><span class="kc">auto</span><span class="p">;</span>
 <span class="w">  </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
@@ -338,7 +369,8 @@ git<span class="w"> </span>add<span class="w"> </span>.<span class="w"> </span><
 </code></pre></div>
 
 <p>Puis ajouter la référence à la feuille de style dans le fichier template <code>base.html</code> :</p>
-<div class="highlight"><pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<div class="highlight">
+<button class="copy-button" onclick="copyToClipboard(this)">Copy code</button><pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
 <span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
     {% block head %}
@@ -359,7 +391,8 @@ git<span class="w"> </span>add<span class="w"> </span>.<span class="w"> </span><
 <p>Attention, pour que pelican embarque la feuille de style sans configuration supplémentaire, il est nécessaire qu'elle se trouve dans un dossier qui soit nommé "static" placé à la racine du thème. L'exemple <code>themes/petitalxio/static/style.css</code> valide ces conditions. </p>
 </blockquote>
 <p>Finalement, lancer les commandes suivantes afin de déployer votre site web :</p>
-<div class="highlight"><pre><span></span><code>shell
+<div class="highlight">
+<button class="copy-button" onclick="copyToClipboard(this)">Copy code</button><pre><span></span><code>shell
 <span class="nb">cd</span><span class="w"> </span>~/dev/petitalxio/_pelican
 make<span class="w"> </span>publish
 
@@ -402,7 +435,8 @@ git<span class="w"> </span>push
 <p><img alt="" src="images/simplify-page-template.jpg"></p>
 <h4>Création d'une page Home personnalisée</h4>
 <p>Créer un fichier <code>home.md</code> dans `_pelican/content/pages/</p>
-<div class="highlight"><pre><span></span><code>---  
+<div class="highlight">
+<button class="copy-button" onclick="copyToClipboard(this)">Copy code</button><pre><span></span><code>---  
 Title: Home
 ---  
 
@@ -419,7 +453,8 @@ Et j&#39;habite actuellement à Rouen.
 <p><code>[now](now)</code> résulte en un lien html relatif à la l'url courante. Si on est à l'url <code>petitalx.io/pages/home.html</code>, cela donne <code>petitalx.io/pages/now</code>. Le pré-processeur <code>{filename}</code> ne semble pas fonctionner chez moi.</p>
 </blockquote>
 <p>Ajouter les lignes suivantes dans le fichier <code>pelicanconf.py</code>. Cela va créer une variable globale <code>HOME</code> qui va contenir le contenu HTML.  </p>
-<div class="highlight"><pre><span></span><code><span class="c1"># En tête de fichier :</span>
+<div class="highlight">
+<button class="copy-button" onclick="copyToClipboard(this)">Copy code</button><pre><span></span><code><span class="c1"># En tête de fichier :</span>
 <span class="kn">from</span> <span class="nn">pelican.readers</span> <span class="kn">import</span> <span class="n">MarkdownReader</span>  
 <span class="kn">from</span> <span class="nn">pelican.settings</span> <span class="kn">import</span> <span class="n">DEFAULT_CONFIG</span>
 
@@ -429,7 +464,8 @@ Et j&#39;habite actuellement à Rouen.
 </code></pre></div>
 
 <p>On peut à présent faire injecter le contenu de la variable HOME dans le template de l'index. Ajouter la ligne <code>{{ HOME }}</code> à la suite de la ligne <code>{% block content %}</code> dans le fichier <code>_pelican/themes/petitalxio/templates/index.html</code>. Le début de votre fichier doit alors resembler à cela : </p>
-<div class="highlight"><pre><span></span><code>{% extends &quot;base.html&quot; %}  
+<div class="highlight">
+<button class="copy-button" onclick="copyToClipboard(this)">Copy code</button><pre><span></span><code>{% extends &quot;base.html&quot; %}  
 {% block content %}  
 
     {{ HOME }}
@@ -446,7 +482,8 @@ Mais vous allez voir, après on se sent mieux.</p>
 <p>Dans cette section, on va éliminer le code inutile. </p>
 <h4>Ne plus générer les pages qui ne nous servent pas</h4>
 <p>Commencer par désactiver la génération des pages "Author", "Authors", "Tag", ... en ajoutant ces lignes au fichier <code>pelicanconf.py</code> :</p>
-<div class="highlight"><pre><span></span><code>TAG_SAVE_AS = &#39;&#39;  
+<div class="highlight">
+<button class="copy-button" onclick="copyToClipboard(this)">Copy code</button><pre><span></span><code>TAG_SAVE_AS = &#39;&#39;  
 TAGS_SAVE_AS = &#39;&#39;  
 CATEGORY_SAVE_AS = &#39;&#39;  
 CATEGORIES_SAVE_AS = &#39;&#39;  
@@ -456,7 +493,8 @@ ARCHIVES_SAVE_AS = &#39;&#39;
 </code></pre></div>
 
 <p>Nettoyer le dossier des templates pour ne conserver que les 4 fichiers suivants : </p>
-<div class="highlight"><pre><span></span><code>templates
+<div class="highlight">
+<button class="copy-button" onclick="copyToClipboard(this)">Copy code</button><pre><span></span><code>templates
 ├── article.html
 ├── base.html
 ├── index.html
@@ -482,7 +520,8 @@ ARCHIVES_SAVE_AS = &#39;&#39;
 <p>En regardant le détail de commande, on se rend compte que la commande <code>clean</code> est dangereuse en l'état. Comme on génère le site à la racine du repo, lancer <code>make clean</code> entraine la suppression de tous nos fichiers !</p>
 <p>Aussi, la commande Github utilise <code>ghp</code>. Ce n'est pas l'option que nous avons choisi pour déployer. </p>
 <p>Voici la version du fichier mise à jour (à partir de la ligne help) : </p>
-<div class="highlight"><pre><span></span><code><span class="n">help</span><span class="p">:</span>
+<div class="highlight">
+<button class="copy-button" onclick="copyToClipboard(this)">Copy code</button><pre><span></span><code><span class="n">help</span><span class="p">:</span>
 <span class="w">    </span><span class="err">@</span><span class="n">echo</span><span class="w"> </span><span class="s1">&#39;Makefile for a pelican Web site                                           &#39;</span>
 <span class="w">    </span><span class="err">@</span><span class="n">echo</span><span class="w"> </span><span class="s1">&#39;                                                                          &#39;</span>
 <span class="w">    </span><span class="err">@</span><span class="n">echo</span><span class="w"> </span><span class="s1">&#39;Usage:                                                                    &#39;</span>
