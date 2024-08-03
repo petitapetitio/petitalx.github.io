@@ -30,6 +30,7 @@ img {
 /* Style pour les échantillons de code */
 
 .highlight {
+    position: relative;
     overflow-x: auto; /* Enable horizontal scrolling */
     white-space: nowrap; /* Prevent line breaks inside the code */
     max-width: 100%; /* Make sure it doesn’t exceed the container's width */
@@ -40,12 +41,31 @@ img {
 
 pre {
     margin: 0; /* Remove margin for the pre element */
+    margin-top: 20px; /* Laisser de la place au copy-button */
 }
 
 code {
     font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace; /* Use a monospace font */
     font-size: 14px; /* Set a comfortable font size */
     line-height: 1.5; /* Set line height for readability */
+}
+
+.copy-button {
+    position: absolute; /* Position the button */
+    top: 10px; /* Adjust the button's vertical position */
+    right: 10px; /* Adjust the button's horizontal position */
+    background-color: #007bff; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 3px; /* Rounded corners for the button */
+    padding: 5px 10px; /* Padding for the button */
+    cursor: pointer; /* Change cursor to pointer */
+    font-size: 12px; /* Font size for button text */
+    z-index: 10; /* Ensure button is above other elements */
+}
+
+.copy-button:hover {
+    background-color: #0056b3; /* Darken the button on hover */
 }
 
 /* Style pour les citations */

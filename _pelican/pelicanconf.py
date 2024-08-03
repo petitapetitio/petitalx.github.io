@@ -1,6 +1,9 @@
 from pelican.readers import MarkdownReader
 from pelican.settings import DEFAULT_CONFIG
 
+from pygments.formatters.html import HtmlFormatter
+
+
 AUTHOR = 'Alexandre Petit'
 SITENAME = 'petitalxio'
 SITEURL = ""
@@ -15,6 +18,30 @@ THEME = "themes/petitalxio"
 
 config = DEFAULT_CONFIG.copy()
 HOME, _ = MarkdownReader(config).read("content/pages/home.md")
+
+
+class HtmlFormatterWithCopyButton(HtmlFormatter):
+    def __init__(self, **options):
+        super().__init__(**options)
+
+    def _wrap_div(self, inner):
+        yield 0, ('<div' + (self.cssclass and f' class="{self.cssclass}"') + '>\n')
+        yield 0, '<button class="copy-button" onclick="copyToClipboard(this)">Copy code</button>'
+        yield from inner
+        yield 0, '</div>\n'
+
+
+MARKDOWN = {
+    "extension_configs": {
+        "markdown.extensions.codehilite": {
+            "css_class": "highlight",
+            "pygments_formatter": HtmlFormatterWithCopyButton,
+        },
+        "markdown.extensions.extra": {},
+        "markdown.extensions.meta": {},
+    },
+    "output_format": "html5",
+}
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None

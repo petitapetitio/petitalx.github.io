@@ -8,6 +8,22 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/style.css" />
       <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/code.css" />
+      <script>
+      function copyToClipboard(button) {
+          const codeElement = button.nextElementSibling.querySelector('code');
+          const codeText = codeElement.innerText || codeElement.textContent;
+
+          navigator.clipboard.writeText(codeText).then(() => {
+              // Provide feedback to the user
+              button.textContent = 'Copied!';
+              setTimeout(() => {
+                  button.textContent = 'Copy code';
+              }, 2000);
+          }).catch(err => {
+              console.error('Could not copy text: ', err);
+          });
+      }
+      </script>
       {% if SITESUBTITLE %}
         <meta name="description" content="{{ SITESUBTITLE }}" />
       {% endif %}
