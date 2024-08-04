@@ -7,6 +7,7 @@ Inspiration
 - https://perfectmotherfuckingwebsite.com/
 
 Script
+
 0. Intro 
 	-  Inspiration
 		- https://sive.rs/
