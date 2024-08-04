@@ -5,9 +5,24 @@
 
     <h2>Derniers articles</h2>
 
-    <ul>
+<!--    <ul class="articles">-->
+<!--    {% for article in articles_page.object_list %}-->
+<!--        <li><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.date.date() }} - {{ article.title }}</a></li>-->
+<!--    {% endfor %}-->
+<!--    </ul>-->
+
+
+
+    <ul class="articles">
     {% for article in articles_page.object_list %}
-        <li><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></li>
+        <li>
+            <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">
+                <div class="article-item">
+                    <div class="article-date">{{ article.date.date() }}</div>
+                    <div class="article-title">{{ article.title }}</div>
+                </div>
+            </a>
+        </li>
     {% endfor %}
     </ul>
 

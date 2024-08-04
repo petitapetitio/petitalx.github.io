@@ -1,4 +1,4 @@
-Title: Créer son site personnel avec Githbub Pages et Python, et Pelican
+Title: Comment créer un site personnel avec Pelican (Python)
 Date: 2024-07-27
 
 
@@ -38,9 +38,7 @@ Et je n'ai pas envie de m'imposer de façon "push".
 
 Pour ces deux raisons, un site personnel me semble être une bonne solution.
 
-En complément de The Developer's Brain, je veux réaliser 30 projets en Python. 
-
-Créer un site personnel en python apparaît comme bon challenge !
+Aussi je veux réaliser 30 projets en Python en complément de The Developer's Brain. Créer un site personnel en python apparaît comme bon challenge !
 
 ## Cadrer le projet
 
@@ -580,7 +578,7 @@ En regardant le détail de commande, on se rend compte que la commande `clean` e
 Aussi, la commande Github utilise `ghp`. Ce n'est pas l'option que nous avons choisi pour déployer. 
 
 Voici la version du fichier mise à jour (à partir de la ligne help) : 
-```
+```makefile
 help:
 	@echo 'Makefile for a pelican Web site                                           '
 	@echo '                                                                          '

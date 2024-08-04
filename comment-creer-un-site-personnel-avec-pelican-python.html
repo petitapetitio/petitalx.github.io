@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-        <title>petitalxio - Créer son site personnel avec Githbub Pages et Python, et Pelican</title>
+        <title>Alexandre Petit - Comment créer un site personnel avec Pelican (Python)</title>
       <meta charset="utf-8" />
       <meta name="generator" content="Pelican" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" type="text/css" href="https://petitalx.github.io/theme/css/style.css" />
-      <link rel="stylesheet" type="text/css" href="https://petitalx.github.io/theme/css/code.css" />
+      <link rel="stylesheet" type="text/css" href="/theme/css/style.css" />
+      <link rel="stylesheet" type="text/css" href="/theme/css/code.css" />
       <script>
       function copyToClipboard(button) {
           const codeElement = button.nextElementSibling.querySelector('code');
@@ -24,18 +24,9 @@
       }
       </script>
 
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-4M6L1RW9VR"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
 
-        gtag('config', 'G-4M6L1RW9VR');
-      </script>
-
-        <link href="https://petitalx.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="petitalxio Full Atom Feed" />
-        <link href="https://petitalx.github.io/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="petitalxio Full RSS Feed" />
+        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Alexandre Petit Full Atom Feed" />
+        <link href="/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Alexandre Petit Full RSS Feed" />
 
 
 
@@ -44,12 +35,12 @@
 
   <body>
     <header>
-      <hgroup><h1><a href="https://petitalx.github.io/">petitalxio</a></h1></hgroup>
+      <hgroup><h1><a href="/">Alexandre Petit</a></h1></hgroup>
     </header>
     <main>
   <article>
     <header>
-      <h2>Créer son site personnel avec Githbub Pages et Python, et Pelican</h2>
+      <h2>Comment créer un site personnel avec Pelican (Python)</h2>
     </header>
     <p>Hello ! </p>
 <p>Dans cet article, on va voir comment créer un site personnel :</p>
@@ -80,8 +71,7 @@
 </ul>
 <p>Et je n'ai pas envie de m'imposer de façon "push". </p>
 <p>Pour ces deux raisons, un site personnel me semble être une bonne solution.</p>
-<p>En complément de The Developer's Brain, je veux réaliser 30 projets en Python. </p>
-<p>Créer un site personnel en python apparaît comme bon challenge !</p>
+<p>Aussi je veux réaliser 30 projets en Python en complément de The Developer's Brain. Créer un site personnel en python apparaît comme bon challenge !</p>
 <h2>Cadrer le projet</h2>
 <p>Ma motivation est de "claim a personal domain", de m'installer dans un coin de la carte.</p>
 <p>Ce qui va être important pour moi est de :</p>
@@ -533,35 +523,35 @@ ARCHIVES_SAVE_AS = &#39;&#39;
 <p>Aussi, la commande Github utilise <code>ghp</code>. Ce n'est pas l'option que nous avons choisi pour déployer. </p>
 <p>Voici la version du fichier mise à jour (à partir de la ligne help) : </p>
 <div class="highlight">
-<button class="copy-button" onclick="copyToClipboard(this)">Copy code</button><pre><span></span><code><span class="n">help</span><span class="p">:</span>
-<span class="w">    </span><span class="err">@</span><span class="n">echo</span><span class="w"> </span><span class="s1">&#39;Makefile for a pelican Web site                                           &#39;</span>
-<span class="w">    </span><span class="err">@</span><span class="n">echo</span><span class="w"> </span><span class="s1">&#39;                                                                          &#39;</span>
-<span class="w">    </span><span class="err">@</span><span class="n">echo</span><span class="w"> </span><span class="s1">&#39;Usage:                                                                    &#39;</span>
-<span class="w">    </span><span class="err">@</span><span class="n">echo</span><span class="w"> </span><span class="s1">&#39;   make clean                          remove the generated files         &#39;</span>
-<span class="w">    </span><span class="err">@</span><span class="n">echo</span><span class="w"> </span><span class="s1">&#39;   make publish                        generate using production settings &#39;</span>
-<span class="w">    </span><span class="err">@</span><span class="n">echo</span><span class="w"> </span><span class="s1">&#39;   make devserver [PORT=8000]          serve and regenerate together      &#39;</span>
-<span class="w">    </span><span class="err">@</span><span class="n">echo</span><span class="w"> </span><span class="s1">&#39;   make github                         upload the web site                &#39;</span>
-<span class="w">    </span><span class="err">@</span><span class="n">echo</span><span class="w"> </span><span class="s1">&#39;                                                                          &#39;</span>
-<span class="w">    </span><span class="err">@</span><span class="n">echo</span><span class="w"> </span><span class="s1">&#39;Set the DEBUG variable to 1 to enable debugging, e.g. make DEBUG=1 html   &#39;</span>
-<span class="w">    </span><span class="err">@</span><span class="n">echo</span><span class="w"> </span><span class="s1">&#39;Set the RELATIVE variable to 1 to enable relative urls                    &#39;</span>
-<span class="w">    </span><span class="err">@</span><span class="n">echo</span><span class="w"> </span><span class="s1">&#39;                                                                          &#39;</span>
+<button class="copy-button" onclick="copyToClipboard(this)">Copy code</button><pre><span></span><code><span class="nf">help</span><span class="o">:</span>
+<span class="w">    </span>@echo<span class="w"> </span><span class="s1">&#39;Makefile for a pelican Web site                                           &#39;</span>
+<span class="w">    </span>@echo<span class="w"> </span><span class="s1">&#39;                                                                          &#39;</span>
+<span class="w">    </span>@echo<span class="w"> </span><span class="s1">&#39;Usage:                                                                    &#39;</span>
+<span class="w">    </span>@echo<span class="w"> </span><span class="s1">&#39;   make clean                          remove the generated files         &#39;</span>
+<span class="w">    </span>@echo<span class="w"> </span><span class="s1">&#39;   make publish                        generate using production settings &#39;</span>
+<span class="w">    </span>@echo<span class="w"> </span><span class="s1">&#39;   make devserver [PORT=8000]          serve and regenerate together      &#39;</span>
+<span class="w">    </span>@echo<span class="w"> </span><span class="s1">&#39;   make github                         upload the web site                &#39;</span>
+<span class="w">    </span>@echo<span class="w"> </span><span class="s1">&#39;                                                                          &#39;</span>
+<span class="w">    </span>@echo<span class="w"> </span><span class="s1">&#39;Set the DEBUG variable to 1 to enable debugging, e.g. make DEBUG=1 html   &#39;</span>
+<span class="w">    </span>@echo<span class="w"> </span><span class="s1">&#39;Set the RELATIVE variable to 1 to enable relative urls                    &#39;</span>
+<span class="w">    </span>@echo<span class="w"> </span><span class="s1">&#39;                                                                          &#39;</span>
 
-<span class="n">clean</span><span class="p">:</span>
-<span class="w">    </span><span class="n">rm</span><span class="w"> </span><span class="o">$</span><span class="p">(</span><span class="n">OUTPUTDIR</span><span class="p">)</span><span class="o">/**.</span><span class="n">html</span><span class="p">;</span><span class="w"> </span><span class="n">rm</span><span class="w"> </span><span class="o">-</span><span class="n">rf</span><span class="w"> </span><span class="s2">&quot;$(OUTPUTDIR)/feeds&quot;</span><span class="p">;</span><span class="w"> </span><span class="n">rm</span><span class="w"> </span><span class="o">-</span><span class="n">rf</span><span class="w"> </span><span class="s2">&quot;$(OUTPUTDIR)/pages&quot;</span><span class="p">;</span><span class="w"> </span><span class="n">rm</span><span class="w"> </span><span class="o">-</span><span class="n">rf</span><span class="w"> </span><span class="s2">&quot;$(OUTPUTDIR)/theme&quot;</span>
+<span class="nf">clean</span><span class="o">:</span>
+<span class="w">    </span>rm<span class="w"> </span><span class="k">$(</span>OUTPUTDIR<span class="k">)</span>/**.html<span class="p">;</span><span class="w"> </span>rm<span class="w"> </span>-rf<span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>OUTPUTDIR<span class="k">)</span><span class="s2">/feeds&quot;</span><span class="p">;</span><span class="w"> </span>rm<span class="w"> </span>-rf<span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>OUTPUTDIR<span class="k">)</span><span class="s2">/pages&quot;</span><span class="p">;</span><span class="w"> </span>rm<span class="w"> </span>-rf<span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>OUTPUTDIR<span class="k">)</span><span class="s2">/theme&quot;</span>
 
-<span class="n">devserver</span><span class="p">:</span>
-<span class="w">    </span><span class="s2">&quot;$(PELICAN)&quot;</span><span class="w"> </span><span class="o">-</span><span class="n">lr</span><span class="w"> </span><span class="s2">&quot;$(INPUTDIR)&quot;</span><span class="w"> </span><span class="o">-</span><span class="n">o</span><span class="w"> </span><span class="s2">&quot;$(OUTPUTDIR)&quot;</span><span class="w"> </span><span class="o">-</span><span class="n">s</span><span class="w"> </span><span class="s2">&quot;$(CONFFILE)&quot;</span><span class="w"> </span><span class="o">$</span><span class="p">(</span><span class="n">PELICANOPTS</span><span class="p">)</span>
+<span class="nf">devserver</span><span class="o">:</span>
+<span class="w">    </span><span class="s2">&quot;</span><span class="k">$(</span>PELICAN<span class="k">)</span><span class="s2">&quot;</span><span class="w"> </span>-lr<span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>INPUTDIR<span class="k">)</span><span class="s2">&quot;</span><span class="w"> </span>-o<span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>OUTPUTDIR<span class="k">)</span><span class="s2">&quot;</span><span class="w"> </span>-s<span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>CONFFILE<span class="k">)</span><span class="s2">&quot;</span><span class="w"> </span><span class="k">$(</span>PELICANOPTS<span class="k">)</span>
 
-<span class="n">publish</span><span class="p">:</span>
-<span class="w">    </span><span class="s2">&quot;$(PELICAN)&quot;</span><span class="w"> </span><span class="s2">&quot;$(INPUTDIR)&quot;</span><span class="w"> </span><span class="o">-</span><span class="n">o</span><span class="w"> </span><span class="s2">&quot;$(OUTPUTDIR)&quot;</span><span class="w"> </span><span class="o">-</span><span class="n">s</span><span class="w"> </span><span class="s2">&quot;$(PUBLISHCONF)&quot;</span><span class="w"> </span><span class="o">$</span><span class="p">(</span><span class="n">PELICANOPTS</span><span class="p">)</span>
+<span class="nf">publish</span><span class="o">:</span>
+<span class="w">    </span><span class="s2">&quot;</span><span class="k">$(</span>PELICAN<span class="k">)</span><span class="s2">&quot;</span><span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>INPUTDIR<span class="k">)</span><span class="s2">&quot;</span><span class="w"> </span>-o<span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>OUTPUTDIR<span class="k">)</span><span class="s2">&quot;</span><span class="w"> </span>-s<span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>PUBLISHCONF<span class="k">)</span><span class="s2">&quot;</span><span class="w"> </span><span class="k">$(</span>PELICANOPTS<span class="k">)</span>
 
-<span class="n">github</span><span class="p">:</span><span class="w"> </span><span class="n">publish</span>
-<span class="w">    </span><span class="n">git</span><span class="w"> </span><span class="n">add</span><span class="w"> </span><span class="o">-</span><span class="n">A</span>
-<span class="w">    </span><span class="n">git</span><span class="w"> </span><span class="n">commit</span><span class="w"> </span><span class="o">-</span><span class="n">m</span><span class="w"> </span><span class="s2">&quot;Update site&quot;</span>
-<span class="w">    </span><span class="n">git</span><span class="w"> </span><span class="n">push</span><span class="w"> </span><span class="n">origin</span><span class="w"> </span><span class="o">$</span><span class="p">(</span><span class="n">GITHUB_PAGES_BRANCH</span><span class="p">)</span>
+<span class="nf">github</span><span class="o">:</span><span class="w"> </span><span class="n">publish</span>
+<span class="w">    </span>git<span class="w"> </span>add<span class="w"> </span>-A
+<span class="w">    </span>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Update site&quot;</span>
+<span class="w">    </span>git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span><span class="k">$(</span>GITHUB_PAGES_BRANCH<span class="k">)</span>
 
 
-<span class="o">.</span><span class="n">PHONY</span><span class="p">:</span><span class="w"> </span><span class="n">help</span><span class="w"> </span><span class="n">clean</span><span class="w"> </span><span class="n">devserver</span><span class="w"> </span><span class="n">publish</span><span class="w"> </span><span class="n">github</span>
+<span class="nf">.PHONY</span><span class="o">:</span><span class="w"> </span><span class="n">help</span> <span class="n">clean</span> <span class="n">devserver</span> <span class="n">publish</span> <span class="n">github</span>
 </code></pre></div>
 
 <p>Enfin, il est aussi possible de supprimer le fichier <code>_pelican/tasks.py</code> qui fait doublon avec notre Makefile.</p>

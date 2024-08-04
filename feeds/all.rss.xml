@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>petitalxio</title><link>https://petitalx.github.io/</link><description></description><lastBuildDate>Sat, 27 Jul 2024 00:00:00 +0200</lastBuildDate><item><title>Créer son site personnel avec Githbub Pages et Python, et Pelican</title><link>https://petitalx.github.io/creer-son-site-personnel-avec-githbub-pages-et-python-et-pelican.html</link><description>&lt;p&gt;Hello ! &lt;/p&gt;
+<rss version="2.0"><channel><title>Alexandre Petit</title><link>/</link><description></description><lastBuildDate>Sat, 27 Jul 2024 00:00:00 +0200</lastBuildDate><item><title>Comment créer un site personnel avec Pelican (Python)</title><link>/comment-creer-un-site-personnel-avec-pelican-python.html</link><description>&lt;p&gt;Hello ! &lt;/p&gt;
 &lt;p&gt;Dans cet article, on va voir comment créer un site personnel :&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;avec le générateur de site statique Pelican (écrit en Python)&lt;/li&gt;
@@ -7,17 +7,149 @@
 &lt;li&gt;à partir de contenu Markdown&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Le résultat final ressemble à &lt;a href="http://petitalx.io/"&gt;ça&lt;/a&gt;. &lt;/p&gt;
-&lt;p&gt;&lt;em&gt;If you don't give a shit about&lt;/em&gt; le contexte et mon processus de …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alexandre Petit</dc:creator><pubDate>Sat, 27 Jul 2024 00:00:00 +0200</pubDate><guid isPermaLink="false">tag:petitalx.github.io,2024-07-27:/creer-son-site-personnel-avec-githbub-pages-et-python-et-pelican.html</guid><category>misc</category></item><item><title>4-4-4</title><link>https://petitalx.github.io/4-4-4.html</link><description>&lt;p&gt;This is the fourth article written in markdown.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alexandre Petit</dc:creator><pubDate>Sun, 20 May 2012 00:00:00 +0200</pubDate><guid isPermaLink="false">tag:petitalx.github.io,2012-05-20:/4-4-4.html</guid><category>misc</category></item><item><title>500</title><link>https://petitalx.github.io/500.html</link><description>&lt;p&gt;This is the fifth article written in markdown.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alexandre Petit</dc:creator><pubDate>Sun, 20 May 2012 00:00:00 +0200</pubDate><guid isPermaLink="false">tag:petitalx.github.io,2012-05-20:/500.html</guid><category>misc</category></item><item><title>3rd markdown powered article</title><link>https://petitalx.github.io/3rd-markdown-powered-article.html</link><description>&lt;p&gt;This is the third article written in markdown.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alexandre Petit</dc:creator><pubDate>Fri, 20 Apr 2012 00:00:00 +0200</pubDate><guid isPermaLink="false">tag:petitalx.github.io,2012-04-20:/3rd-markdown-powered-article.html</guid><category>misc</category></item><item><title>Another markdown powered article</title><link>https://petitalx.github.io/another-markdown-powered-article.html</link><description>&lt;p&gt;This is another article written in markdown.&lt;/p&gt;
-&lt;div class="highlight"&gt;
-&lt;button class="copy-button" onclick="copyToClipboard(this)"&gt;Copy code&lt;/button&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;hello&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
-    &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Hello, world!&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-
-&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;bis&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
-    &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Bis, world!&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Et plus long : &lt;/p&gt;
-&lt;div class="highlight"&gt;
-&lt;button class="copy-button" onclick="copyToClipboard(this)"&gt;Copy code&lt;/button&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;hello&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
-    &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Hello, woooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooorld!&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alexandre Petit</dc:creator><pubDate>Fri, 20 Apr 2012 00:00:00 +0200</pubDate><guid isPermaLink="false">tag:petitalx.github.io,2012-04-20:/another-markdown-powered-article.html</guid><category>misc</category></item></channel></rss>
+&lt;p&gt;&lt;em&gt;If you don't give a shit about&lt;/em&gt; le contexte et mon processus de …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alexandre Petit</dc:creator><pubDate>Sat, 27 Jul 2024 00:00:00 +0200</pubDate><guid isPermaLink="false">tag:None,2024-07-27:/comment-creer-un-site-personnel-avec-pelican-python.html</guid><category>misc</category></item><item><title>13 Enseignements du DevOps</title><link>/13-enseignements-du-devops.html</link><description>&lt;p&gt;Hello !&lt;/p&gt;
+&lt;p&gt;Ces derniers mois, j'ai beaucoup lu sur le DevOps.&lt;/p&gt;
+&lt;p&gt;Dans l'&lt;a href="https://100produits.substack.com/p/devops-101"&gt;édition précédente&lt;/a&gt;,
+nous avons approché une outline de la discipline formée par les grands
+principes et techniques qui la composent.&lt;/p&gt;
+&lt;p&gt;Dans cette édition, j'ai regroupé les réalisations que j'ai eues et les
+concepts qui m'ont le plus marqué …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alexandre Petit</dc:creator><pubDate>Tue, 21 May 2024 06:12:57 +0000</pubDate><guid isPermaLink="false">tag:None,2024-05-21:/13-enseignements-du-devops.html</guid><category>misc</category></item><item><title>DevOps 101</title><link>/devops-101.html</link><description>&lt;p&gt;Hello !&lt;/p&gt;
+&lt;p&gt;C'est dernier mois, je me suis demandé, c'est quoi le DevOps ?&lt;/p&gt;
+&lt;p&gt;Est-ce&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;un mouvement ?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;un ensemble de techniques ?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;un ensemble de principes ? &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;un peu tout cela ?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Avant de m'immerger dans la discipline, je percevais avant tout sa dimension
+outillage : les technologies de virtualisation comme Docker et Kubernetes, les
+plateformes …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alexandre Petit</dc:creator><pubDate>Mon, 06 May 2024 06:33:41 +0000</pubDate><guid isPermaLink="false">tag:None,2024-05-06:/devops-101.html</guid><category>misc</category></item><item><title>Appliquer la Théorie des Contraintes à la création de contenu.</title><link>/appliquer-la-theorie-des-contraintes-a-la-creation-de-contenu.html</link><description>&lt;p&gt;Hello !&lt;/p&gt;
+&lt;p&gt;La semaine dernière, on a passé en revue les principes de la théorie de
+contraintes.&lt;/p&gt;
+&lt;p&gt;Cette semaine, j'ai appliqué la méthode à mon processus de création de
+contenu.&lt;/p&gt;
+&lt;p&gt;Et vous allez voir, les résultats sont surprenants.&lt;/p&gt;
+&lt;h1&gt;Rappels&lt;/h1&gt;
+&lt;p&gt;Pour rappel, les grandes étapes de la méthode sont les suivantes :&lt;/p&gt;
+&lt;p&gt;1 …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alexandre Petit</dc:creator><pubDate>Tue, 23 Apr 2024 05:38:39 +0000</pubDate><guid isPermaLink="false">tag:None,2024-04-23:/appliquer-la-theorie-des-contraintes-a-la-creation-de-contenu.html</guid><category>misc</category></item><item><title>Produire 2x + grâce à la Théorie des Contraintes</title><link>/produire-2x-grace-a-la-theorie-des-contraintes.html</link><description>&lt;p&gt;Hello !&lt;/p&gt;
+&lt;p&gt;Depuis le mois de février, mon focus est d'apprendre le DevOps.&lt;/p&gt;
+&lt;p&gt;En m'attaquant à cette compétence, je pensais baigner dans de la technique.&lt;/p&gt;
+&lt;p&gt;Et il y en a.&lt;/p&gt;
+&lt;p&gt;Mais j’ai aussi découvert une dimension culturelle super importante.&lt;/p&gt;
+&lt;p&gt;Remonter aux origines du DevOps m'a conduit au Lean Manufacturing et …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alexandre Petit</dc:creator><pubDate>Wed, 17 Apr 2024 05:39:47 +0000</pubDate><guid isPermaLink="false">tag:None,2024-04-17:/produire-2x-grace-a-la-theorie-des-contraintes.html</guid><category>misc</category></item><item><title>Comment se ruiner (sans l'aide de la chance)</title><link>/comment-se-ruiner-sans-laide-de-la-chance.html</link><description>&lt;p&gt;Hello !&lt;/p&gt;
+&lt;p&gt;Dans cette édition, je te propose un post-mortem de mon premier achat
+immobilier.&lt;/p&gt;
+&lt;p&gt;Mon objectif ici est de&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;identifier les erreurs qui m'ont amené à cette situation&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;comprendre comment ne pas les reproduire &lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;C'est parti.&lt;/p&gt;
+&lt;h1&gt;Contexte&lt;/h1&gt;
+&lt;p&gt;Fin novembre 2021, je valide ma période d'essai en CDI. Après de premiers …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alexandre Petit</dc:creator><pubDate>Mon, 08 Apr 2024 06:57:37 +0000</pubDate><guid isPermaLink="false">tag:None,2024-04-08:/comment-se-ruiner-sans-laide-de-la-chance.html</guid><category>misc</category></item><item><title>Explorer le monde avec un second cerveau</title><link>/explorer-le-monde-avec-un-second-cerveau.html</link><description>&lt;p&gt;Hello !&lt;/p&gt;
+&lt;p&gt;Mon second cerveau fête ses un an.&lt;/p&gt;
+&lt;p&gt;C'est l'occasion de revenir en arrière pour un premier bilan.&lt;/p&gt;
+&lt;p&gt;Au programme aujourd’hui :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;le problème initial&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;c’est quoi un second cerveau&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;qu’est-ce que cela a changé dans ma vie&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ressources et conseils pour démarrer&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;conclusion&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Point de départ&lt;/h1&gt;
+&lt;p&gt;Il …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alexandre Petit</dc:creator><pubDate>Mon, 25 Mar 2024 07:20:20 +0000</pubDate><guid isPermaLink="false">tag:None,2024-03-25:/explorer-le-monde-avec-un-second-cerveau.html</guid><category>misc</category></item><item><title>3 principes tirés de l'Almanach de Naval</title><link>/3-principes-tires-de-lalmanach-de-naval.html</link><description>&lt;p&gt;Hello !&lt;/p&gt;
+&lt;p&gt;Pour commencer l'année, j'ai écouté l'Almanach de Naval Ravikant en audio
+book.&lt;/p&gt;
+&lt;p&gt;Cette édition explore les trois concepts qui m’ont le plus marqué dans ce
+livre.&lt;/p&gt;
+&lt;h1&gt;Naval Ravikant&lt;/h1&gt;
+&lt;p&gt;Naval est un entrepreneur américain de la Silicon Valley. Il est né à New
+Delhi, a fondé plusieurs entreprises, et …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alexandre Petit</dc:creator><pubDate>Mon, 18 Mar 2024 07:51:23 +0000</pubDate><guid isPermaLink="false">tag:None,2024-03-18:/3-principes-tires-de-lalmanach-de-naval.html</guid><category>misc</category></item><item><title>Mes intentions pour 2024</title><link>/mes-intentions-pour-2024.html</link><description>&lt;p&gt;En 2023, mon but était de me lancer dans l'entrepreneuriat sur un mode &lt;em&gt;indie-
+maker&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;La flot de la vie m'a conduit sur une autre voie.&lt;/p&gt;
+&lt;p&gt;Aujourd'hui, je travaille comme Software Engineer en freelance.&lt;/p&gt;
+&lt;p&gt;En 2024, j'ai envie de jouer ce jeu à fond et me concentrer sur 3 choses …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alexandre Petit</dc:creator><pubDate>Mon, 11 Mar 2024 07:20:27 +0000</pubDate><guid isPermaLink="false">tag:None,2024-03-11:/mes-intentions-pour-2024.html</guid><category>misc</category></item><item><title>Ma rétrospective de 2023</title><link>/ma-retrospective-de-2023.html</link><description>&lt;p&gt;Hello !&lt;/p&gt;
+&lt;p&gt;Il paraît qu'on a jusqu'à fin janvier pour se souhaiter une bonne année.&lt;/p&gt;
+&lt;p&gt;J'imagine que c'est aussi valable pour la rétrospective.&lt;/p&gt;
+&lt;p&gt;In-extremis, voici ma rétrospective de 2023. 😁&lt;/p&gt;
+&lt;h1&gt;Revue générale de l’année&lt;/h1&gt;
+&lt;p&gt;2023 a été chaotique.&lt;/p&gt;
+&lt;p&gt;Les problèmes liés à la maison que j'ai acheté en 2022 ont pris …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alexandre Petit</dc:creator><pubDate>Wed, 31 Jan 2024 21:51:13 +0000</pubDate><guid isPermaLink="false">tag:None,2024-01-31:/ma-retrospective-de-2023.html</guid><category>misc</category></item><item><title>Passer de zéro à 1000 sur chess.com en un mois</title><link>/passer-de-zero-a-1000-sur-chesscom-en-un-mois.html</link><description>&lt;p&gt;Hello !  &lt;/p&gt;
+&lt;p&gt;J’ai tenté de passer de zéro à 1000 sur Chess.com. C'est-à-dire, de, je
+connais en partie les règles et n’ai pas joué depuis +10 ans, à je m’en sors
+bien face à 80% des gens. Cette expérience m’a beaucoup marquée. Est-ce que
+j’y …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alexandre Petit</dc:creator><pubDate>Mon, 22 Jan 2024 06:43:06 +0000</pubDate><guid isPermaLink="false">tag:None,2024-01-22:/passer-de-zero-a-1000-sur-chesscom-en-un-mois.html</guid><category>misc</category></item><item><title>J'ai mis un véhicule en location pendant un an.</title><link>/jai-mis-un-vehicule-en-location-pendant-un-an.html</link><description>&lt;p&gt;Salut les gros,&lt;/p&gt;
+&lt;p&gt;L’année dernière, j’ai testé de générer des revenus via la location de
+véhicule.&lt;/p&gt;
+&lt;p&gt;Voici mon retour d’expérience.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-
+post-
+media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb776d39a-ddf4-4ca3-93b0-ebb0e6f528aa_1326x510.png"&gt;&lt;img alt="" src="https://substack-post-
+media.s3.amazonaws.com/public/images/b776d39a-ddf4-4ca3-93b0-ebb0e6f528aa_1326x510.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Contexte&lt;/h1&gt;
+&lt;p&gt;J'ai commencé à m'intéresser à l'entrepreneuriat fin 2022.&lt;/p&gt;
+&lt;p&gt;Et au cours de l’année, il m’est arrivé de louer des utilitaires à plusieurs
+reprises pour …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alexandre Petit</dc:creator><pubDate>Mon, 08 Jan 2024 07:04:54 +0000</pubDate><guid isPermaLink="false">tag:None,2024-01-08:/jai-mis-un-vehicule-en-location-pendant-un-an.html</guid><category>misc</category></item><item><title>Créer un générateur de recommandations LinkedIn</title><link>/creer-un-generateur-de-recommandations-linkedin.html</link><description>&lt;p&gt;Hello !&lt;/p&gt;
+&lt;p&gt;Aujourd'hui, je vous partage mon aventure dans le développement d'un
+générateur de recommandation LinkedIn.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-
+post-
+media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc17a2939-aec2-4065-b1c1-395edf57c8f4_3024x1902.png"&gt;&lt;img alt="" src="https://substack-post-
+media.s3.amazonaws.com/public/images/c17a2939-aec2-4065-b1c1-395edf57c8f4_3024x1902.png"&gt;&lt;/a&gt;ça
+ressemble à ça à la fin ! ☝️&lt;/p&gt;
+&lt;p&gt;Au programme de cette édition :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Introduction&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Qu’est-ce qu’une recommandation LinkedIn ?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Pourquoi écrire une recommandation LinkedIn ?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;La difficulté&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Le concept&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Exécution&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Quelques recherches en amont&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Construire le …&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alexandre Petit</dc:creator><pubDate>Tue, 17 Oct 2023 14:36:25 +0000</pubDate><guid isPermaLink="false">tag:None,2023-10-17:/creer-un-generateur-de-recommandations-linkedin.html</guid><category>misc</category></item><item><title>Ma version des Fables de La Fontaine avec Midjourney</title><link>/ma-version-des-fables-de-la-fontaine-avec-midjourney.html</link><description>&lt;p&gt;Hello !&lt;/p&gt;
+&lt;p&gt;Bienvenue dans &lt;em&gt;100 produits&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Ma démarche est donner vie à des projets en quelques journées et de documenter
+leur réalisation. Plutôt que de travailler sur LE projet parfait, je vais
+multiplier les expérimentations, explorer les façons de trouver des solutions,
+mettre les mains dans le cambouis, trouver des hacks …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alexandre Petit</dc:creator><pubDate>Mon, 02 Oct 2023 15:28:10 +0000</pubDate><guid isPermaLink="false">tag:None,2023-10-02:/ma-version-des-fables-de-la-fontaine-avec-midjourney.html</guid><category>misc</category></item></channel></rss>

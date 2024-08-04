@@ -82,3 +82,32 @@ blockquote {
 blockquote p {
     margin: 0; /* Remove default paragraph margin inside blockquote */
 }
+
+
+/* Style pour l'affichage des articles */
+
+.articles li {
+    margin-bottom: 6px;
+}
+
+.articles {
+    list-style: none;
+    padding-left: 10px;
+}
+
+.article-item {
+    display: flex;
+    align-items: center; /* Vertically center the items */
+    margin-bottom: 10px; /* Add some space between list items */
+}
+
+.article-date {
+    margin-right: 10px; /* Space between the date and the title */
+    font-size: 12px;
+    width: 80px;
+    text-align: right;
+}
+
+.article-title {
+    flex: 1; /* Allow the title to take up the remaining space */
+}

@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+        <title>Alexandre Petit - Créer un générateur de recommandations LinkedIn</title>
+      <meta charset="utf-8" />
+      <meta name="generator" content="Pelican" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="/theme/css/style.css" />
+      <link rel="stylesheet" type="text/css" href="/theme/css/code.css" />
+      <script>
+      function copyToClipboard(button) {
+          const codeElement = button.nextElementSibling.querySelector('code');
+          const codeText = codeElement.innerText || codeElement.textContent;
+
+          navigator.clipboard.writeText(codeText).then(() => {
+              // Provide feedback to the user
+              button.textContent = 'Copied!';
+              setTimeout(() => {
+                  button.textContent = 'Copy code';
+              }, 2000);
+          }).catch(err => {
+              console.error('Could not copy text: ', err);
+          });
+      }
+      </script>
+
+
+        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Alexandre Petit Full Atom Feed" />
+        <link href="/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Alexandre Petit Full RSS Feed" />
+
+
+
+
+  </head>
+
+  <body>
+    <header>
+      <hgroup><h1><a href="/">Alexandre Petit</a></h1></hgroup>
+    </header>
+    <main>
+  <article>
+    <header>
+      <h2>Créer un générateur de recommandations LinkedIn</h2>
+    </header>
+    <p>Hello !</p>
+<p>Aujourd'hui, je vous partage mon aventure dans le développement d'un
+générateur de recommandation LinkedIn.</p>
+<p><a href="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-
+post-
+media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc17a2939-aec2-4065-b1c1-395edf57c8f4_3024x1902.png"><img alt="" src="https://substack-post-
+media.s3.amazonaws.com/public/images/c17a2939-aec2-4065-b1c1-395edf57c8f4_3024x1902.png"></a>ça
+ressemble à ça à la fin ! ☝️</p>
+<p>Au programme de cette édition :</p>
+<ul>
+<li>
+<p>Introduction</p>
+<ul>
+<li>
+<p>Qu’est-ce qu’une recommandation LinkedIn ?</p>
+</li>
+<li>
+<p>Pourquoi écrire une recommandation LinkedIn ?</p>
+</li>
+<li>
+<p>La difficulté</p>
+</li>
+<li>
+<p>Le concept</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Exécution</p>
+<ul>
+<li>
+<p>Quelques recherches en amont</p>
+</li>
+<li>
+<p>Construire le produit</p>
+</li>
+<li>
+<p>Diffuser le produit</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Bilan</p>
+<ul>
+<li>
+<p>Leçons</p>
+</li>
+<li>
+<p>Monétisation</p>
+</li>
+<li>
+<p>Conclusion</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>C'est parti !</p>
+<h1>Introduction</h1>
+<blockquote>
+<p>Quoi !? Pourquoi ?</p>
+</blockquote>
+<p>Début 2023, je reçois le message d'un ancien collègue. Il est en plein
+recrutement et me demande si je peux lui écrire une recommandation LinkedIn
+pour le supporter dans ce processus.</p>
+<p>Je réponds : oui, pas de soucis !</p>
+<p>J'y pense.</p>
+<p>Je prends quelques notes.</p>
+<p>Je veux que la recommandation soit top.</p>
+<p>J'hésite.</p>
+<p>Je laisse maturer.</p>
+<p>Bref, ça traine ...</p>
+<h2>Mais déjà, c'est quoi une recommandation LinkedIn ?</h2>
+<p>Les recommandations LinkedIn sont une version moderne des lettres de
+recommandation, sauf qu'elles sont affichées en public sur ton profil
+LinkedIn.</p>
+<p><a href="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-
+post-
+media.s3.amazonaws.com%2Fpublic%2Fimages%2F49c78c2b-6a5d-40e0-8006-8f9dad4a9551_3024x1676.png"><img alt="" src="https://substack-post-
+media.s3.amazonaws.com/public/images/49c78c2b-6a5d-40e0-8006-8f9dad4a9551_3024x1676.png"></a></p>
+<h2>Pourquoi écrire une recommandation LinkedIn ?</h2>
+<p>Pour la personne qui reçoit la recommandation</p>
+<ul>
+<li>
+<p>Une recommandation est un gage de confiance, de crédibilité et de réputation</p>
+</li>
+<li>
+<p>Cela fait toujours plaisir d'apprendre qu'on est apprécié dans notre travail</p>
+</li>
+<li>
+<p>Cela aide à identifier ses forces et donc à mieux se connaître</p>
+</li>
+</ul>
+<p>Pour la personne qui écrit, cela permet de</p>
+<ul>
+<li>
+<p>générer de la réciprocité</p>
+</li>
+<li>
+<p>démontrer que vous êtes enclin à aider votre entourage</p>
+</li>
+<li>
+<p>conscientiser les qualités de l'autre : certaines collaborations sont parfaites sur toute la ligne, d'autres sont plus chaotiques. Quoiqu'il en soit, cet exercice aide à réaliser ce que l'on a apprécié chez l'autre et à relativiser les difficultés que l'on a pu rencontrer ensemble.</p>
+</li>
+</ul>
+<p>Pour l'analogie, c'est comme laisser un avis positif sur un lieu sur Maps :
+cela permet de supporter la personne et de lui donner de la crédibilité.</p>
+<h2>La difficulté</h2>
+<p>Écrire une recommandation présente de nombreux intérêts. Mais, écrire une
+recommandation pertinente est un exercice délicat, qui peut facilement prendre
+beaucoup de temps.</p>
+<p>Au cours des 10 dernières années j'en ai écris deux.</p>
+<p>C'est peu.</p>
+<p>Pourtant, Je pense qu'elle sont plutôt réussies. Les personnes pour qui je les
+ai écrites en étaient très contentes, et cela m'a fait plaisir qu'elles soient
+touchées. Cependant, chacune m'a demandé plusieurs jours de maturation et j'ai
+procédé à plusieurs essais avant de trouver la forme qui me convenait. À
+chaque fois, cela m'a demandé beaucoup d'énergie.</p>
+<p>C'est là que ChatGPT entre en jeu !</p>
+<h2>Le concept</h2>
+<p>Proposer un outil facilite la génération de recommandation LinkedIn</p>
+<h1>Exécution</h1>
+<h2>Quelques recherches en amont</h2>
+<h3>Comment écrire une bonne recommandation LinkedIn ?</h3>
+<p>En recoupant plusieurs articles sur le web et en ajoutant mon expérience
+personnelle, je dirais qu'une bonne recommandation LinkedIn :</p>
+<ul>
+<li>
+<p>est écrite par une personne légitime : ancien collègue, clients, mentor, ...</p>
+</li>
+<li>
+<p>met en avant les talents de la personne en lien avec ses aspirations professionnelles</p>
+</li>
+<li>
+<p>est authentique : élogieuse sans tomber dans l'excès</p>
+</li>
+<li>
+<p>précise : </p>
+<ul>
+<li>
+<p>le contexte de la relation : la durée, le lieu, la nature de la relation</p>
+</li>
+<li>
+<p>les résultats obtenus ou les contributions apportées par la personne à l'équipe</p>
+</li>
+</ul>
+</li>
+<li>
+<p>contient une anecdote mettant en avant les soft skills de la personne</p>
+</li>
+<li>
+<p>conclut sur le poste, les missions ou les besoins pour lesquels vous recommandez la personne</p>
+</li>
+</ul>
+<h3>Existe-t-il déjà des générateurs ?</h3>
+<p>En écumant le web, j'ai pu trouver les générateurs de recommandation LinkedIn
+suivants :</p>
+<p>- <a href="https://generiateur.swile.co/">Gener-IA-teur de Swile</a></p>
+<p>- <a href="https://ai.socialrecommendator.com/">Social Recommendator</a> : le générateur
+indie</p>
+<p>- <a href="https://www.linkedjetpack.com/linkedin-recommendation-
+generator/">LinkedJetPack</a> : alambiqué</p>
+<p>- <a href="https://easy-peasy.ai/fr/templates/linkedin-recommendation-
+generator">EasyPeasy</a></p>
+<p>- <a href="https://vanling.net/LinkedIn.htm">Vanling</a> : le générateur old school</p>
+<p>- <a href="https://logicballs.com/tools/linkedin-recommendation-
+generator">LogicBalls</a></p>
+<p>- <a href="https://lazyapply.com/linkedin-recommendation-generator">LazyApply</a></p>
+<p>J'en ai tiré plusieurs observations :</p>
+<ul>
+<li>
+<p>il y a une demande pour de tels générateurs : vanling, le plus cheap de tous, a déjà généré plus de 100k recommandations</p>
+</li>
+<li>
+<p>il est possible de faire mieux. Les produits disponibles sont souvent superficiels. Certains sont diablement simple d'utilisation. Ils permettent de générer une recommandation en 3 clic. Mais ils recueillent trop peu de context. Ils produisent ainsi des recommendations génériques qui sonnent creux et manquent d'authenticité.</p>
+</li>
+<li>
+<p>ces générateurs sont tous gratuits : il est peu probable qu'un utilisateur soit enclin à payer pour utiliser un tel outil</p>
+</li>
+</ul>
+<h2>Construire le produit</h2>
+<p>Mon objectif est d'aider les personnes à générer une recommandation LinkedIn.</p>
+<p>La version la plus élémentaire de cet outil serait de partager le prompt que
+j'ai conçu. L'avantage est que cela permet de lancer très rapidement et de
+toucher un premier public. L'inconvénient, c'est qu'une fois le prompt
+partagé, il m'est difficile de suivre sa vie et de collecter du feedback
+utilisateur.</p>
+<p>Une approche possible serait d'utiliser des outils NoCode ou de programmation
+visuelle comme Retool, Noodl ou encore Wized.</p>
+<p>Ce projet étant aussi un prétexte pour que je déploie une application web,
+j'ai décidé d'aller directement vers un outil plus abouti et de créer un site
+dédié à cet unique fonctionnalité.</p>
+<p>Le service que j'ai en tête présente la forme suivante :</p>
+<p>1. Poser des questions à la personne</p>
+<p>2. Construire un prompt à partir des réponses</p>
+<p>3. Générer une recommandation avec GPT</p>
+<p>4. Présenter la recommandation à l'utilisateur</p>
+<h3>Choisir la stack</h3>
+<p>De quoi ai-je besoin ?</p>
+<ul>
+<li>
+<p>un front-end pour collecter les informations puis afficher les résultats</p>
+</li>
+<li>
+<p>une partie backend pour effectuer des appels à l'API d'OpenAI</p>
+</li>
+<li>
+<p>un système de persistence des données pour analyser les usages</p>
+</li>
+<li>
+<p>une solution d'hébergement</p>
+</li>
+</ul>
+<p>Bon, quelles sont les options ?</p>
+<p>Il existe une quantité étourdissante de langages front, back, de frameworks,
+de solution d'hébergement et de combinaison de tout cela. Pour simplifier ma
+décision, je vais me concentrer sur les langages JavaScript, Python et .NET
+que je connais déjà bien. Encore une fois, une bonne façon de procéder ici est
+de commencer par la fin : où est-ce qu'on va héberger tout ça ?</p>
+<h4>L'hébergement</h4>
+<p>Du plus bas niveau au plus haut, on en gros trouver les approches suivantes :</p>
+<ul>
+<li>
+<p>Configurer son propre serveur et le faire tourner dans sa chambre, back to basics ! </p>
+</li>
+<li>
+<p>Louer un serveur virtuel privé et configurer sois-même le serveur : on bascule dans le cloud computing. On s'épargne un ronfleur, mais on est encore sur quelque choses de très bas niveau. Il faut configurer Apache HTTP Server, gérer les sécurité, ...</p>
+</li>
+<li>
+<p>Infrastructure as a Service (IaaS) : Encore trop complexe pour mon besoin, je ne veux pas passer ma semaine à configurer la couche infrastructure. Je n'ai jamais testé AWS et ai eu une expérience laborieuse d'Azure. Je préfère garder ça pour une prochaine fois. </p>
+</li>
+<li>
+<p>Platform as a Service (Paas) : les PaaS sont moins flexibles que les IaaS, mais permettent de se concentrer sur l'application et de démarrer rapidement, ce qui est idéal pour un minimum viable product (MVP).</p>
+</li>
+</ul>
+<p>Parmis les PaaS, les 4 solutions suivantes me paraissent intéressantes :</p>
+<ul>
+<li>
+<p><strong>Firebase</strong> : existe depuis 2011, Firebase est une solution propriétaire développée par Google. FireBase regroupe un ensemble de composants modulaires qui peuvent être facilement reliés entre eux pour construire une solution complète : base de donnée NoSQL (Cloud FireStore), service d'authentification (Authentication), création de points d'api avec des [[serverless functions - Function as a Service (FaaS)]] (Cloud Functions).</p>
+</li>
+<li>
+<p><strong>Supabase</strong> : existe depuis 2020, Supabase est une solutions open source qui se positionne directement comme une alternative à Firebase. La société compte dans ses investisseurs des partenaires prestigieux comme le Y Combinator et Mozilla. Elle offre des fonctionnalités similaires à Firebase.</p>
+</li>
+<li>
+<p><strong>Vercel</strong> : existe depuis 2015. C’est la société qui est derrière le framework React Next.js. Bien qu'initialement centré sur le déploiement du front-end, Vercel offre auhourd'hui une solution quasi-complète avec des solutions de stockage (NoSQL, SQL et Blob) et des fonctions serverless. La plateforme n'offre par contre pas de solution d'authentification clé en main à ce stade.</p>
+</li>
+<li>
+<p><strong>Netlify</strong> : existe depuis 2014. Couplé à FaunaDB, la plateforme offre elle aussi une solution d'hébergement complète.</p>
+</li>
+</ul>
+<p>Partons sur Firebase.</p>
+<h4>Langage et frameworks</h4>
+<p>Le fait de partir sur du "pur" Firebase va fortement orienter la suite.</p>
+<p>Firebase a récemment introduit des templates dédiés à certains framework
+front-end. Cela facilite par exemple le setup d'applications basés sur Angular
+ou Next.js (React). J'ai déjà une expérience positive de React. Go pour ce
+framework.</p>
+<p>De la même façon, Cloud Functions supporte trois langages : Javascript, Python
+ou TypeScript (Beta). J'ai d'abord pensé à utiliser TypeScript pour bénéficier
+du typage, mais la documentation pour TypeScript est bien moins détaillée.
+Finalement, je suis parti sur Python.</p>
+<p>Il y a plusieurs intérêts à utiliser python pour le backend :</p>
+<ul>
+<li>
+<p>Cela créer une séparation claire entre le front et le back : en fonction du langage, on sait où on est !</p>
+</li>
+<li>
+<p>L'écosystème python est juste dingue en terme de bibliothèques. Que ce soit pour faire du traitement d'image, de l'analyse de données, du machine learning, il est possible de tout faire.</p>
+</li>
+<li>
+<p>Contrairement à TypeScript, il n'est pas nécessaire de transpiler python (ce qui veut dire moins de configuration à gérer)</p>
+</li>
+<li>
+<p>j'adore python</p>
+</li>
+</ul>
+<p>OK, on a notre stack !</p>
+<ul>
+<li>
+<p>Hébergement du front-end : Firebase Hosting</p>
+</li>
+<li>
+<p>Authentification : Firebase Auth</p>
+</li>
+<li>
+<p>Framework front-end : [[Next.js]] (React/TypeScript)</p>
+</li>
+<li>
+<p>Backend : Cloud Function for Firebase (Python)</p>
+</li>
+<li>
+<p>Persistence des données : Cloud Firestore</p>
+</li>
+</ul>
+<h3>Développer</h3>
+<blockquote>
+<p>Je ne vas pas entrer dans le détail pas à pas de comment créer une
+application avec Firebase — mais si c'est quelque chose qui t'intéresse,
+fais le moi savoir !</p>
+</blockquote>
+<p>Un truc amusant à raconter ici c'est que, si, après coup, la fonction et le
+périmètre de chaque service me parait clair, j'étais dans le brouillard en
+abordant les services de Firebase. La première approche que j'ai eu a été
+d'avancer pas à pas, de faire avec les zones de flou et de suivre la
+documentation.</p>
+<p>Il y a de nombreuses façons de monter une app.</p>
+<h4>Premier jet</h4>
+<p>En première approche, je suis parti de <code>npm create-next-app</code> et ai intégré
+Firebase à posteriori. J'ai utilisé TypeScript pour le backend et ai setup des
+tests automatisés avec jest ainsi qu'un système de formattage automatique avec
+Prettier.</p>
+<p>Je me suis retrouvé avec une véritable usine à gaz.</p>
+<p>L'organisation imbriquée du code source était source de confusion. Avec la
+transpilation, je n'étais pas bien sûr de quel code était exécuté où et à quel
+moment. Aussi, je rencontrais des problèmes avec la version déployée que je ne
+parvenais pas à comprendre.</p>
+<p><a href="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-
+post-
+media.s3.amazonaws.com%2Fpublic%2Fimages%2Febb9a15f-5b6c-4421-89d1-8eb9532006a5_2336x1712.jpeg"><img alt="" src="https://substack-post-
+media.s3.amazonaws.com/public/images/ebb9a15f-5b6c-4421-89d1-8eb9532006a5_2336x1712.jpeg"></a></p>
+<h4>Remise au propre et simplification</h4>
+<p>J'ai finalement remis de l'ordre en recréant l'architecture du projet de zéro.
+Cette fois-ci, j'ai utilisé uniquement les client firebase. Aussi, j'ai décidé
+de ne pas mettre en place de tests automatisés et ni de formatage automatique
+du code à ce stade.</p>
+<p>Pour se faire, rien de plus simple.</p>
+<p>1. Installer <a href="https://www.nodejs.org/">Node.js</a> en utilisant
+<a href="https://github.com/creationix/nvm/blob/master/README.md">nvm</a> (Node Version
+Manager)</p>
+<p>2. Installer le client Firebase à l'aide de npm (gestionnaire de paquets
+installé avec Node.js)</p>
+<div class="highlight">
+<button class="copy-button" onclick="copyToClipboard(this)">Copy code</button><pre><span></span><code><span class="w">   </span><span class="n">npm</span><span class="w"> </span><span class="n">install</span><span class="w"> </span><span class="o">-</span><span class="n">g</span><span class="w"> </span><span class="n">firebase</span><span class="o">-</span><span class="n">tools</span>
+</code></pre></div>
+
+<p>3. Connecter sa machine à Firebase</p>
+<div class="highlight">
+<button class="copy-button" onclick="copyToClipboard(this)">Copy code</button><pre><span></span><code>   firebase login
+</code></pre></div>
+
+<p>4. Créer un dossier pour le projet et se placer à la racine du projet</p>
+<div class="highlight">
+<button class="copy-button" onclick="copyToClipboard(this)">Copy code</button><pre><span></span><code>mkdir writing-a-linkedin-reco
+cd writing-a-linkedin-reco
+</code></pre></div>
+
+<p>5. Utiliser le client Firebase pour créer l'architecture du projet et se
+laisser guider</p>
+<div class="highlight">
+<button class="copy-button" onclick="copyToClipboard(this)">Copy code</button><pre><span></span><code>   firebase init hosting
+   firebase init functions
+</code></pre></div>
+
+<p><a href="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-
+post-
+media.s3.amazonaws.com%2Fpublic%2Fimages%2Fabd435ab-54c1-4515-954a-4e2b312bb5b0_2156x1697.jpeg"><img alt="" src="https://substack-post-
+media.s3.amazonaws.com/public/images/abd435ab-54c1-4515-954a-4e2b312bb5b0_2156x1697.jpeg"></a></p>
+<h4>La question du formatage</h4>
+<p>Les outils de formatage automatique sont précieux lorsque la codebase est
+maintenue par de nombreuses personnes. Ils permettent d'uniformiser le style
+et donc de réduire la charge cognitive qu'implique de lire le code existant.
+Dans notre cas, je suis seul, il y a peu de code, et mon style est cohérent
+avec moi même. J'ai donc jugé qu'un formatter n'était pas nécessaire.</p>
+<p>De plus, pour que ce type d'outil soit vraiment à ton service (et non
+l'inverse ...) il est indispensable d'aller au bout de la configuration.
+Configurer un hook de pre-commit par exemple permet de lancer le formatage de
+façon automatique avant chaque commit, ce qui assure que l'outil est exécuté à
+intervalle régulière sans que l'on ai à y penser. Lorsque l'outil est installé
+mais configuré à moitié, il représente finalement davantage une charge mentale
+puisqu'il faut penser à le lancer manuellement.</p>
+<h3>Designer le produit</h3>
+<p>Afin de designer l'application, j'ai utilisé les techniques suivantes :</p>
+<ul>
+<li>
+<p>m'inspirer du design des autres compétiteurs : ce qui marchait bien, ce qui ne me plaisait pas.</p>
+</li>
+<li>
+<p>lire le livre <a href="https://www.refactoringui.com/">Refactoring UI</a> et appliquer pas à pas les conseils données dans le livre.</p>
+</li>
+<li>
+<p>utiliser le générateur de <a href="https://www.framer.com/">Framer</a> avec comme instruction "a linkedin recommendation generator app" pour avoir une proposition de design</p>
+</li>
+</ul>
+<h2>Diffuser le produit</h2>
+<p>Les pistes de diffusions identifiées :</p>
+<ul>
+<li>
+<p>publier 50 recommandations à l'aide de l'outil et faire un poste LinkedIn à ce propos</p>
+</li>
+<li>
+<p>proposer l'outil à mon entourage</p>
+</li>
+<li>
+<p>commenter des posts qui listent les outils indispensable pour LinkedIn</p>
+</li>
+<li>
+<p>faire une vidéo Youtube qui présente l'outil</p>
+</li>
+</ul>
+<h3>Exact match domain</h3>
+<p>En SEO, on parle d'"exact match domain" lorsque l'adresse de site web contient
+les mots clés des requêtes ciblées. Un vecteur sur lequel j'ai parié est qu'en
+choisissant le nom de domaine <code>ecrire-une-recommandation-linkedin.fr</code>, le site
+ressortirait naturellement des recherches google "Comment écrire une
+recommandation LinkedIn".</p>
+<p>A posteriori, il s'avère cependant que "écrire une recommandation linkedin"
+correspond à un volume de recherche extrêmement faible :</p>
+<p><a href="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-
+post-
+media.s3.amazonaws.com%2Fpublic%2Fimages%2F98cbd3d8-131e-46db-92f0-97fbf3f020d7_2582x1440.png"><img alt="" src="https://substack-post-
+media.s3.amazonaws.com/public/images/98cbd3d8-131e-46db-92f0-97fbf3f020d7_2582x1440.png"></a>Recherche
+de mots clés sur <a href="https://www.semrush.com/">Semrush</a> - les volumes sont
+faibles !</p>
+<p>🥴</p>
+<h1>Bilan</h1>
+<h2>Leçons</h2>
+<h3>Mobile first !</h3>
+<p>J'ai développé l'application sur desktop. Lorsque je demandais à mon entourage
+de tester pour faire des retours, il se produisait systématiquement la même
+chose : ils testaient sur mobile et des bugs d'affichages se présentaient.</p>
+<p>De fait, en France, <a href="https://www.similarweb.com/fr/platforms/france/">65% du trafic provient des
+mobiles</a>. Il semble donc
+logique d'optimiser l'affichage en premier lieu pour les mobiles.</p>
+<p>Par ailleurs, il est plus simple d'adapter un design mobile vers un design
+desktop que l'inverse.</p>
+<p>Donc, mobile first !</p>
+<h3>Just in time</h3>
+<p>Je réalise à quel points certains outils qui me paraissent indispensable
+lorsque l'on travaille en équipe ne le sont pas lorsque l'on travaille seul et
+sur un prototype. Ici, ma priorité est de délivrer le plus rapidement
+possible. Mettre en place proprement des outils de formatage automatique et de
+test automatisé demande un investissement que je n'ai pas trouvé nécessaire
+ici.</p>
+<h3>Side-project vs side-business</h3>
+<p>Je suis allé trop loin dans le développement du produit et dans le design de
+l'interface utilisateur pour un minimum viable product (MVP). Le fait de
+mélanger un objectif de création de valeur et de génération de revenus
+(business) avec un objectif d’apprentissage (project) me conduit à prendre des
+décisions qui n’ont pas de sens d’un point de vue économique.</p>
+<p>D’un point de vue technique, j’ai pu mettre en pratique et apprendre. Mais
+d’un point de vue business, j’ai gâché énormément de ressources car j’aurais
+pu tester mes hypothèses plus rapidement.</p>
+<p>Pour les prochains produits, je serai davantage focus sur la démarche
+économique.</p>
+<h2>Monétisation</h2>
+<p>Je ne pense pas que les gens soient prêt à payer pour accéder à ce service
+seul. Les coûts d'exploitation sont cependant relativement faible. S'il y a un
+product market fit, la piste du sponsoring me paraît la plus prometteuse.</p>
+<h2>Conclusion</h2>
+<p>Les premiers designs de prompt étaient catastrophiques, j'ai hésité un moment
+à laisser tomber. Mais je suis content du résultat final.</p>
+<p>Écrire une recommandation permet de réaliser ce qu'il y a de bon chez l'autre.
+C'est comme une lettre d'amour. Alors écrivez des recommandations de vos
+anciens collègues, le liens est 👉 <a href="https://ecrire-une-recommandation-
+linkedin.fr/">ici</a> 👈 !</p>
+<p>Merci de m’avoir lu jusqu’ici et à la prochaine !</p>
+<p>🙂</p>
+<p>Alexandre</p>
+<p>Thanks for reading 100 produits! Subscribe for free to receive new posts and
+support my work.</p>
+    <footer>
+      <p>Published: <time datetime="2023-10-17T14:36:25.392000+00:00">
+        Mar 17 octobre 2023
+      </time></p>
+    </footer>
+  </article>
+    </main>
+  </body>
+</html>

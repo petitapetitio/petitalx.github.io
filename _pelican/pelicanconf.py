@@ -3,7 +3,7 @@ from pelican.settings import DEFAULT_CONFIG
 from pygments.formatters.html import HtmlFormatter
 
 AUTHOR = 'Alexandre Petit'
-SITENAME = 'petitalxio'
+SITENAME = 'Alexandre Petit'
 SITEURL = ""
 
 PATH = "content"

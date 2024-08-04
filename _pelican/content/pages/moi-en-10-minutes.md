@@ -3,6 +3,8 @@ Title: Moi en 10 minutes
 Date: 2024-07-21
 ---
 
+![Me](images/me.jpg)
+
 Ma journée idéale :
 
 - 6h : Réveil - Exercices
