@@ -42,7 +42,12 @@ help:
 	@echo '                                                                          '
 
 clean:
-	rm $(OUTPUTDIR)/**.html; rm -rf "$(OUTPUTDIR)/feeds"; rm -rf "$(OUTPUTDIR)/pages"; rm -rf "$(OUTPUTDIR)/theme"
+	rm $(OUTPUTDIR)/**.html || true
+	rm -rf "$(OUTPUTDIR)/feeds"
+	rm -rf "$(OUTPUTDIR)/pages"
+	rm -rf "$(OUTPUTDIR)/theme"
+	rm -rf "$(OUTPUTDIR)/images"
+
 
 devserver:
 	"$(PELICAN)" -lr "$(INPUTDIR)" -o "$(OUTPUTDIR)" -s "$(CONFFILE)" $(PELICANOPTS)
@@ -50,7 +55,7 @@ devserver:
 publish:
 	"$(PELICAN)" "$(INPUTDIR)" -o "$(OUTPUTDIR)" -s "$(PUBLISHCONF)" $(PELICANOPTS)
 
-github: publish
+github: clean publish
 	git add -A
 	git commit -m "Update site"
 	git push origin $(GITHUB_PAGES_BRANCH)
