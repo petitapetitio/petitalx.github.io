@@ -9,6 +9,15 @@ Inspiration
 HOME, _ = MarkdownReader(DEFAULT_CONFIG.copy()).read("content/pages/home.md")
 ```
 
+```
+FEED_ALL_RSS = "feeds/all.rss.xml"  
+FEED_ALL_ATOM = "feeds/all.atom.xml"  
+CATEGORY_FEED_ATOM = None  
+TRANSLATION_FEED_ATOM = None  
+AUTHOR_FEED_ATOM = None  
+AUTHOR_FEED_RSS = None
+```
+
 
 Snippets
 ```
