@@ -1,23 +1,18 @@
 from pelican.readers import MarkdownReader
 from pelican.settings import DEFAULT_CONFIG
-
 from pygments.formatters.html import HtmlFormatter
-
 
 AUTHOR = 'Alexandre Petit'
 SITENAME = 'petitalxio'
 SITEURL = ""
 
 PATH = "content"
-
-TIMEZONE = 'Europe/Paris'
-
-DEFAULT_LANG = 'fr'
-
 THEME = "themes/petitalxio"
 
-config = DEFAULT_CONFIG.copy()
-HOME, _ = MarkdownReader(config).read("content/pages/home.md")
+TIMEZONE = 'Europe/Paris'
+DEFAULT_LANG = 'fr'
+
+HOME, _ = MarkdownReader(DEFAULT_CONFIG.copy()).read("content/pages/home.md")
 
 
 class HtmlFormatterWithCopyButton(HtmlFormatter):
@@ -43,17 +38,12 @@ MARKDOWN = {
     "output_format": "html5",
 }
 
-# Feed generation is usually not desired when developing
-FEED_ALL_ATOM = None
+FEED_ALL_RSS = "feeds/all.rss.xml"
+FEED_ALL_ATOM = "feeds/all.atom.xml"
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
-
-DEFAULT_PAGINATION = False
-
-# Uncomment following line if you want document-relative URLs when developing
-# RELATIVE_URLS = True
 
 # Disable the generation of these pages
 TAG_SAVE_AS = ''

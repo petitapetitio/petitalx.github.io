@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>petitalxio</title><link>https://petitalx.github.io/</link><description></description><lastBuildDate>Sat, 27 Jul 2024 00:00:00 +0200</lastBuildDate><item><title>Créer son site personnel avec Githbub Pages et Python, et Pelican</title><link>https://petitalx.github.io/creer-son-site-personnel-avec-githbub-pages-et-python-et-pelican.html</link><description>&lt;p&gt;Hello ! &lt;/p&gt;
+&lt;p&gt;Dans cet article, on va voir comment créer un site personnel :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;avec le générateur de site statique Pelican (écrit en Python)&lt;/li&gt;
+&lt;li&gt;hébergé sur Github Pages&lt;/li&gt;
+&lt;li&gt;à partir de contenu Markdown&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Le résultat final ressemble à &lt;a href="http://petitalx.io/"&gt;ça&lt;/a&gt;. &lt;/p&gt;
+&lt;p&gt;&lt;em&gt;If you don't give a shit about&lt;/em&gt; le contexte et mon processus de …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alexandre Petit</dc:creator><pubDate>Sat, 27 Jul 2024 00:00:00 +0200</pubDate><guid isPermaLink="false">tag:petitalx.github.io,2024-07-27:/creer-son-site-personnel-avec-githbub-pages-et-python-et-pelican.html</guid><category>misc</category></item><item><title>4-4-4</title><link>https://petitalx.github.io/4-4-4.html</link><description>&lt;p&gt;This is the fourth article written in markdown.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alexandre Petit</dc:creator><pubDate>Sun, 20 May 2012 00:00:00 +0200</pubDate><guid isPermaLink="false">tag:petitalx.github.io,2012-05-20:/4-4-4.html</guid><category>misc</category></item><item><title>500</title><link>https://petitalx.github.io/500.html</link><description>&lt;p&gt;This is the fifth article written in markdown.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alexandre Petit</dc:creator><pubDate>Sun, 20 May 2012 00:00:00 +0200</pubDate><guid isPermaLink="false">tag:petitalx.github.io,2012-05-20:/500.html</guid><category>misc</category></item><item><title>3rd markdown powered article</title><link>https://petitalx.github.io/3rd-markdown-powered-article.html</link><description>&lt;p&gt;This is the third article written in markdown.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alexandre Petit</dc:creator><pubDate>Fri, 20 Apr 2012 00:00:00 +0200</pubDate><guid isPermaLink="false">tag:petitalx.github.io,2012-04-20:/3rd-markdown-powered-article.html</guid><category>misc</category></item><item><title>Another markdown powered article</title><link>https://petitalx.github.io/another-markdown-powered-article.html</link><description>&lt;p&gt;This is another article written in markdown.&lt;/p&gt;
+&lt;div class="highlight"&gt;
+&lt;button class="copy-button" onclick="copyToClipboard(this)"&gt;Copy code&lt;/button&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;hello&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Hello, world!&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;bis&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Bis, world!&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Et plus long : &lt;/p&gt;
+&lt;div class="highlight"&gt;
+&lt;button class="copy-button" onclick="copyToClipboard(this)"&gt;Copy code&lt;/button&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;hello&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Hello, woooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooorld!&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alexandre Petit</dc:creator><pubDate>Fri, 20 Apr 2012 00:00:00 +0200</pubDate><guid isPermaLink="false">tag:petitalx.github.io,2012-04-20:/another-markdown-powered-article.html</guid><category>misc</category></item></channel></rss>
