@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Alexandre Petit</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2024-07-27T00:00:00+02:00</updated><entry><title>Comment créer un site personnel avec Pelican (Python)</title><link href="/comment-creer-un-site-personnel-avec-pelican-python.html" rel="alternate"></link><published>2024-07-27T00:00:00+02:00</published><updated>2024-07-27T00:00:00+02:00</updated><author><name>Alexandre Petit</name></author><id>tag:None,2024-07-27:/comment-creer-un-site-personnel-avec-pelican-python.html</id><summary type="html">&lt;p&gt;Hello ! &lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Alexandre Petit</title><link href="https://petitalx.github.io/" rel="alternate"></link><link href="https://petitalx.github.io/feeds/all.atom.xml" rel="self"></link><id>https://petitalx.github.io/</id><updated>2024-07-27T00:00:00+02:00</updated><entry><title>Comment créer un site personnel avec Pelican (Python)</title><link href="https://petitalx.github.io/comment-creer-un-site-personnel-avec-pelican-python.html" rel="alternate"></link><published>2024-07-27T00:00:00+02:00</published><updated>2024-07-27T00:00:00+02:00</updated><author><name>Alexandre Petit</name></author><id>tag:petitalx.github.io,2024-07-27:/comment-creer-un-site-personnel-avec-pelican-python.html</id><summary type="html">&lt;p&gt;Hello ! &lt;/p&gt;
 &lt;p&gt;Dans cet article, on va voir comment créer un site personnel :&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;avec le générateur de site statique Pelican (écrit en Python)&lt;/li&gt;
@@ -538,7 +538,7 @@ ARCHIVES_SAVE_AS = &amp;#39;&amp;#39;
 &lt;li&gt;créer son propre plugin&lt;/li&gt;
 &lt;li&gt;créer le thème &lt;em&gt;bettermotherfuckingwebsite&lt;/em&gt; pour contribuer&lt;/li&gt;
 &lt;li&gt;prendre une &lt;a href="https://github.com/getpelican/pelican/issues"&gt;issue&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><category term="misc"></category></entry><entry><title>13 Enseignements du DevOps</title><link href="/13-enseignements-du-devops.html" rel="alternate"></link><published>2024-05-21T06:12:57+00:00</published><updated>2024-05-21T06:12:57+00:00</updated><author><name>Alexandre Petit</name></author><id>tag:None,2024-05-21:/13-enseignements-du-devops.html</id><summary type="html">&lt;p&gt;Hello !&lt;/p&gt;
+&lt;/ul&gt;</content><category term="misc"></category></entry><entry><title>13 Enseignements du DevOps</title><link href="https://petitalx.github.io/13-enseignements-du-devops.html" rel="alternate"></link><published>2024-05-21T06:12:57+00:00</published><updated>2024-05-21T06:12:57+00:00</updated><author><name>Alexandre Petit</name></author><id>tag:petitalx.github.io,2024-05-21:/13-enseignements-du-devops.html</id><summary type="html">&lt;p&gt;Hello !&lt;/p&gt;
 &lt;p&gt;Ces derniers mois, j'ai beaucoup lu sur le DevOps.&lt;/p&gt;
 &lt;p&gt;Dans l'&lt;a href="https://100produits.substack.com/p/devops-101"&gt;édition précédente&lt;/a&gt;,
 nous avons approché une outline de la discipline formée par les grands
@@ -890,7 +890,7 @@ l’est pas.&lt;/p&gt;
 &lt;p&gt;J’espère que tu auras trouvé ici certaines idées qui te seront utiles au
 quotidien :)&lt;/p&gt;
 &lt;p&gt;À la prochaine !&lt;/p&gt;
-&lt;p&gt;Alex&lt;/p&gt;</content><category term="misc"></category></entry><entry><title>DevOps 101</title><link href="/devops-101.html" rel="alternate"></link><published>2024-05-06T06:33:41+00:00</published><updated>2024-05-06T06:33:41+00:00</updated><author><name>Alexandre Petit</name></author><id>tag:None,2024-05-06:/devops-101.html</id><summary type="html">&lt;p&gt;Hello !&lt;/p&gt;
+&lt;p&gt;Alex&lt;/p&gt;</content><category term="misc"></category></entry><entry><title>DevOps 101</title><link href="https://petitalx.github.io/devops-101.html" rel="alternate"></link><published>2024-05-06T06:33:41+00:00</published><updated>2024-05-06T06:33:41+00:00</updated><author><name>Alexandre Petit</name></author><id>tag:petitalx.github.io,2024-05-06:/devops-101.html</id><summary type="html">&lt;p&gt;Hello !&lt;/p&gt;
 &lt;p&gt;C'est dernier mois, je me suis demandé, c'est quoi le DevOps ?&lt;/p&gt;
 &lt;p&gt;Est-ce&lt;/p&gt;
 &lt;ul&gt;
@@ -1030,7 +1030,7 @@ système technologique complexe.&lt;/p&gt;
 &lt;p&gt;Dans la prochaine édition, je vous présenterai en détail les concepts qui
 m'ont le plus marqué ainsi que ceux qui m'ont le plus amusé.&lt;/p&gt;
 &lt;p&gt;D’ici là, portez-vous bien :)  &lt;/p&gt;
-&lt;p&gt;Alex  &lt;/p&gt;</content><category term="misc"></category></entry><entry><title>Appliquer la Théorie des Contraintes à la création de contenu.</title><link href="/appliquer-la-theorie-des-contraintes-a-la-creation-de-contenu.html" rel="alternate"></link><published>2024-04-23T05:38:39+00:00</published><updated>2024-04-23T05:38:39+00:00</updated><author><name>Alexandre Petit</name></author><id>tag:None,2024-04-23:/appliquer-la-theorie-des-contraintes-a-la-creation-de-contenu.html</id><summary type="html">&lt;p&gt;Hello !&lt;/p&gt;
+&lt;p&gt;Alex  &lt;/p&gt;</content><category term="misc"></category></entry><entry><title>Appliquer la Théorie des Contraintes à la création de contenu.</title><link href="https://petitalx.github.io/appliquer-la-theorie-des-contraintes-a-la-creation-de-contenu.html" rel="alternate"></link><published>2024-04-23T05:38:39+00:00</published><updated>2024-04-23T05:38:39+00:00</updated><author><name>Alexandre Petit</name></author><id>tag:petitalx.github.io,2024-04-23:/appliquer-la-theorie-des-contraintes-a-la-creation-de-contenu.html</id><summary type="html">&lt;p&gt;Hello !&lt;/p&gt;
 &lt;p&gt;La semaine dernière, on a passé en revue les principes de la théorie de
 contraintes.&lt;/p&gt;
 &lt;p&gt;Cette semaine, j'ai appliqué la méthode à mon processus de création de
@@ -1260,7 +1260,7 @@ surtout une source de frustration. Aborder les choses de façon carré me permet
 finalement de mieux apprécier ce que je fais.&lt;/p&gt;
 &lt;p&gt;À voir dans les prochains mois ce que cela va donner :)  &lt;/p&gt;
 &lt;p&gt;++  &lt;/p&gt;
-&lt;p&gt;Alex&lt;/p&gt;</content><category term="misc"></category></entry><entry><title>Produire 2x + grâce à la Théorie des Contraintes</title><link href="/produire-2x-grace-a-la-theorie-des-contraintes.html" rel="alternate"></link><published>2024-04-17T05:39:47+00:00</published><updated>2024-04-17T05:39:47+00:00</updated><author><name>Alexandre Petit</name></author><id>tag:None,2024-04-17:/produire-2x-grace-a-la-theorie-des-contraintes.html</id><summary type="html">&lt;p&gt;Hello !&lt;/p&gt;
+&lt;p&gt;Alex&lt;/p&gt;</content><category term="misc"></category></entry><entry><title>Produire 2x + grâce à la Théorie des Contraintes</title><link href="https://petitalx.github.io/produire-2x-grace-a-la-theorie-des-contraintes.html" rel="alternate"></link><published>2024-04-17T05:39:47+00:00</published><updated>2024-04-17T05:39:47+00:00</updated><author><name>Alexandre Petit</name></author><id>tag:petitalx.github.io,2024-04-17:/produire-2x-grace-a-la-theorie-des-contraintes.html</id><summary type="html">&lt;p&gt;Hello !&lt;/p&gt;
 &lt;p&gt;Depuis le mois de février, mon focus est d'apprendre le DevOps.&lt;/p&gt;
 &lt;p&gt;En m'attaquant à cette compétence, je pensais baigner dans de la technique.&lt;/p&gt;
 &lt;p&gt;Et il y en a.&lt;/p&gt;
@@ -1580,7 +1580,7 @@ post-
 media.s3.amazonaws.com%2Fpublic%2Fimages%2F6d2f6e65-add6-4d67-8db0-f9b0ba42fca7_800x400.gif"&gt;&lt;img alt="" src="https://substack-post-
 media.s3.amazonaws.com/public/images/6d2f6e65-add6-4d67-8db0-f9b0ba42fca7_800x400.gif"&gt;&lt;/a&gt;Lorsque
 l’on réduit la taille des lots, il même possible d’augmenter la cadence sans
-entraîner de blocage dans le système.&lt;/p&gt;</content><category term="misc"></category></entry><entry><title>Comment se ruiner (sans l'aide de la chance)</title><link href="/comment-se-ruiner-sans-laide-de-la-chance.html" rel="alternate"></link><published>2024-04-08T06:57:37+00:00</published><updated>2024-04-08T06:57:37+00:00</updated><author><name>Alexandre Petit</name></author><id>tag:None,2024-04-08:/comment-se-ruiner-sans-laide-de-la-chance.html</id><summary type="html">&lt;p&gt;Hello !&lt;/p&gt;
+entraîner de blocage dans le système.&lt;/p&gt;</content><category term="misc"></category></entry><entry><title>Comment se ruiner (sans l'aide de la chance)</title><link href="https://petitalx.github.io/comment-se-ruiner-sans-laide-de-la-chance.html" rel="alternate"></link><published>2024-04-08T06:57:37+00:00</published><updated>2024-04-08T06:57:37+00:00</updated><author><name>Alexandre Petit</name></author><id>tag:petitalx.github.io,2024-04-08:/comment-se-ruiner-sans-laide-de-la-chance.html</id><summary type="html">&lt;p&gt;Hello !&lt;/p&gt;
 &lt;p&gt;Dans cette édition, je te propose un post-mortem de mon premier achat
 immobilier.&lt;/p&gt;
 &lt;p&gt;Mon objectif ici est de&lt;/p&gt;
@@ -1861,7 +1861,7 @@ vital.&lt;/p&gt;
 &lt;p&gt;Il est possible d'aller plus loin dans les apprentissages.&lt;/p&gt;
 &lt;p&gt;Mais en voici déjà quelques-uns.&lt;/p&gt;
 &lt;p&gt;À la prochaine :)&lt;/p&gt;
-&lt;p&gt;Alex&lt;/p&gt;</content><category term="misc"></category></entry><entry><title>Explorer le monde avec un second cerveau</title><link href="/explorer-le-monde-avec-un-second-cerveau.html" rel="alternate"></link><published>2024-03-25T07:20:20+00:00</published><updated>2024-03-25T07:20:20+00:00</updated><author><name>Alexandre Petit</name></author><id>tag:None,2024-03-25:/explorer-le-monde-avec-un-second-cerveau.html</id><summary type="html">&lt;p&gt;Hello !&lt;/p&gt;
+&lt;p&gt;Alex&lt;/p&gt;</content><category term="misc"></category></entry><entry><title>Explorer le monde avec un second cerveau</title><link href="https://petitalx.github.io/explorer-le-monde-avec-un-second-cerveau.html" rel="alternate"></link><published>2024-03-25T07:20:20+00:00</published><updated>2024-03-25T07:20:20+00:00</updated><author><name>Alexandre Petit</name></author><id>tag:petitalx.github.io,2024-03-25:/explorer-le-monde-avec-un-second-cerveau.html</id><summary type="html">&lt;p&gt;Hello !&lt;/p&gt;
 &lt;p&gt;Mon second cerveau fête ses un an.&lt;/p&gt;
 &lt;p&gt;C'est l'occasion de revenir en arrière pour un premier bilan.&lt;/p&gt;
 &lt;p&gt;Au programme aujourd’hui :&lt;/p&gt;
@@ -2177,7 +2177,7 @@ arrière.&lt;/p&gt;
 &lt;p&gt;Et donc, je compte bien travailler avec cet outil pendant les dix prochaines
 années.&lt;/p&gt;
 &lt;p&gt;À la prochaine :)&lt;/p&gt;
-&lt;p&gt;Alexandre&lt;/p&gt;</content><category term="misc"></category></entry><entry><title>3 principes tirés de l'Almanach de Naval</title><link href="/3-principes-tires-de-lalmanach-de-naval.html" rel="alternate"></link><published>2024-03-18T07:51:23+00:00</published><updated>2024-03-18T07:51:23+00:00</updated><author><name>Alexandre Petit</name></author><id>tag:None,2024-03-18:/3-principes-tires-de-lalmanach-de-naval.html</id><summary type="html">&lt;p&gt;Hello !&lt;/p&gt;
+&lt;p&gt;Alexandre&lt;/p&gt;</content><category term="misc"></category></entry><entry><title>3 principes tirés de l'Almanach de Naval</title><link href="https://petitalx.github.io/3-principes-tires-de-lalmanach-de-naval.html" rel="alternate"></link><published>2024-03-18T07:51:23+00:00</published><updated>2024-03-18T07:51:23+00:00</updated><author><name>Alexandre Petit</name></author><id>tag:petitalx.github.io,2024-03-18:/3-principes-tires-de-lalmanach-de-naval.html</id><summary type="html">&lt;p&gt;Hello !&lt;/p&gt;
 &lt;p&gt;Pour commencer l'année, j'ai écouté l'Almanach de Naval Ravikant en audio
 book.&lt;/p&gt;
 &lt;p&gt;Cette édition explore les trois concepts qui m’ont le plus marqué dans ce
@@ -2419,7 +2419,7 @@ faire des bilans sur les projets que je fais, et parler des concepts qui me
 marquent dans mes lectures.&lt;/p&gt;
 &lt;p&gt;Qu’est-ce que tu penses de ce type de format axé sur une lecture ?&lt;/p&gt;
 &lt;p&gt;À très vite :)&lt;/p&gt;
-&lt;p&gt;Alex&lt;/p&gt;</content><category term="misc"></category></entry><entry><title>Mes intentions pour 2024</title><link href="/mes-intentions-pour-2024.html" rel="alternate"></link><published>2024-03-11T07:20:27+00:00</published><updated>2024-03-11T07:20:27+00:00</updated><author><name>Alexandre Petit</name></author><id>tag:None,2024-03-11:/mes-intentions-pour-2024.html</id><summary type="html">&lt;p&gt;En 2023, mon but était de me lancer dans l'entrepreneuriat sur un mode &lt;em&gt;indie-
+&lt;p&gt;Alex&lt;/p&gt;</content><category term="misc"></category></entry><entry><title>Mes intentions pour 2024</title><link href="https://petitalx.github.io/mes-intentions-pour-2024.html" rel="alternate"></link><published>2024-03-11T07:20:27+00:00</published><updated>2024-03-11T07:20:27+00:00</updated><author><name>Alexandre Petit</name></author><id>tag:petitalx.github.io,2024-03-11:/mes-intentions-pour-2024.html</id><summary type="html">&lt;p&gt;En 2023, mon but était de me lancer dans l'entrepreneuriat sur un mode &lt;em&gt;indie-
 maker&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;La flot de la vie m'a conduit sur une autre voie.&lt;/p&gt;
 &lt;p&gt;Aujourd'hui, je travaille comme Software Engineer en freelance.&lt;/p&gt;
@@ -2879,7 +2879,7 @@ les choses commencent à s’aligner dans ma tête.&lt;/p&gt;
 &lt;p&gt;C’est n’est qu’une feuille de route.&lt;/p&gt;
 &lt;p&gt;Aller, assez passé de temps sur la planification. C'est parti pour l'exécution
 :)&lt;/p&gt;
-&lt;p&gt;Et toi, quelles sont tes intentions pour 2024 ?&lt;/p&gt;</content><category term="misc"></category></entry><entry><title>Ma rétrospective de 2023</title><link href="/ma-retrospective-de-2023.html" rel="alternate"></link><published>2024-01-31T21:51:13+00:00</published><updated>2024-01-31T21:51:13+00:00</updated><author><name>Alexandre Petit</name></author><id>tag:None,2024-01-31:/ma-retrospective-de-2023.html</id><summary type="html">&lt;p&gt;Hello !&lt;/p&gt;
+&lt;p&gt;Et toi, quelles sont tes intentions pour 2024 ?&lt;/p&gt;</content><category term="misc"></category></entry><entry><title>Ma rétrospective de 2023</title><link href="https://petitalx.github.io/ma-retrospective-de-2023.html" rel="alternate"></link><published>2024-01-31T21:51:13+00:00</published><updated>2024-01-31T21:51:13+00:00</updated><author><name>Alexandre Petit</name></author><id>tag:petitalx.github.io,2024-01-31:/ma-retrospective-de-2023.html</id><summary type="html">&lt;p&gt;Hello !&lt;/p&gt;
 &lt;p&gt;Il paraît qu'on a jusqu'à fin janvier pour se souhaiter une bonne année.&lt;/p&gt;
 &lt;p&gt;J'imagine que c'est aussi valable pour la rétrospective.&lt;/p&gt;
 &lt;p&gt;In-extremis, voici ma rétrospective de 2023. 😁&lt;/p&gt;
@@ -3343,7 +3343,7 @@ rétrospective que j’ai utilisé : &lt;a href="https://philopreneurs.notion.si
 Annuelle-2022-18a7bd8062384e0dbcfa67834a76be51"&gt;template de Jean-Charles
 Kurdali&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;A la prochaine 👋&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://100produits.substack.com/subscribe?"&gt;Subscribe now&lt;/a&gt;&lt;/p&gt;</content><category term="misc"></category></entry><entry><title>Passer de zéro à 1000 sur chess.com en un mois</title><link href="/passer-de-zero-a-1000-sur-chesscom-en-un-mois.html" rel="alternate"></link><published>2024-01-22T06:43:06+00:00</published><updated>2024-01-22T06:43:06+00:00</updated><author><name>Alexandre Petit</name></author><id>tag:None,2024-01-22:/passer-de-zero-a-1000-sur-chesscom-en-un-mois.html</id><summary type="html">&lt;p&gt;Hello !  &lt;/p&gt;
+&lt;p&gt;&lt;a href="https://100produits.substack.com/subscribe?"&gt;Subscribe now&lt;/a&gt;&lt;/p&gt;</content><category term="misc"></category></entry><entry><title>Passer de zéro à 1000 sur chess.com en un mois</title><link href="https://petitalx.github.io/passer-de-zero-a-1000-sur-chesscom-en-un-mois.html" rel="alternate"></link><published>2024-01-22T06:43:06+00:00</published><updated>2024-01-22T06:43:06+00:00</updated><author><name>Alexandre Petit</name></author><id>tag:petitalx.github.io,2024-01-22:/passer-de-zero-a-1000-sur-chesscom-en-un-mois.html</id><summary type="html">&lt;p&gt;Hello !  &lt;/p&gt;
 &lt;p&gt;J’ai tenté de passer de zéro à 1000 sur Chess.com. C'est-à-dire, de, je
 connais en partie les règles et n’ai pas joué depuis +10 ans, à je m’en sors
 bien face à 80% des gens. Cette expérience m’a beaucoup marquée. Est-ce que
@@ -3550,7 +3550,7 @@ d’une prochaine newsletter :).  &lt;/p&gt;
 &lt;p&gt;Thanks for reading 100 produits! Subscribe for free to receive new posts and
 support my work.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://100produits.substack.com/subscribe?"&gt;Subscribe now&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;À la prochaine :)&lt;/p&gt;</content><category term="misc"></category></entry><entry><title>J'ai mis un véhicule en location pendant un an.</title><link href="/jai-mis-un-vehicule-en-location-pendant-un-an.html" rel="alternate"></link><published>2024-01-08T07:04:54+00:00</published><updated>2024-01-08T07:04:54+00:00</updated><author><name>Alexandre Petit</name></author><id>tag:None,2024-01-08:/jai-mis-un-vehicule-en-location-pendant-un-an.html</id><summary type="html">&lt;p&gt;Salut les gros,&lt;/p&gt;
+&lt;p&gt;À la prochaine :)&lt;/p&gt;</content><category term="misc"></category></entry><entry><title>J'ai mis un véhicule en location pendant un an.</title><link href="https://petitalx.github.io/jai-mis-un-vehicule-en-location-pendant-un-an.html" rel="alternate"></link><published>2024-01-08T07:04:54+00:00</published><updated>2024-01-08T07:04:54+00:00</updated><author><name>Alexandre Petit</name></author><id>tag:petitalx.github.io,2024-01-08:/jai-mis-un-vehicule-en-location-pendant-un-an.html</id><summary type="html">&lt;p&gt;Salut les gros,&lt;/p&gt;
 &lt;p&gt;L’année dernière, j’ai testé de générer des revenus via la location de
 véhicule.&lt;/p&gt;
 &lt;p&gt;Voici mon retour d’expérience.&lt;/p&gt;
@@ -3743,7 +3743,7 @@ moments où je n'avais pas beaucoup d'argent disponible. Et globalement, ça a
 &lt;p&gt;Voilà,&lt;/p&gt;
 &lt;p&gt;à plus pour la prochaine aventure !&lt;/p&gt;
 &lt;p&gt;Merci d’avoir lu jusqu’ici ! Si tu souhaites recevoir les prochaines éditions,
-tu peux t’abonner juste là 👇🙂&lt;/p&gt;</content><category term="misc"></category></entry><entry><title>Créer un générateur de recommandations LinkedIn</title><link href="/creer-un-generateur-de-recommandations-linkedin.html" rel="alternate"></link><published>2023-10-17T14:36:25+00:00</published><updated>2023-10-17T14:36:25+00:00</updated><author><name>Alexandre Petit</name></author><id>tag:None,2023-10-17:/creer-un-generateur-de-recommandations-linkedin.html</id><summary type="html">&lt;p&gt;Hello !&lt;/p&gt;
+tu peux t’abonner juste là 👇🙂&lt;/p&gt;</content><category term="misc"></category></entry><entry><title>Créer un générateur de recommandations LinkedIn</title><link href="https://petitalx.github.io/creer-un-generateur-de-recommandations-linkedin.html" rel="alternate"></link><published>2023-10-17T14:36:25+00:00</published><updated>2023-10-17T14:36:25+00:00</updated><author><name>Alexandre Petit</name></author><id>tag:petitalx.github.io,2023-10-17:/creer-un-generateur-de-recommandations-linkedin.html</id><summary type="html">&lt;p&gt;Hello !&lt;/p&gt;
 &lt;p&gt;Aujourd'hui, je vous partage mon aventure dans le développement d'un
 générateur de recommandation LinkedIn.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-
@@ -4235,7 +4235,7 @@ linkedin.fr/"&gt;ici&lt;/a&gt; 👈 !&lt;/p&gt;
 &lt;p&gt;🙂&lt;/p&gt;
 &lt;p&gt;Alexandre&lt;/p&gt;
 &lt;p&gt;Thanks for reading 100 produits! Subscribe for free to receive new posts and
-support my work.&lt;/p&gt;</content><category term="misc"></category></entry><entry><title>Ma version des Fables de La Fontaine avec Midjourney</title><link href="/ma-version-des-fables-de-la-fontaine-avec-midjourney.html" rel="alternate"></link><published>2023-10-02T15:28:10+00:00</published><updated>2023-10-02T15:28:10+00:00</updated><author><name>Alexandre Petit</name></author><id>tag:None,2023-10-02:/ma-version-des-fables-de-la-fontaine-avec-midjourney.html</id><summary type="html">&lt;p&gt;Hello !&lt;/p&gt;
+support my work.&lt;/p&gt;</content><category term="misc"></category></entry><entry><title>Ma version des Fables de La Fontaine avec Midjourney</title><link href="https://petitalx.github.io/ma-version-des-fables-de-la-fontaine-avec-midjourney.html" rel="alternate"></link><published>2023-10-02T15:28:10+00:00</published><updated>2023-10-02T15:28:10+00:00</updated><author><name>Alexandre Petit</name></author><id>tag:petitalx.github.io,2023-10-02:/ma-version-des-fables-de-la-fontaine-avec-midjourney.html</id><summary type="html">&lt;p&gt;Hello !&lt;/p&gt;
 &lt;p&gt;Bienvenue dans &lt;em&gt;100 produits&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;Ma démarche est donner vie à des projets en quelques journées et de documenter
 leur réalisation. Plutôt que de travailler sur LE projet parfait, je vais
