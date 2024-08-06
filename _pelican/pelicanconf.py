@@ -18,6 +18,8 @@ HOME, _ = MarkdownReader(DEFAULT_CONFIG.copy()).read("content/pages/home.md")
 
 LOG_FILTER = [(logging.WARN, 'Empty alt attribute for image %s in %s')]
 
+STATIC_PATHS = ['images']
+
 
 class HtmlFormatterWithCopyButton(HtmlFormatter):
     def __init__(self, **options):
