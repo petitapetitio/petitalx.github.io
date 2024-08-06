@@ -1,3 +1,5 @@
+import logging
+
 from pelican.readers import MarkdownReader
 from pelican.settings import DEFAULT_CONFIG
 from pygments.formatters.html import HtmlFormatter
@@ -13,6 +15,8 @@ TIMEZONE = 'Europe/Paris'
 DEFAULT_LANG = 'fr'
 
 HOME, _ = MarkdownReader(DEFAULT_CONFIG.copy()).read("content/pages/home.md")
+
+LOG_FILTER = [(logging.WARN, 'Empty alt attribute for image %s in %s')]
 
 
 class HtmlFormatterWithCopyButton(HtmlFormatter):
