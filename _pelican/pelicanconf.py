@@ -45,6 +45,8 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
+PAGE_SAVE_AS = "{slug}.html"
+
 # Disable the generation of these pages
 TAG_SAVE_AS = ''
 TAGS_SAVE_AS = ''
