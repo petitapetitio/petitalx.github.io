@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+        <title>Alexandre Petit - Publier une version illustrée des Fables de La Fontaine avec ChatGPT et Midjourney</title>
+      <meta charset="utf-8" />
+      <meta name="generator" content="Pelican" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="/theme/css/style.css" />
+      <link rel="stylesheet" type="text/css" href="/theme/css/code.css" />
+      <script>
+      function copyToClipboard(button) {
+          const codeElement = button.nextElementSibling.querySelector('code');
+          const codeText = codeElement.innerText || codeElement.textContent;
+
+          navigator.clipboard.writeText(codeText).then(() => {
+              // Provide feedback to the user
+              button.textContent = 'Copied!';
+              setTimeout(() => {
+                  button.textContent = 'Copy code';
+              }, 2000);
+          }).catch(err => {
+              console.error('Could not copy text: ', err);
+          });
+      }
+      </script>
+
+
+        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Alexandre Petit Full Atom Feed" />
+        <link href="/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Alexandre Petit Full RSS Feed" />
+
+
+
+
+  </head>
+
+  <body>
+    <header>
+      <hgroup><h1><a href="/">Alexandre Petit</a></h1></hgroup>
+    </header>
+    <main>
+  <article>
+    <header>
+      <h2>Publier une version illustrée des Fables de La Fontaine avec ChatGPT et Midjourney</h2>
+    </header>
+    <p>Hello ! </p>
+<p>Bienvenue dans <em>100 produits</em>.</p>
+<p>Ma démarche est donner vie à des projets en quelques journées et de documenter leur réalisation. Plutôt que de travailler sur LE projet parfait, je vais multiplier les expérimentations, explorer les façons de trouver des solutions, mettre les mains dans le cambouis, trouver des hacks, aller droit au but, copier des idées de business déjà existantes, lancer rapidement, itérer, améliorer, et répéter l’expérience jusqu'à ce qu'elle soit couronnée de succès.</p>
+<p>Cette newsletter sera comme un journal de bord et je publierai une rétrospective par projet. <br/><br/>C’est parti pour la première !</p>
+<h2>Une version illustrée des fables de La Fontaine</h2>
+<p>J’ai redécouvert les Fables de La Fontaine il y a deux ans, dans <a href="https://podcast.ausha.co/artisan-developpeur/le-loup-et-le-chien">un épisode du podcast Artisan Développeur </a>de Benoit Gantaume. Depuis, j’ai souhaité les relire. J’ai acheté deux éditions, mais aucune ne m’a vraiment plus : </p>
+<ul><li><p>La première est une version de poche. La mise en page est agréable, mais il n’y a pas d’images et je trouve que cela manque à l’expérience de lecture.</p></li><li><p>La deuxième est une intégrale illustrée, en quatre tomes : les images sont belles, mais la mise en page n’est pas agréable. Aussi, toutes les fables ne se valent pas. Parmi les 243, certaines sont plus universelles que d’autres. Or, je ne recherche pas une encyclopédie sur La Fontaine. Juste des histoires avec des leçons de vie que je peux méditer dans mon quotidien. Le 20% qui apportent 80% de la valeur.</p></li></ul>
+<p>Avec la sortie de ChatGPT et la version 4 de Midjourney fin 2022, on a vu de nombreuses personnes créer des livres en combinant ces deux technologies et les mettre en vente sur Amazon, “juste en cliquant sur un bouton”  ! Cela m’a donné envie d’expérimenter.<br/><br/>Enfin, je cherchais un prétexte pour me documenter davantage sur ChatGPT et Midjourney. Les capacités esthétiques de Midjourney sont bluffantes. Et, quelque part, j’ai pensé que peut-être une édition actualisée des Fables, avec des images époustouflantes, donnerait peut-être envie à un public de 20-30 ans de redécouvrir ces textes.<br/></p>
+<p>Je me suis alors lancé dans ce projet avec en tête :</p>
+<ul><li><p>d’automatiser un maximum le processus </p></li><li><p>d’aller au bout quoi qu’il arrive</p></li><li><p>de chercher en premier lieu un produit fini plutôt qu’un produit parfait</p></li><li><p>d’y consacrer 5 jours maximum<br/></p></li></ul>
+<p>Évidemment, tout ne s’est pas passé comme prévu.</p>
+<p></p>
+<blockquote><p>Le PDF du résultat final est visible <a href="https://www.dropbox.com/scl/fi/i9rb8ggmcalt74805dqw5/Les-Fables-de-La-Fontaine-illustr-es-avec-Midjourney-Alexandre-Petit.pdf?rlkey=6dnidl571o887rv8inexo2yub&amp;dl=0">ici</a> </p></blockquote>
+<p></p>
+<h3>Vue d’ensemble</h3>
+<p>Traditionnellement, publier un livre c’est : </p>
+<ol><li><p>Écrire un manuscrit</p></li><li><p>Trouver une maison d’édition</p></li><li><p>Travailler avec des illustrateurs et des designers pour mettre en page l’ouvrage</p></li><li><p>Missionner une équipe marketing pour la diffusion de l’ouvrage</p></li><li><p>Contacter des imprimeurs et des relieurs pour la fabrication de l’ouvrage</p></li><li><p>Conclure avec un distributeur pour acheminer le livre en librairie</p></li></ol>
+<p>C’est un processus qui mobilise un grand nombre d’acteurs et présente deux barrières majeurs. Premièrement, il y a la barrière de la sélection : peu de personnes passent le cap de l’étape 2. Ensuite, si vous signez un contrat à compte d’auteur, il reste une barrière financière puisque c’est à vous d’avancer les frais de conception et de fabrication.</p>
+<p>Ce qui est dingue avec les solutions d’auto-édition et l’émergence de l’impression à la demande, c’est qu’il est possible de gérer soi-même une grande partie des étapes, de publier un ouvrage sans permission, et sans avoir à avancer de frais.</p>
+<p>Dans ce projet, l’étape 1 est déjà bien prémâchée puisque je vais me baser des textes déjà existants. L’étape 2 se change en “choisir un service d’auto édition”. Le service d’auto-édition va prendre en charge les étapes 5 et 6. Il me reste donc le troisième point (la mise en page), et le quatrième point (la diffusion).</p>
+<p>[Faire un schéma classique vs pour le projet avec des photos de moi avec un pouce]</p>
+<p></p>
+<h2>Choisir une solution d’auto-édition</h2>
+<p>Il existe des dizaines de solutions d’auto-édition : Lulu Xpress, Blurb, Amazon Kindle Direct Publishing (KDP), Coollibri, Ingram, The Book Edition, Librinova, Iggybook, Publishroom, Bookelis, …</p>
+<p>Parmi les plus importantes : </p>
+<ul><li><p><a href="https://kdp.amazon.com/fr_FR/">Amazon KDP</a> est la solution d’auto-édition d’Amazon. Elle permet de publier de eBooks aussi bien que des livres papier (reliés ou brochés) et est adaptée à tous types de contenu (romans, livres pour enfant, bandes déssinées, …). Les livres publiés sur Amazon KDP ne sont disponibles que sur Amazon. <a href="https://kdp.amazon.com/fr_FR/help/topic/G200634280">L’espace d’aide</a> est complet. Dans le cas des eBooks, il est nécessaire de publier le livre au format KPF. </p></li><li><p><a href="https://www.lulu.com/">Lulu Xpress</a> a été fondée en 2002 par l’ancien CEO de RedHat. Comme Amazon, elle permet de publier de eBooks aussi bien que des livres papier. Le design du site exprime érgonomie et simplicité. La platforme met à disposition des templates Word et InDesign avec des presets d’export. Le service gère lui même l’obtention de l’ISBN. L’option “global distribution” permet de distribuer son livre papier sur Amazon et le rends disponible en commande dans “toutes les bonnes librairies” via le réseau du groupe Hachette.</p></li></ul>
+<p>Sans trop hésiter, je suis parti sur Lulu.</p>
+<p></p>
+<h2>Le processus éditorial</h2>
+<div class="captioned-image-container"><img src="images/1024e141-54f7-4c03-af98-a7f49637f5f3_522x281.png"/><p style="text-align: center; font-style: italic; font-size: 0.8em;">Visualisation schématique du processus éditorial</p></div>
+<p></p>
+<h3>Récupérer les textes</h3>
+<p>Pour aller plus vite, j’ai demandé à ChatGPT de lister les 50 fables de La Fontaine les plus populaires. Ces textes sont depuis longtemps dans le domaine public et on les retrouve facilement sur internet. Beaucoup sont sur Wikipédia. Souvent, je suis allé les récupérer à la main sur ce site <a href="http://www.mesfables.com/livre-1/01-la-cigale-et-la-fourmi.html">mes-fables.com</a>. </p>
+<p><em>Amélioration possible de cette étape : automatiser le processus avec un script navigateur.</em></p>
+<h3>Sélectionner</h3>
+<p>Pour cette étape, j’ai lu l’ensemble des textes récupéré et ai utilisé deux critères de sélection. </p>
+<ol><li><p>Est-ce que le texte déclenche une émotion chez moi ? est-ce que son message est toujours d’actualité ?</p></li><li><p>Est-ce que c’est un “à connaitre” ? est-ce que c’est une fable dont les <a href="https://fr.wikipedia.org/wiki/Fables_de_La_Fontaine#Vers_et_moralit%C3%A9s_les_plus_souvent_cit%C3%A9es">vers et la moralité sont les plus fréquemment citées</a> ? </p></li></ol>
+<p><em>Amélioration possible : appliquer ce processus aux 249 fables plutôt qu’à une pré-selection </em></p>
+<h3>Choisir l’ordre d’apparition des textes</h3>
+<p>Au fil de la lecture, j’ai tagué chaque fable avec des émojis. </p>
+<ul><li><p>⭐️ (incontournable)</p></li><li><p>❤️ (j’adore)</p></li><li><p>😂 (lol)</p></li><li><p>😵‍💫 (pas compris)</p></li><li><p>👍 (ok)</p></li></ul>
+<div class="captioned-image-container"><img src="images/30bd1049-7b4f-4759-abdf-f10493e36fba_2534x888.png"/><p style="text-align: center; font-style: italic; font-size: 0.8em;">Annotations des fables dans une feuille de calcul</p></div>
+<p>Mon premier critère de tri a été de mettre en premier les fables ⭐️ et ❤️. </p>
+<p>Le deuxième a été de mettre les plus courtes en premier, pour offrir des récompenses rapides au lecteur et lui donner envie d’aller plus loin dans la lecture. </p>
+<p>On peut voir cela comme un deuxième niveau d’application du <a href="https://fr.wikipedia.org/wiki/Principe_de_Pareto">principe de Pareto</a>. Le livre ambitionne de regrouper les 20% des fables qui apportent 80% de la “sagesse”. Les premiers 20% du livre tentent d’apporter eu aussi un maximum de valeur. </p>
+<p><em>Amélioration possible : avoir une évaluation plus fine que les trois cas (rien), </em>👍, ❤️. <br/></p>
+<h2>Créer les illustrations</h2>
+<p>Une fois la solution d’auto-édition choisie, le gros du projet consiste à générer les illustrations. </p>
+<p>Pour aller au plus simple, j’ai d’abord testé de donner directement le texte complet et en français de la fable à Midjourney, mais les résultats n’étaient pas brillants. </p>
+<p>En itérant, je suis finalement arrivé au processus suivant :</p>
+<div class="captioned-image-container"><img src="images/321610f1-f926-438e-9b04-73cf6147ef67_861x281.png"/><p style="text-align: center; font-style: italic; font-size: 0.8em;">Vue globale du processus de génération des illustrations</p></div>
+<h3>Traduire en anglais</h3>
+<p>GPT comprend le français mais saisi mieux l’anglais. Afin de l’aider, j’ai rédigé un script qui utilise l’API de <a href="https://www.deepl.com/translator">DeepL</a> pour traduire chaque fable. À ce stade que j’ai abandonné ma feuille de calcul pour basculer sur <a href="https://airtable.com/">Airtable</a> afin de simplifier l’accès aux informations dans les scripts.<br/></p>
+<p>Cette étape génère la colonne “Traduction” à partir de la colonne “Texte”.</p>
+<div class="captioned-image-container"><img src="images/8da25672-9552-44b1-aefc-df9d03f5355f_3024x920.png"/><p style="text-align: center; font-style: italic; font-size: 0.8em;">Aperçu de la table Airtable où les données relatives à chaques fables sont stockées</p></div>
+<p><em>Amélioration possible : mesurer la qualité des descriptions visuelles générées par ChatGPT avec ou sans prompt.</em></p>
+<p></p>
+<h3>Décrire une scène avec ChatGPT</h3>
+<p>Là, on arrive sur les parties épineuses. </p>
+<p>J’ai testé des dizaines de prompts pour demander à ChatGPT de décrire une fable en une image. Celui que j’ai retenu est le suivant.</p>
+<blockquote><p>You are an experienced illustrator. The goal is to create a prompt for a text to image generator. I will give you a tale. I want to depict the most representative scene of the tale. Answer using short sentences. Use less than 30 words. Focus on the subjects, the environment and the major event of the tale. <br/><br/>{la fable traduite en anglais}</p></blockquote>
+<p>Le prompt peut être analysé de la façon suivante : </p>
+<ul><li><p><em>You are an experienced illustrator</em> : le rôle à jouer</p></li><li><p><em>The goal is to create a prompt for a text to image generator</em> : objectif</p></li><li><p>I <em>want to depict the most representative scene of the tale</em> : dans les premières versions, ChatGPT avait tendance à résumer l’histoire et décrire plusieurs scènes. Évidemment, cela n’aide pas Midjourney à créer des images cohérentes. Ici, je lui demande de se concentrer sur une seule scène.</p></li></ul>
+<ul><li><p><em>Answer using short sentences. Use less than 30 words</em> : Les prompts ont tendance à être longs. Or, lorsque la description est faite de phrases à rallonge, Midjourney part facilement en vrille sur l’interprétation. Je préfère lui donner peu d’informations mais qu’il colle au prompt plutôt que de lui donner trop d’informations et qu’il ne tienne compte que de la moitié.</p></li><li><p><em>Focus on the subjects, the environment and the major event of the tale</em> : donner à Midjourney des indications sur les principaux éléments à représenter. Le décor, les personnages, l’action.</p><p></p></li></ul>
+<h3>Prendre en main Midjourney et calibrer le prompt</h3>
+<p>Midjourney est un programme qui permet de générer des images à partir de descriptions textuelles. Il se distingue des autres logiciels du même genre tels que StableDiffusion et Dall-E par sa tendance naturelle à générer des images esthétiques, ce qui est bien adapté à la création d’un livre illustré.</p>
+<p>En plus de la description visuelle, il est possible d’utiliser des paramètres pour guider la génération. </p>
+<p>Afin de me familiariser avec Midjourney, j’ai sélectionné trois fables (le chêne et le roseau, le rat des villes et le rat des champs, la cigale et la fourmi) et ai testé différentes variations de :</p>
+<ul><li><p>Style : <em>“cyanotype”, “contemporary illustration, bold colors, dynamic composition”, “<a href="https://cdn.discordapp.com/attachments/1089155086925705336/1089806385262370906/lx_An_oak_tree_and_reed_stand_on_a_windy_riverbank_tension_buil_142c4379-0766-48a0-93ec-91ef17e42df2.png">minimalist neo pop style</a>”, “<a href="https://cdn.discordapp.com/attachments/1089155086925705336/1089639875566903416/lx_An_oak_tree_and_reed_stand_on_a_windy_riverbank_tension_buil_9b23be8c-601e-4fcb-8d2c-3c0691a05d04.png">moebius</a>”, “<a href="https://cdn.discordapp.com/attachments/1089155086925705336/1089641314909442058/lx_An_oak_tree_and_reed_stand_on_a_windy_riverbank_tension_buil_a690ec99-5875-4115-bdaa-13e2154a200d.png">naive art</a>”, “<a href="https://cdn.discordapp.com/attachments/1089155086925705336/1089797825522585630/lx_An_oak_tree_and_reed_stand_on_a_windy_riverbank_tension_buil_95e8dee5-f391-4c4d-b13c-731be9218506.png">op art</a>”, “<a href="https://cdn.discordapp.com/attachments/1089155086925705336/1089799181973078046/lx_An_oak_tree_and_reed_stand_on_a_windy_riverbank_tension_buil_328d7f57-69a1-49b4-bd9c-c6f57215819b.png">zentangle</a>”, “iridescent”, “colorful geometric”, “Airbrush surrealism”, “Contrast of resilience, watercolor style with expressive brushstrokes”, “Y2K grunge grimy textures, chrome metallics, broken grids and amorphous shapes”, “Vintage computer graphics”…</em></p></li><li><p>Description</p></li><li><p>chaos : 0, 1000</p></li><li><p>stylize : 0, 100, 1000</p></li><li><p>graine aléatoire (seed)</p></li></ul>
+<div class="captioned-image-container"><img src="images/350b74bc-e969-4e2d-9d12-682e836533dd_4096x4096.jpeg"/><p style="text-align: center; font-style: italic; font-size: 0.8em;">Test de différents styles graphiques dans Midjourney</p></div>
+<p></p>
+<p>Rapidement, plusieurs problèmes/limitations sont apparues : </p>
+<ul><li><p>Explorer au hasard et à la main un problème à cinq dimensions n’est pas efficace. Même après y avoir passé plusieurs heures, il reste difficile de tirer des conclusions sur “est-ce que je vais dans la bonne direction avec ce jeu de paramètres”</p></li></ul>
+<ul><li><p>Lorsque le prompt décrit plusieurs animaux, le moteur tends à mélanger les deux. Par exemple, le prompt <em><a href="https://cdn.discordapp.com/attachments/1089155086925705336/1090970693698592879/lx_a_dog_and_a_rabbit_in_a_landscape_playing_hapiness_colorfull_0606586f-1bb7-46be-8d26-5e9a03b54b5d.png">“a dog and a rabbit in a landscape playing hapiness colorfull”</a> </em>génère un lapin avec une langue de chien, et un chien avec des oreilles de lapin… </p></li><li><p>Midjourney a du mal à représenter certains animaux. Lorsque l’on demande une pie, l’animal qu’il dessine présente parfois davantage les traits d’un corbeau. Lorsque l’on demande une belette, il esquisse une souris…</p></li><li><p>Le moteur tends à prendre ses liberté par rapport aux instructions. Il va globalement coller au prompt, mais n’intègre pas toujours tous les éléments. </p></li><li><p>Le images générées tendent à présenter de nombreuses inconsistences : un troisième bras, une jambe en moins, …</p></li></ul>
+<p></p>
+<p><em>Amélioration possible : </em></p>
+<ul><li><p><em>commencer par 1) explorer de façon libre et sur un temps délimité pour explorer les limites et les paramètres importants puis 2) explorer de façon méthodique</em></p></li><li><p><em>cette étape n’est pas nécessaire à la mise en place du walking skeleton : pour commencer, il serait tout à fait possible de générer des images sans préciser le style et avec les paramètres par défaut puis de revenir plus tard à cette étape pour l’améliorer</em></p></li><li><p><em>jouer avec le paramètre “quality” (qui n’influe pas sur la qualité de l’image comme je l’ai d’abord interprêté mais sur la “qualité du dessin”).</em></p></li></ul>
+<p></p>
+<h3>Automatiser la génération des images</h3>
+<p>L’un des objectifs de ce projet est d’automatiser au maximum chaque étape. Générer de longues séries d’images avec Midjourney est particulièrement fastidieux puisque pour chaque image, cela consiste à : </p>
+<ol><li><p>Entrer le prompt</p></li><li><p>Générer une grille de quatre propositions (~ 1min)</p></li><li><p>Agrandir une image (10s) ou relancer une grille de propositions (retour à l’étape 2)</p></li><li><p>Enregistrer l’image</p></li></ol>
+<p></p>
+<p>L’automatisation de cette étape présente ainsi deux intérêts : </p>
+<ul><li><p>Mettre à jour l’édition avec une nouvelle version de Midjourney devient simple. Il suffit de relancer le script de génération pour chaque fable.</p></li></ul>
+<ul><li><p>Explorer de façon méthodique un grand nombre de styles, de paramètres et de descriptions</p></li></ul>
+<p></p>
+<p>Malheureusement, il n’existe pas d’API officielle de Midjourney, et l’automatisation va à l’encontre de leurs <a href="https://docs.midjourney.com/docs/terms-of-service">conditions d’utilisation</a>. Cependant, il existe tout de même plusieurs façons d’automatiser le processus. </p>
+<ul><li><p>Utiliser une api non officielles : <a href="https://www.theinsaneapp.com/2023/05/midjourney-api.html">cet article</a> en référence plusieurs </p></li><li><p>Créer son propre bot Discord pour servir de proxy : il est ainsi possible d’interagir avec via son bot, qui lui interagit alors avec le bot de Midjourney. </p></li><li><p>Automatiser la souris et le clavier avec des outils comme <a href="https://pyautogui.readthedocs.io/en/latest/#">PyAutoGUI</a> ou son navigateur avec des outils comme <a href="https://pptr.dev/">Puppeteer</a>, <a href="https://www.selenium.dev/">Selenium</a> ou <a href="https://playwright.dev/python/">Playwright</a>.</p></li></ul>
+<p></p>
+<h4>Option 1 : Utiliser une api non officielles</h4>
+<p>Les API non officielles sont payantes. Or, j’ai déjà un abonnement à Midjourney et ne veux pas payer en double. Aussi, étant dans une démarche de construction, j’ai rapidement écarté ces options et ne les ai pas creusées davantage. </p>
+<p></p>
+<h4>Option 2 : Créer mon propre Bot Discord</h4>
+<p>C’est l’option qui m’a d’abord parue la plus séduisante. </p>
+<p>J’ai donc exploré cette piste et ai été agréablement surpris de voir à quel point il est simple de créer un bot Discord. La bibliothèque python <a href="https://github.com/Rapptz/discord.py">discord.py</a> est simple à prendre en main et il est rapide de coder ses premières interactions. </p>
+<p>Par contre, je n’ai pas réussi à faire communiquer mon bot avec le bot de Midjourney (pour être précis, je n’ai pas trouvé comment faire pour envoyer une “slash command” au bot de midjourney à partir de mon bot). J’ai bloqué toute une après-midi sur la question.</p>
+<p>En allant chercher de l’aide sur le serveur Discord de discord.py, j’ai vu que d’autres personnes rencontraient le même problème que moi. La réponse était toujours là même : <a href="https://discord.com/channels/336642139381301249/985299059441025044/threads/1075203228255395923">“les bots ne peuvent pas invoquer de slash commands”</a>.</p>
+<p>Essayons autre chose.</p>
+<p></p>
+<h4>Option 3 : L’automatisation navigateur</h4>
+<p>Les automatisations navigateur sont répandues dans le monde du développement logiciel où elles servent à vérifier le bon fonctionnement de l’application du point de vue de l’utilisateur. </p>
+<h5>Choisir une bibliothèque</h5>
+<p>En python, les deux principaux outils pour automatiser les interactions avec un navigateur sont <a href="https://pypi.org/project/selenium/">Selenium</a> et <a href="https://playwright.dev/python/">Playwright</a>.</p>
+<ul><li><p>Selenium existe depuis 2004, est open-source et bénéficie d’une large communauté d’utilisateurs. C’est un standard de l’industrie, à tel point que son interface WebDriver a été ajouté au recommandations de l’organisme de standardisation W3C en 2018 (<a href="https://www.w3.org/TR/webdriver1/">ref</a>).</p></li><li><p>Playwright lui est tout jeune. Il a été publié en 2020 par Microsoft et met en avant le fait d’être conçu pour le web moderne. Il supporte moins de navigateurs que Selenium, mais est plus performant.</p></li></ul>
+<p>Dans notre contexte, les deux outils sont parfaitement adapté. J’ai donc suivi mon envie et suis parti sur l’option Playwright.</p>
+<h5>Coder l’automation</h5>
+<p>Pour répondre aux besoins du projet, j’ai mis en place deux automations. La première génère une planche de suggestion pour chaque fable. La deuxième, décrite plus bas, agrandit les images sélectionnées via la méthode “upscale” fournie par Midjourney.</p>
+<p>Les automatisations de navigateur procèdent de la façon suivant : </p>
+<ol><li><p>Cibler un élément de la page</p></li><li><p>Interagir avec l’élément ciblé</p></li></ol>
+<p>Pour accélérer cette partie, j’ai me suis directement inspiré de <a href="https://github.com/passivebot/midjourney-automation-bot/blob/main/upscale_midjourney_downloader.py">ce script</a> en récupérant les fonctions dont j’avais besoin, au moment où j’en avais besoin.</p>
+<h3>Le pipeline de sélection</h3>
+<p>Les outils d'IA facilitent le processus de divergence et la génération d'options. Cependant, une fois les propositions générées, il reste encore à choisir celle que l’on veut utiliser, l’agrandir, la passer en 300 dpi (en vue de l’impression), puis à la placer dans le dossier assets du livre afin que l’image soit chargée dans le projet.</p>
+<p>Ce processus peut rapidement devenir chronophage et désordonné. Afin de l'automatiser et de le fluidifier, j'ai mis en place le pipeline suivant. A chaque fois, un script permet de passer d'une étape à la suivante et toutes les données intermédiaires sont mémorisées.</p>
+<div class="captioned-image-container"><img src="images/d2905cd3-aaf3-45b6-ba26-23108eba22b2_1571x741.png"/><p style="text-align: center; font-style: italic; font-size: 0.8em;"></p></div>
+<p>Prennons l’exemple de la fable “Le Renard et les Raisins”.</p>
+<ol><li><p>La planche de suggestion du job <code>1b197be7</code> est enregistrée dans le dossier <code>1_Grille/Le Renard et les Raisins/1b197be7.png</code></p></li><li><p>Un script python parcours de façon récursive les dossiers qui sont dans <code>1_Grille</code>, découpe l’image en quatre puis enregistre chaque morceau dans le dossier <code>2_Splits</code> en conservant le dossier intermédiaire qui indique le nom de la fable et en ajoutant le suffixe <code>U1</code>, <code>U2</code>, <code>U3</code> ou <code>U4</code> au nom de l’image pour indiquer sa position dans la grille initiale. </p></li><li><p>Dans le finder, j’utilise la preview avec la touche espace pour comparer les images puis renomme ma favorite en la préfixant par une étoile.</p></li><li><p>Un script python récupère toutes les images qui sont préfixées, les agrandit en entrant dans Discord la commande Midjourney <code>/show 1b197be7</code> puis en cliquant sur le bouton upscale correspondant au morceau. Par exemple, <code>U1</code>.</p></li><li><p>Un script python récupère les images qui ont été agrandies, les passe en 300 dpi, puis les copie dans le dossier ressources du livre.</p></li></ol>
+<p></p>
+<p><em>Amélioration possible : </em></p>
+<ul><li><p><em>upscaler et passer en 300 dpi de façon systématique permettrait de réduire le nombre d’étapes et de simplifier le processus. Passer une image en 300 dpi est quasiment instantané et le coût de l’upscale est négligeable en phase d’exploration.</em></p></li></ul>
+<p></p>
+<h2>Mettre en page le livre</h2>
+<p></p>
+<h4>Choisir un outil de mise en page</h4>
+<p>Toujours en ayant en tête de produire une solution la plus automatisée et “mise-à-jour-able” possible, j’ai d’abord essayer de trouver un outil qui permette de “générer” un livre à partir de code. </p>
+<p>Je n’ai pas trouvé de tels outils à proprement parler.</p>
+<p>Les outils <em>Markdown to PDF</em> se rapprochent de cette idée, mais derrière, les options de mise en page sont assez limitées ou “hacky”. </p>
+<p><a href="https://www.latex-project.org/">LaTeX</a> que j’ai utilisé pendant mes études réponds bien à cette envie d’automatisation. Avec LaTeX, le contenu est séparé de la mise en page. Il est donc possible de gérer chaque chose séparémment. Seulement, produire un joli style n’est pas aisé. L’outil s’adresse davantage aux chercheurs et aux scientifiques qu’aux designers et aux auteurs de livres pour enfants.</p>
+<p>Il vient ensuite les deux principales solutions du marché : <a href="https://www.adobe.com/fr/products/indesign.html">InDesign</a> et <a href="https://www.canva.com/">Canva</a> : </p>
+<ul><li><p>InDesign est un logiciel de mise en page dévelopé par Adobe et publié pour la première fois en 1999. C’est un standard de l’industrie de la mise en page, mais aussi un produit qui est complexe à aborder de prime abord. Son prix est assez élevé. De façon plus personnelle, c’est un produit que j’affectionne. Cela fait longtemps que je ne l’ai pas utilisé, mais j’ai beaucoup utilisé par le passé (comme pour ce portfolio réalisé en 2015).</p></li><li><p>Canva est un logiciel de conception graphique dont la première version a été publiée en 2008. Cet outil est né en réaction à InDesign avec la volonté de proposer un outil sans installation et simple d’utilisation. Sa popularité a explosée en 2019 et c’est une solution particulièrement adapté à la création de supports visuels en ligne.</p></li></ul>
+<p>Les deux outils me paraissent adapté au problème, mais je pense qu’InDesign offre d’avantage d’options d’automatisation. J’espère qu’apprendre à l’utiliser va vite revenir et Lulu propose justement des templates InDesign pour réaliser la maquette du livre. Alors go pour InDesign. </p>
+<p></p>
+<h4>Executer la mise en page</h4>
+<p>Pour mettre en page le livre, j’ai procédé de la façon suivante :</p>
+<ol><li><p>Récupérer le <a href="https://www.lulu.com/publishing-toolkit">template InDesign</a> proposé par Lulu</p></li><li><p>Mettre en page une fable représentative. En analysant les textes sélectionné, on note que les fables font en moyenne un peu plus de 31 lignes et que cela correspond aussi à la valeur médiane : la moitié des fables sélectionnées font 31 lignes ou moins. Idéalement, j’aurais aimé que pour chaque fable, le texte et l’image tienne dans une double page, ce qui aurait grandement facilité la mise en page. </p></li><li><p>Considérer mettre de côté tous les textes qui ne tiennent pas sur une page. Cela peut faire une édition agréable à lire. Mais cela implique de mettre de côté certaines de mes fables intéressantes comme Le Meunier, son Fils et l'Âne (83 lignes). Si je veux faire un recueil des “meilleures fables”, ce n’est pas une option.</p></li><li><p>Considérer de mettre les textes sur plusieurs colonnes. Mais étant parti sur du A5, introduire deux colonnes nécessite de descendre la taille de police à 6 pour que les vers tiennent sur une ligne. C’est trop petit.</p></li><li><p>Aller à la Fnac pour voir et toucher la mise en page d’autres livres. </p></li><li><p>Revenir sur InDesign</p></li><li><p><s>Tester différentes polices</s> (pas nécessaire pour le walking skeleton)</p></li><li><p>Extraire le gabarit </p></li><li><p>Dupliquer la double page, dupliquer, dupliquer … x60</p></li><li><p>Coller les titres </p></li><li><p>Coller les textes</p></li><li><p>Importer les images</p></li><li><p>Gérer les exceptions : le titres qui ne tiennent pas sur une ligne (coucou La Grenouille qui veut se faire aussi grosse que le Bœuf), les textes qui courent sur deux voir trois pages. </p></li><li><p>Ajuster les polices, les marges, la position de la numérotation, … les petits détails</p></li><li><p>Générer la couverture directement sur Lulu</p></li><li><p>OK, on est bon pour une première version !</p></li></ol>
+<div class="captioned-image-container"><img src="images/7d954b90-e7bc-4d84-9875-191e6180fbaa_3024x1902.png"/><p style="text-align: center; font-style: italic; font-size: 0.8em;">Le maquettage dans InDesign</p></div>
+<p></p>
+<h2>Finaliser la publication</h2>
+<p>Une fois la mise en page terminée, il ne reste plus qu’à finaliser la publication ! </p>
+<p>Les instructions fournies par la plateforme sont claires et je n’ai pas rencontré de problèmes particuliers à cet étape. </p>
+<p>Au niveau de la fixation des prix, il tout de même intéressant de noter que dans le cas d’une distribution globale (Amazon etc), la marge sur chaque vente est extrêmement faible. Ici, pour un livre vendu 19€90 sur Amazon, je touche 1€06. Dans le cas d’une vente directe ou via le shop de Lulu, la marge est par contre importante, autour de 9€ par vente.</p>
+<div class="captioned-image-container"><img src="images/cd2d2422-5806-460c-83fb-0c77d445a930_2842x1672.png"/><p style="text-align: center; font-style: italic; font-size: 0.8em;">La fixation du prix sur Lulu</p></div>
+<h2>Diffuser le livre</h2>
+<p>Pour la diffusion, j’ai prévu les actions suivantes : </p>
+<ol><li><p>Laisser trainer un exemplaire dans l’espace salon du Moho</p></li><li><p>Préparer 10 posts pour LinkedIn</p></li><li><p>En parler dans cet article de newsletter</p></li></ol>
+<h2>Conclusion</h2>
+<p>Le résultat n’est pas à la hauteur de mes espérance et j’y ai consacré deux fois plus de temps qu’initiallement prévu, mais je suis allé au bout ! </p>
+<p>J’ai beaucoup aimé travailler en mode hack et essayer d'utiliser la solution la plus simple et la plus directe pour répondre aux besoins. </p>
+<p>Techniquement, ce projet aura été l’occasion de balayer pas mal de technologies. Replonger dans python, tester Airtable, utiliser l’api DeepL, prototyper un bot Discord, découvrir Playwright, remettre les mains dans InDesign.</p>
+<h3>Aller plus loin</h3>
+<p>Pour aller plus loin, il est possible d’améliorer l’édition de la façon suivante : </p>
+<ul><li><p>indiquer les morales de chaque fable sous la forme de conseils activables, en une ligne. Les placer en sous titre ou dans un index placé en début ou en fin d’ouvrage. <em>Exemple pour Le Cochon, la Chèvre et le Mouton : Ne te torture pas l'esprit avec des problèmes qui échappent à ton influence.</em></p></li><li><p>ajouter des questions à méditer. <em>Exemple pour Le Renard et les Raisins : Dans quelles situations de votre vie avez-vous déjà rationalisé ou minimisé l'importance de quelque chose que vous désiriez, simplement parce que vous ne pouviez pas l'obtenir ou l'atteindre facilement ?</em></p></li><li><p>mettre à jour l'édition dans un autre style ou avec une prochaine version de Midjourney </p></li></ul>
+<p></p>
+<p>D’autre part, un autre d’angle à explorer est de réutiliser le processus mis en place pour créer d’autres ouvrages :</p>
+<ul><li><p>50 expressions populaires imagées : ceintures et bretelles, raconter des salades, …</p></li><li><p>un recueil de contes illustrés</p></li><li><p>un autre recueil de fables</p></li><li><p>un livre de concepts illustrés (10x, founder market fit, ...)</p></li><li><p>une version contemporaine des “Caractères” </p></li><li><p>une version illustrée et expliquée des “27 émotions” </p></li></ul>
+<div class="captioned-image-container"><img src="images/4ab8f67f-51cd-4cff-bd0c-151fb0c0f007_1024x1024.png"/><p style="text-align: center; font-style: italic; font-size: 0.8em;">Illustration de l’expression “ceintures et bretelles”. On est jamais trop prudent !</p></div>
+<p></p>
+<h3>Difficultés rencontrées</h3>
+<ul><li><p><strong>Rester concentré sur la mise en place du processus de bout en bout avant de chercher à améliorer les différentes étapes</strong>.  C’est dingue comme cette tentation est forte de rester des heures à améliorer une étape. Par exemple dans la recherche de style, j’ai eu beaucoup de mal à me dire “ok partons avec ça et je peaufinerais plus tard”. Si je n’avais pas dès le départ eu la ferme intention d’éviter ce type de “piège”, c’est vraiment quelque chose qui aurait pu empêcher le projet de se matérialiser. Au final, la qualité n’est pas au niveau que j’espérait, mais le projet est. Et si je veux y consacrer davantage de temps, il m’est posssible de l’améliorer.</p></li><li><p><strong>Définir le public visé</strong>. J’ai beaucoup hésité entre adresser l’éditions aux enfants, ou  à de jeunes adultes, ou à des fans de mangas, ou, ou, ou. Au final, j’ai pris l’option de l’adresser à de jeunes adultes. Mais ne pas avoir une idée claire de “à qui s’adresse l’ouvrage” m’a fait perdre beaucoup de temps en questions et interrogations lors de l’étape de la mise en page et la recherche du style.</p></li><li><p><strong>Aller au bout de l’itération quoi qu’il arrive</strong>. En avançant dans les expérimentations, j’ai rapidement compris que les illustrations auraient difficilement l’originalité et la qualité que j’espérait et que la mise en page n’allait pas non plus être au niveau ambitionné. Plusieurs fois je me suis demandé s’il ne vallait pas mieux que je passe directement à un autre projet.</p></li></ul>
+<h3>Leçon</h3>
+<p>On dit souvent que “<em>l’idée de vaut rien</em>” et que <em>“c’est l’exécution qui compte”</em>. Dans ce projet, je me suis rendu compte que, clairement, tant que tu n'as pas essayé de mettre en œuvre l’idée, tu n’as pas idée du nombre de problèmes et d’obstacles que tu vas rencontrer. Aussi, le nombre de décisions à prendre, et donc de chemins qui partent de l’idée pour arriver à une concrétisation, sont tellements nombreux, que l’on peut affirmer que tout se passe dans l’exécution.</p>
+<p></p>
+<p>Merci de m’avoir lu jusqu’ici ! </p>
+<p>Si vous avez aimé cette édition, n’hésitez pas à vous abonner ou à la partager autour de vous. </p>
+<p class="button-wrapper" data-attrs='{"url":"https://100produits.substack.com/subscribe?","text":"Subscribe now","action":null,"class":null}' data-component-name="ButtonCreateButton"><a class="button primary" href="https://100produits.substack.com/subscribe?"><span>Subscribe now</span></a></p>
+<p></p>
+<p>À très vite pour un nouveau projet !</p>
+<p>Alexandre</p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+    <footer>
+      <p>Published: <time datetime="2023-10-02T15:28:10.810000+00:00">
+        Lun 02 octobre 2023
+      </time></p>
+    </footer>
+  </article>
+    </main>
+  </body>
+</html>
