@@ -1,8 +1,13 @@
 import logging
+import os
+import sys
 
 from pelican.readers import MarkdownReader
 from pelican.settings import DEFAULT_CONFIG
-from pygments.formatters.html import HtmlFormatter
+
+sys.path.append(os.curdir)
+from pygments_formatter import HtmlFormatterWithCopyButton  # nopep8 (current dir needs to be added to path before)
+
 
 AUTHOR = 'Alexandre Petit'
 SITENAME = 'Alexandre Petit'
@@ -19,18 +24,6 @@ HOME, _ = MarkdownReader(DEFAULT_CONFIG.copy()).read("content/pages/home.md")
 LOG_FILTER = [(logging.WARN, 'Empty alt attribute for image %s in %s')]
 
 STATIC_PATHS = ['images']
-
-
-class HtmlFormatterWithCopyButton(HtmlFormatter):
-    def __init__(self, **options):
-        super().__init__(**options)
-
-    def _wrap_div(self, inner):
-        yield 0, ('<div' + (self.cssclass and f' class="{self.cssclass}"') + '>\n')
-        yield 0, '<button class="copy-button" onclick="copyToClipboard(this)">Copy code</button>'
-        yield from inner
-        yield 0, '</div>\n'
-
 
 MARKDOWN = {
     "extension_configs": {
