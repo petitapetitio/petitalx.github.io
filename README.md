@@ -26,7 +26,7 @@ cd _pelican
 make devserver
 ```
 
-> Attention, tout les commandes Make sont à lancer depuis le sous-dossier `_pelican`.
+> Attention, les commandes Make sont à lancer depuis le sous-dossier `_pelican`.
 
 
 Pour déployer le site, il suffit de lancer la commande suivante :
