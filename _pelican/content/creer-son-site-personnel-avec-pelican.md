@@ -1,6 +1,8 @@
-Title: Comment créer un site personnel avec Pelican (Python)
+---
+Title: Comment créer un site personnel en Python avec Pelican
 Date: 2024-07-27
-
+slug: quickstart-pelican
+---
 
 Hello ! 
 
