@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Alexandre Petit</title><link>https://petitalx.github.io/</link><description></description><lastBuildDate>Sat, 27 Jul 2024 00:00:00 +0200</lastBuildDate><item><title>Comment créer un site personnel avec Pelican (Python)</title><link>https://petitalx.github.io/comment-creer-un-site-personnel-avec-pelican-python.html</link><description>&lt;p&gt;Hello ! &lt;/p&gt;
+<rss version="2.0"><channel><title>Alexandre Petit</title><link>https://petitalx.github.io/</link><description></description><lastBuildDate>Sat, 27 Jul 2024 00:00:00 +0200</lastBuildDate><item><title>Comment créer un site personnel en Python avec Pelican</title><link>https://petitalx.github.io/quickstart-pelican.html</link><description>&lt;p&gt;Hello ! &lt;/p&gt;
 &lt;p&gt;Dans cet article, on va voir comment créer un site personnel :&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;avec le générateur de site statique Pelican (écrit en Python)&lt;/li&gt;
@@ -7,7 +7,7 @@
 &lt;li&gt;à partir de contenu Markdown&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Le résultat final ressemble à &lt;a href="http://petitalx.io/"&gt;ça&lt;/a&gt;. &lt;/p&gt;
-&lt;p&gt;&lt;em&gt;If you don't give a shit about&lt;/em&gt; le contexte et mon processus de …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alexandre Petit</dc:creator><pubDate>Sat, 27 Jul 2024 00:00:00 +0200</pubDate><guid isPermaLink="false">tag:petitalx.github.io,2024-07-27:/comment-creer-un-site-personnel-avec-pelican-python.html</guid><category>misc</category></item><item><title>13 Enseignements du DevOps</title><link>https://petitalx.github.io/13-enseignements-du-devops.html</link><description>&lt;p&gt;Hello ! &lt;/p&gt;
+&lt;p&gt;&lt;em&gt;If you don't give a shit about&lt;/em&gt; le contexte et mon processus de …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alexandre Petit</dc:creator><pubDate>Sat, 27 Jul 2024 00:00:00 +0200</pubDate><guid isPermaLink="false">tag:petitalx.github.io,2024-07-27:/quickstart-pelican.html</guid><category>misc</category></item><item><title>13 Enseignements du DevOps</title><link>https://petitalx.github.io/13-enseignements-du-devops.html</link><description>&lt;p&gt;Hello ! &lt;/p&gt;
 &lt;p&gt;Ces derniers mois, j'ai beaucoup lu sur le DevOps. &lt;/p&gt;
 &lt;p&gt;Dans l'&lt;a href="https://100produits.substack.com/p/devops-101"&gt;édition précédente&lt;/a&gt;, nous avons approché une outline de la discipline formée par les grands principes et techniques qui la composent. &lt;/p&gt;
 &lt;p&gt;Dans cette édition, j'ai regroupé les réalisations que j'ai eues et les concepts qui m'ont le plus marqué …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alexandre Petit</dc:creator><pubDate>Tue, 21 May 2024 06:12:57 +0000</pubDate><guid isPermaLink="false">tag:petitalx.github.io,2024-05-21:/13-enseignements-du-devops.html</guid><category>misc</category></item><item><title>DevOps 101</title><link>https://petitalx.github.io/devops-101.html</link><description>&lt;p&gt;Hello ! &lt;/p&gt;
