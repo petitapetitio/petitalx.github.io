@@ -2,3 +2,4 @@ pelican[markdown]
 html2text
 requests
 beautifulsoup4
+black
