@@ -7,7 +7,9 @@ from pelican.settings import DEFAULT_CONFIG
 
 sys.path.append(os.curdir)
 from pygments_formatter import HtmlFormatterWithCopyButton  # nopep8 (current dir needs to be added to path before)
+from plugins import readtime  # nopep8 (current dir needs to be added to path before)
 
+PLUGINS = [readtime]
 
 AUTHOR = 'Alexandre Petit'
 SITENAME = 'Alexandre Petit'
