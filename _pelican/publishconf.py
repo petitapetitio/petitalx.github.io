@@ -9,4 +9,3 @@ SITEURL = "https://petitalx.github.io"
 RELATIVE_URLS = False
 
 # DISQUS_SITENAME = ""
-GOOGLE_ANALYTICS = "G-4M6L1RW9VR"
