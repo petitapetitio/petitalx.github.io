@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Alexandre Petit</title><link>https://petitalx.github.io/</link><description></description><lastBuildDate>Sat, 27 Jul 2024 00:00:00 +0200</lastBuildDate><item><title>Comment créer un site personnel en Python avec Pelican</title><link>https://petitalx.github.io/quickstart-pelican.html</link><description>&lt;p&gt;Hello ! &lt;/p&gt;
+<rss version="2.0"><channel><title>Alexandre Petit</title><link>https://petitalx.github.io/</link><description></description><lastBuildDate>Thu, 05 Sep 2024 00:00:00 +0200</lastBuildDate><item><title>Une retraite de méditation, sept leçons</title><link>https://petitalx.github.io/une-retraite-de-meditation-sept-lecons.html</link><description>&lt;p&gt;Cette année, j'ai lancé plusieurs expérimentations pour gagner en clarté mentale
+- écrire un journal
+- échanger régulièrement avec un psychologue
+- digérer les connaissances auxquelles je suis exposées dans mon second cerveau
+- écrire des articles comme celui-ci
+- faire des trecks 
+- et méditer&lt;/p&gt;
+&lt;p&gt;Début Juillet. &lt;/p&gt;
+&lt;p&gt;Cela fait 8 semaines que je médite 5 …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alexandre Petit</dc:creator><pubDate>Thu, 05 Sep 2024 00:00:00 +0200</pubDate><guid isPermaLink="false">tag:petitalx.github.io,2024-09-05:/une-retraite-de-meditation-sept-lecons.html</guid><category>misc</category></item><item><title>Comment créer un site personnel en Python avec Pelican</title><link>https://petitalx.github.io/quickstart-pelican.html</link><description>&lt;p&gt;Hello ! &lt;/p&gt;
 &lt;p&gt;Dans cet article, on va voir comment créer un site personnel :&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;avec le générateur de site statique Pelican (écrit en Python)&lt;/li&gt;

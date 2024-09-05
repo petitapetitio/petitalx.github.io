@@ -1,5 +1,140 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Alexandre Petit</title><link href="https://petitalx.github.io/" rel="alternate"></link><link href="https://petitalx.github.io/feeds/all.atom.xml" rel="self"></link><id>https://petitalx.github.io/</id><updated>2024-07-27T00:00:00+02:00</updated><entry><title>Comment créer un site personnel en Python avec Pelican</title><link href="https://petitalx.github.io/quickstart-pelican.html" rel="alternate"></link><published>2024-07-27T00:00:00+02:00</published><updated>2024-07-27T00:00:00+02:00</updated><author><name>Alexandre Petit</name></author><id>tag:petitalx.github.io,2024-07-27:/quickstart-pelican.html</id><summary type="html">&lt;p&gt;Hello ! &lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Alexandre Petit</title><link href="https://petitalx.github.io/" rel="alternate"></link><link href="https://petitalx.github.io/feeds/all.atom.xml" rel="self"></link><id>https://petitalx.github.io/</id><updated>2024-09-05T00:00:00+02:00</updated><entry><title>Une retraite de méditation, sept leçons</title><link href="https://petitalx.github.io/une-retraite-de-meditation-sept-lecons.html" rel="alternate"></link><published>2024-09-05T00:00:00+02:00</published><updated>2024-09-05T00:00:00+02:00</updated><author><name>Alexandre Petit</name></author><id>tag:petitalx.github.io,2024-09-05:/une-retraite-de-meditation-sept-lecons.html</id><summary type="html">&lt;p&gt;Cette année, j'ai lancé plusieurs expérimentations pour gagner en clarté mentale
+- écrire un journal
+- échanger régulièrement avec un psychologue
+- digérer les connaissances auxquelles je suis exposées dans mon second cerveau
+- écrire des articles comme celui-ci
+- faire des trecks 
+- et méditer&lt;/p&gt;
+&lt;p&gt;Début Juillet. &lt;/p&gt;
+&lt;p&gt;Cela fait 8 semaines que je médite 5 …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Cette année, j'ai lancé plusieurs expérimentations pour gagner en clarté mentale
+- écrire un journal
+- échanger régulièrement avec un psychologue
+- digérer les connaissances auxquelles je suis exposées dans mon second cerveau
+- écrire des articles comme celui-ci
+- faire des trecks 
+- et méditer&lt;/p&gt;
+&lt;p&gt;Début Juillet. &lt;/p&gt;
+&lt;p&gt;Cela fait 8 semaines que je médite 5 à 10 minutes par jour. Je lance un chrono. Je ferme les yeux, et je concentre mon attention sur ma respiration ou sur les sensations de mon corps. Mais je ne sais pas vraiment où je vais. &lt;/p&gt;
+&lt;p&gt;C'est alors que je reçois un e-mail qui fait la promotion d'Atomic Meditation.&lt;/p&gt;
+&lt;p&gt;Atomic Meditation est un programme mis en avant par Eliott (Atomic) et proposé par Maxime Gréau. Le programme propose un volet formation et un volet coaching. Il tombe à pic. Je fais déjà confiance à Eliott. Je souhaite m'investir davantage dans la communauté Atomic. Je décide donc de rejoindre le Club Samatha.&lt;/p&gt;
+&lt;p&gt;Maxime propose alors une rencontre physique lors d'une retraite de méditation. C'est à deux pas de chez moi. C'est pile pendant mes vacances. Et je n'ai rien de prévu à ces dates. &lt;/p&gt;
+&lt;p&gt;Let's go !&lt;/p&gt;
+&lt;h2&gt;Le cadre&lt;/h2&gt;
+&lt;p&gt;&lt;img alt="img.png" src="images/retraite-vajrad.png"&gt;&lt;/p&gt;
+&lt;p&gt;Vajradhara-Ling est un centre bouddhiste installé au coeur du Pays d'Auge, en Normandie. Il a été inauguré en 1987, est géré par Lama Gyourmé. Il est composé d'un temple, un stupa, d'un moulin à prière, un bassin, un grand parc, et peut hébergé jusqu'à 120 personnes en pension complète.&lt;/p&gt;
+&lt;p&gt;L'organisateur de la retraite est Pierre Bourges. Il a une formation de psychologue, est spécialisé dans la pédagogie, et est passionné par les neurosciences et le bouddhisme Thibétain. C'est une personne remarquable est très intéressante. &lt;/p&gt;
+&lt;p&gt;Cette édition a été marquée par la présence de Phakyab Rinpoche. Phakyab est né en 1966 et est issu d'une famille de nomades Thibétaine. Son enfance est marquée par l'immensité de l'Hymalaya et une vie minimaliste dans une nature abondante. En 2003, il rejoint New York après avoir été torturé dans son Pays. Il y est hospitalisé pour une gangrene à la cheville. Impressionné par l'organisation et la technologie américaine, il est convaincu que la médecine occidentale pourra le guérir. Cependant, les tentatives de soin échouent et les médecins se replient sur la solution de dernier recours : l'amputation. Il consulte alors le Dalaï lama qui lui donne comme instruction de se soigner avec ses ressources intérieures. Il va alors appliquer les pratiques de méditation auxquelles il a été entraîné plus jeune 12 heures par jour pendant 3 ans. Lentement, sa circulation sanguine va revenir dans son pied, ses cartilages vont se reconstituer, et il va guérir. &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Attention : la conclusion de cette histoire est que n'est pas que la médecine occidentale et la méditation sont deux formes de soin qui se complètent. Il ne s'agit pas de choisir entre l'une ou l'autre. Phakyab décourage les personnes qui souhaitent arrêter leurs traitements pour se soigner uniquement par la méditation. Il rappelle qu'il a plus de 50 000 heures de pratique à son actif. &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Maxime Gréau est coach et accompagne les gens à être heureux dans leur vie. C'est le fondateur du Club Samatha que j'ai rejoins début juillet. Il organise des méditations guidées formidables, et c'est grâce à lui que je suis ici cette semaine.&lt;/p&gt;
+&lt;p&gt;Le temple est tenu par Lama Gyourmé et Lama Pema qui organisent régulièrement des rituels. Deux résidents vivent ici toute l'année où ils sont hébergés et nourris en échange de services. Et ils sont soutenus par une équipe de bénévoles chaleureuse, dynamique et souriante. &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Remarque : Le titre de lama est attribué aux personnes qui enseignent le bouddhisme Thibétain / qui sont spirituellement avancées. Le titre est en général décerné par d'autres lamas.&lt;/em&gt; &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Enfin, côté participants, nous étions ~60 personnes issues de toute la France, de Belgique, dans une moyenne d'age de 50 ans (😅). &lt;/p&gt;
+&lt;p&gt;Lorsque je suis arrivé sur le site, j'ai senti une vague d'appréhension monter :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;est-ce que je vais aimer ?&lt;/li&gt;
+&lt;li&gt;est-ce que je vais connecter avec les personnes qui sont sur place ?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;La retraite&lt;/h2&gt;
+&lt;h3&gt;Une semaine bien remplie&lt;/h3&gt;
+&lt;p&gt;Je suis arrivé le samedi 10 août et reparti le dimanche 18 août. &lt;/p&gt;
+&lt;p&gt;Le programme de la retraite était structuré autour la pratique de Samatha et de Samatha Healing. &lt;/p&gt;
+&lt;p&gt;Samatha est la méditation de la concentration, du calme mental et de la tranquillité. La concentration est une compétence clé dans la vie de tous les jours. Aussi, dans le cadre de la méditation, développer sa capacité de concentration est la base. C'est un pré-requis pour les pratiques plus avancées. &lt;/p&gt;
+&lt;p&gt;Samatha Healing est une méditation de soin qui repose sur de la visualisation. C'est l'une des pratique qui a aidé Phakyab à se soigner, et c'est une technique plus avancée. &lt;/p&gt;
+&lt;p&gt;Pendants une semaine, ma journée type était la suivante : 
+- &lt;code&gt;06h15&lt;/code&gt; : levé, douche, étirements
+- &lt;code&gt;07h00&lt;/code&gt; : session avec Pierre
+- &lt;code&gt;08h00&lt;/code&gt; : petit déjeuner (café, muesli)
+- &lt;code&gt;09h00&lt;/code&gt; : enseignements de Phakyab
+- &lt;code&gt;10h30&lt;/code&gt; : pause 
+- &lt;code&gt;11h00&lt;/code&gt; : session avec Pierre ou Phakyab
+- &lt;code&gt;12h30&lt;/code&gt; : déjeuner
+- &lt;code&gt;14h00&lt;/code&gt; : session avec Pierre ou Phakyab
+- &lt;code&gt;15h30&lt;/code&gt; : pause
+- &lt;code&gt;16h00&lt;/code&gt; : session avec Pierre ou Phakyab
+- &lt;code&gt;17h30&lt;/code&gt; : pause
+- &lt;code&gt;18h00&lt;/code&gt; : mise au propre de mes notes
+- &lt;code&gt;19h30&lt;/code&gt; : dîner
+- &lt;code&gt;20h30&lt;/code&gt; : marche, clarification de mes notes, méditation, lecture
+- &lt;code&gt;22h30&lt;/code&gt; : dodo&lt;/p&gt;
+&lt;p&gt;&lt;img alt="img" src="images/retraite-session-temple.png"&gt;
+&lt;em&gt;Les sessions avaient lieu dans le temple. Elles alternaient théorie et pratique.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Lors des pauses, j'allais soit faire une sieste, soit écrire, soit m'étirer, soit méditer.&lt;/p&gt;
+&lt;p&gt;Nous avons été exposés à beaucoup d'informations. Prendre des notes sur mon téléphone puis les distiller/compléter le soir a été un élément clé pour m'aider à assimiler le contenu de la semaine. &lt;/p&gt;
+&lt;p&gt;&lt;img alt="img" src="images/retraite-notes.png"&gt;
+&lt;em&gt;Un aperçu de la liste des fiches que j'ai créées (à gauche) et de l'index que j'ai assemblé (à droite).&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;En plus d'être un shoot de connaissances sur la méditation, le bouddhisme et la spiritualité, cette semaine a aussi été une expérience sociale. &lt;/p&gt;
+&lt;h3&gt;Déjeuner avec des inconnus&lt;/h3&gt;
+&lt;p&gt;Les repas étaient gérés par les bénévoles du lieu et étaient organisés à heure fixe. Ils étaient végétariens, très bons, et se tenaient dans le réfectoire où étaient allongées de grandes tablées.&lt;/p&gt;
+&lt;p&gt;Les premiers jours, je m'asseyais à une table où je ne connaissais personne. Les échanges naissaient naturellement. Et lorsque je me levais, 5 personnes étaient passées du statut de "inconnu que je ne sais pas trop où ranger" à "personne sympa dont je connais le prénom et avec qui j'ai connecté". &lt;/p&gt;
+&lt;p&gt;J'ai parlé avec Elisabeth, Kassie, Warren, Bettie, Magda, Amandine, Elise (psy), Elise (reiki), Maxime, Daniel, Jessica, Denis, Audrey, Sandrine (grenoble), Sandrine (physicienne), Sarah, Marie-Laure (samatha), Marie-Laure (orga), Joëlle, Ludovic, Phakyab, Micka, Laure, Magda. &lt;/p&gt;
+&lt;p&gt;&lt;img alt="img" src="images/retraite-personnes.jpeg"&gt;
+&lt;em&gt;Photo de groupe prise le jeudi avec les participants de la retraite&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Au début de la semaine, j'étais mal à l'aise dans les situations sociales. Je labellisais beaucoup - et me sentais jugé en retour. Je sentais ma tension monter au moment des breaks. &lt;/p&gt;
+&lt;p&gt;À la fin de la semaine, j'étais à l'aise avec tout le groupe. Je me sentais calme.&lt;/p&gt;
+&lt;p&gt;Et ce calme a été renforcé par l'installation du silence.&lt;/p&gt;
+&lt;h4&gt;Une expérience du silence&lt;/h4&gt;
+&lt;p&gt;Mardi matin, Pierre a instauré le silence.&lt;/p&gt;
+&lt;p&gt;Avec les exceptions suivantes : 
+- Si vous avez quelque chose d'important à dire à quelqu'un, vous pouvez, mais uniquement sur le parking. L'idée est de lui faire signe et de vous écarter.
+- Vous pouvez parler pendants les sessions de formation. Pour poser des questions par exemple.&lt;/p&gt;
+&lt;p&gt;Au départ, j'étais décidé à l'appliquer sans concession. &lt;/p&gt;
+&lt;p&gt;Mais rapidement, j'ai lâché prise. &lt;/p&gt;
+&lt;p&gt;En fait, beaucoup de personnes ne jouaient pas le jeu. 
+Parfois parce qu'ils n'avaient pas envie et n'étaient pas venu pour cela. 
+Parfois parce que le silence les mettait dans l'inconfort.
+Parfois un peu des deux.&lt;/p&gt;
+&lt;p&gt;Aussi j'ai abandonné l'idée de faire l'expérience de 4 jours de silence en continu.
+Ce n'était pas du pur silence donc, mais cela a quand même été une expérience particulière.
+Le silence était globalement respecté au moment des repas. &lt;/p&gt;
+&lt;p&gt;L'instauration du silence a eu des effets amusants : 
+- le fait que la parole soit '"autorisée" seulement pendant les cours a entraîné une hausse de la participation
+- le parking c'est rapidement transformé en salon de discussion
+- il arrivait qu'une question à poser à Maxime ou à Elise me vienne en tête pendant les repas. Au lieu de la poser, je me demandais alors "pourquoi" cette question ? Quelle est mon intention derrière cette question ? Très souvent, la question n'avait pas grand intérêt. 
+- ne pas parler est un obstacle à faire connaissance (en général). Par effet de simple exposition, le groupe devient familier. Mais je n'ai plus fait de rencontres après l'instauration du silence.
+- le silence donne lieu à des situations amusantes où l'on communique avec des signes - sans forcément parvenir à délivrer le message&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Remarque : je dis "en général" car après avoir écouté une histoire d'Elise, j'ai compris que certaines pratiques de danse comme le Mind Body Centering permettent de connecter avec l'intimité d'une personne uniquement avec langage du corps, sans parole.&lt;/em&gt; &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Au début, le fait de ne pas parler en présence d'autres amène de drôles de questions : 
+- que faire de son regard pendant les repas ? 
+- s'assoir face à face ou en quinconce ? &lt;/p&gt;
+&lt;p&gt;Quoi qu'il en soit, une fois habitué à moins parler et à être en présence d'autres personnes dans le silence, une forme de calme d'installe. &lt;/p&gt;
+&lt;p&gt;Un calme propice à la méditation.&lt;/p&gt;
+&lt;h3&gt;Les chants méditatifs&lt;/h3&gt;
+&lt;p&gt;Les chants méditatifs ont été ma plus grande surprise. &lt;/p&gt;
+&lt;p&gt;Le premier atelier de la retraite était une pratique de Tchenrezi. Et j'ai détesté : 
+- j'étais au fond de la salle
+- je n'avais pas le texte
+- c'était trop religieux pour moi&lt;/p&gt;
+&lt;p&gt;Je me suis demandé ce que je faisais ici. &lt;/p&gt;
+&lt;p&gt;Puis il y a eu cette session sur Chine-Lakthong. Cette fois-ci : 
+- j'étais dans les premiers rangs, entouré de participants
+- une personne a partagé son texte avec moi
+- je suis passé outre la forme religieuse&lt;/p&gt;
+&lt;p&gt;Et j'ai pris une claque. &lt;/p&gt;
+&lt;p&gt;La pratique de Chine-Lakthong alterne chant en Thibétain et méditation libre par blocs de 10 minutes et pendant une heure. Pratiquer avec un lama et les résidants créent une expérience unique. Les moines Thibétains ont une technique de chant particulière. Leur voix résonne. Et les résidents donnent de la profondeur à la pratique en ajoutant des tambours et des cloches.&lt;/p&gt;
+&lt;p&gt;Chanter plonge dans un état d'apaisement propice à la méditation. Je ressens du bien être à méditer lorsque mon mental ne cherche pas à s'échapper. Et l'alternance entre chant et méditation est absorbante&lt;/p&gt;
+&lt;p&gt;Aussi, chanter à côté de quelqu'un crée une bulle où tu connectes avec la personne. &lt;/p&gt;
+&lt;p&gt;La session était en fin de journée. C'est une pratique éprouvante en attention. Pourtant, en sortant de la session, j'étais super excité. Comme si la pratique avait réactivé la circulation de mes émotions. Elles circulaient à présent librement dans mon corps. Par torrents. C'était des émotions positives, agréables. Et en même temps cela m'a désarçonné. C'était presque fatiguant. &lt;/p&gt;
+&lt;p&gt;C'est l'activité qui m'a le plus marquée de la semaine.&lt;/p&gt;
+&lt;h3&gt;Conclusion&lt;/h3&gt;
+&lt;p&gt;C'était une semaine hors du temps. &lt;/p&gt;
+&lt;p&gt;Chaque jour, je me suis senti reconnaissant de la chance de vivre cette expérience. &lt;/p&gt;
+&lt;p&gt;Voici 7 leçons que je retiens de cette retraite : 
+1. &lt;strong&gt;Atteindre l'éveil (la conscience de soi) est la meilleure chose que tu peux faire pour aider les autres.&lt;/strong&gt; Nous avons tendance à vouloir nettoyer la neige qui est sur le toit du voisin avant de balayer devant notre porte. Or, il y a un risque d'erreur important à chercher à aider les autres avant d'avoir géré son cas. Aide-toi avant de chercher à aider les autres. Atteindre l'éveil va t'aider à faire face à tes problèmes. Résoudre ses problèmes permet ensuite d'aider les autres à résoudre le même problème. 
+2. &lt;strong&gt;Samatha est la base de la méditation.&lt;/strong&gt; Samatha permet de développer sa capacité de concentration et de vider son esprit pour en faire un lac calme et silencieux. Elle est un pré-requis aux pratiques de méditation plus avancées. Lorsque tu parviens aux stades 7, 8, 9, elle a en elle même un impact immense sur ton quotidien.
+3. &lt;strong&gt;Commencer avec de courtes durées&lt;/strong&gt; : Il est préférable de débuter la méditation avec des entrainements courts mais régulier. Lors des longues sessions, tu fatigues et risques d'installer des habitudes qui seront difficiles à défaire ensuite.
+4. &lt;strong&gt;Limiter les takeways à 7 points&lt;/strong&gt; : Notre mémoire à long terme est presque infinie, mais notre mémoire à court terme est limitée à sept emplacements. Lorsqu'on essaie d'embarquer davantage d'éléments, la mémoire à court terme sature et on oublie tout. 
+5. &lt;strong&gt;Les religions sont des véhicules.&lt;/strong&gt; Les religions encapsulent des connaissances et des éléments de sagesse sous forme d’histoires et de pratiques. Ces histoires facilitent le partage et la mémorisation. Le risque ici est de s’attacher à la forme plutôt qu'au fond et de tomber dans une forme de cargo cult. Ou encore, que la forme prenne de plus en plus de place et finisse par diluer la substance (ce que Bruce Lee appelait &lt;em&gt;The classical mess&lt;/em&gt; dans le cas des écoles de &lt;em&gt;Kung-fu&lt;/em&gt;).
+6. &lt;strong&gt;Ta responsabilité actuelle porte sur tes actions à venir.&lt;/strong&gt; Tu n'as aucune responsabilité vis-à-vis de tes actions passées. Tu n'as à culpabiliser. C'était ton karma. Mais tu as une responsabilité absolue quant à tes actions à venir.
+7. &lt;strong&gt;C'est bien pour toi, et c'est maintenant.&lt;/strong&gt; Lorsque tu as accès à ces connaissances, c'est bien pour toi, et c'est maintenant. Les Thibétains ont une forte culture du secret, et la probabilité de trouver une personne qui possède à la fois la connaissance et la pratique est faible - même à l'époque d'internet. J'ai trouvé chez Pierre et Maxime des personnes de confiance pour m'accompagner dans cette pratique. &lt;/p&gt;
+&lt;p&gt;Aussi, je sors de cette semaine avec une résolution ferme : &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Pratiquer Samatha (Shi-né) de façon assidue dans jusqu'à réaliser le stade 9.&lt;/strong&gt;&lt;/p&gt;</content><category term="misc"></category></entry><entry><title>Comment créer un site personnel en Python avec Pelican</title><link href="https://petitalx.github.io/quickstart-pelican.html" rel="alternate"></link><published>2024-07-27T00:00:00+02:00</published><updated>2024-07-27T00:00:00+02:00</updated><author><name>Alexandre Petit</name></author><id>tag:petitalx.github.io,2024-07-27:/quickstart-pelican.html</id><summary type="html">&lt;p&gt;Hello ! &lt;/p&gt;
 &lt;p&gt;Dans cet article, on va voir comment créer un site personnel :&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;avec le générateur de site statique Pelican (écrit en Python)&lt;/li&gt;

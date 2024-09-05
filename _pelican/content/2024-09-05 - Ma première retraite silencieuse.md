@@ -1,7 +1,7 @@
 ---
 date: 2024-09-05
 title: Une retraite de méditation, sept leçons
-subtitle: 
+slug: retraite
 ---
 
 
