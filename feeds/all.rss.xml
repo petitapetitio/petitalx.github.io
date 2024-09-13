@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Alexandre Petit</title><link>https://petitalx.github.io/</link><description></description><lastBuildDate>Thu, 05 Sep 2024 00:00:00 +0200</lastBuildDate><item><title>Une retraite de méditation, sept leçons</title><link>https://petitalx.github.io/retraite.html</link><description>&lt;p&gt;Cette année, j'ai lancé plusieurs expérimentations pour gagner en clarté mentale&lt;/p&gt;
+<rss version="2.0"><channel><title>Alexandre Petit</title><link>https://petitalx.github.io/</link><description></description><lastBuildDate>Thu, 05 Sep 2024 00:00:00 +0200</lastBuildDate><item><title>Une retraite de méditation, sept leçons</title><link>https://petitalx.github.io/retraite.html</link><description>&lt;p&gt;Cette année, j'ai lancé plusieurs expérimentations pour gagner en clarté mentale :&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;écrire un journal&lt;/li&gt;
+&lt;li&gt;digérer les informations que je consomme dans mon second cerveau&lt;/li&gt;
 &lt;li&gt;échanger régulièrement avec un psychologue&lt;/li&gt;
-&lt;li&gt;digérer les connaissances auxquelles je suis exposées dans mon second cerveau&lt;/li&gt;
-&lt;li&gt;écrire des articles comme celui-ci&lt;/li&gt;
+&lt;li&gt;écrire des articles (comme celui-ci)&lt;/li&gt;
+&lt;li&gt;écrire un journal&lt;/li&gt;
 &lt;li&gt;faire des trecks &lt;/li&gt;
 &lt;li&gt;et méditer&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Début Juillet : cela fait 8 semaines que je médite 5 …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alexandre Petit</dc:creator><pubDate>Thu, 05 Sep 2024 00:00:00 +0200</pubDate><guid isPermaLink="false">tag:petitalx.github.io,2024-09-05:/retraite.html</guid><category>misc</category></item><item><title>Comment créer un site personnel en Python avec Pelican</title><link>https://petitalx.github.io/quickstart-pelican.html</link><description>&lt;p&gt;Hello ! &lt;/p&gt;
+&lt;p&gt;Début Juillet : cela fait 8 semaines que je médite 5 à …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alexandre Petit</dc:creator><pubDate>Thu, 05 Sep 2024 00:00:00 +0200</pubDate><guid isPermaLink="false">tag:petitalx.github.io,2024-09-05:/retraite.html</guid><category>misc</category></item><item><title>Comment créer un site personnel en Python avec Pelican</title><link>https://petitalx.github.io/quickstart-pelican.html</link><description>&lt;p&gt;Hello ! &lt;/p&gt;
 &lt;p&gt;Dans cet article, on va voir comment créer un site personnel :&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;avec le générateur de site statique Pelican (écrit en Python)&lt;/li&gt;

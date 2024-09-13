@@ -5,12 +5,12 @@ slug: retraite
 ---
 
 
-Cette année, j'ai lancé plusieurs expérimentations pour gagner en clarté mentale
+Cette année, j'ai lancé plusieurs expérimentations pour gagner en clarté mentale :
 
-- écrire un journal
+- digérer les informations que je consomme dans mon second cerveau
 - échanger régulièrement avec un psychologue
-- digérer les connaissances auxquelles je suis exposées dans mon second cerveau
-- écrire des articles comme celui-ci
+- écrire des articles (comme celui-ci)
+- écrire un journal
 - faire des trecks 
 - et méditer
 
@@ -18,8 +18,9 @@ Début Juillet : cela fait 8 semaines que je médite 5 à 10 minutes par jour. J
 
 C'est alors que je reçois un e-mail qui fait la promotion d'Atomic Meditation. Atomic Meditation est un programme mis en avant par Eliott (Atomic) et proposé par Maxime Gréau. Le programme propose un volet formation et un volet coaching. Il tombe à pic. Je fais déjà confiance à Eliott. Je souhaite m'investir davantage dans la communauté Atomic. Je décide donc de rejoindre le Club Samatha.
 
-Maxime propose une rencontre physique lors d'une retraite de méditation. C'est à deux pas de chez moi. C'est pile pendant mes vacances. Et je n'ai rien de prévu à ces dates. Let's go !
+Maxime propose une rencontre physique lors d'une retraite de méditation. C'est à deux pas de chez moi. C'est pile pendant mes vacances. Et je n'ai rien de prévu à ces dates. 
 
+Let's go !
 
 
 ## Le cadre
