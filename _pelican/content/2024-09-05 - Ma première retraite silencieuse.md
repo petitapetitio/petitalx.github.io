@@ -14,23 +14,11 @@ Cette année, j'ai lancé plusieurs expérimentations pour gagner en clarté men
 - faire des trecks 
 - et méditer
 
+Début Juillet : cela fait 8 semaines que je médite 5 à 10 minutes par jour. Je lance un chrono. Je ferme les yeux. Je concentre mon attention sur ma respiration, les sensations de mon corps. Mais je ne sais pas vraiment où je vais. 
 
-Début Juillet. 
+C'est alors que je reçois un e-mail qui fait la promotion d'Atomic Meditation. Atomic Meditation est un programme mis en avant par Eliott (Atomic) et proposé par Maxime Gréau. Le programme propose un volet formation et un volet coaching. Il tombe à pic. Je fais déjà confiance à Eliott. Je souhaite m'investir davantage dans la communauté Atomic. Je décide donc de rejoindre le Club Samatha.
 
-
-Cela fait 8 semaines que je médite 5 à 10 minutes par jour. Je lance un chrono. Je ferme les yeux, et je concentre mon attention sur ma respiration ou sur les sensations de mon corps. Mais je ne sais pas vraiment où je vais. 
-
-
-C'est alors que je reçois un e-mail qui fait la promotion d'Atomic Meditation.
-
-
-Atomic Meditation est un programme mis en avant par Eliott (Atomic) et proposé par Maxime Gréau. Le programme propose un volet formation et un volet coaching. Il tombe à pic. Je fais déjà confiance à Eliott. Je souhaite m'investir davantage dans la communauté Atomic. Je décide donc de rejoindre le Club Samatha.
-
-
-Maxime propose alors une rencontre physique lors d'une retraite de méditation. C'est à deux pas de chez moi. C'est pile pendant mes vacances. Et je n'ai rien de prévu à ces dates. 
-
-
-Let's go !
+Maxime propose une rencontre physique lors d'une retraite de méditation. C'est à deux pas de chez moi. C'est pile pendant mes vacances. Et je n'ai rien de prévu à ces dates. Let's go !
 
 
 
