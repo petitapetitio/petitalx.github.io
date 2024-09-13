@@ -5,7 +5,7 @@ slug: retraite
 ---
 
 
-Cette année, j'ai lancé plusieurs expérimentations pour gagner en clarté mentale :
+Cette année, j'ai lancé plusieurs expérimentations pour gagner en clarté mentale:
 
 - digérer les informations que je consomme dans mon second cerveau
 - échanger régulièrement avec un psychologue
@@ -182,6 +182,7 @@ C'était une semaine hors du temps.
 Chaque jour, je me suis senti reconnaissant de la chance de vivre cette expérience. 
 
 Voici 7 leçons que je retiens de cette retraite : 
+
 1. **Atteindre l'éveil (la conscience de soi) est la meilleure chose que tu peux faire pour aider les autres.** Nous avons tendance à vouloir nettoyer la neige qui est sur le toit du voisin avant de balayer devant notre porte. Or, il y a un risque d'erreur important à chercher à aider les autres avant d'avoir géré son cas. Aide-toi avant de chercher à aider les autres. Atteindre l'éveil va t'aider à faire face à tes problèmes. Résoudre ses problèmes permet ensuite d'aider les autres à résoudre le même problème. 
 2. **Samatha est la base de la méditation.** Samatha permet de développer sa capacité de concentration et de vider son esprit pour en faire un lac calme et silencieux. Elle est un pré-requis aux pratiques de méditation plus avancées. Lorsque tu parviens aux stades 7, 8, 9, elle a en elle même un impact immense sur ton quotidien.
 3. **Commencer avec de courtes durées** : Il est préférable de débuter la méditation avec des entrainements courts mais régulier. Lors des longues sessions, tu fatigues et risques d'installer des habitudes qui seront difficiles à défaire ensuite.
