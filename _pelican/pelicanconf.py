@@ -46,7 +46,8 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-PAGE_SAVE_AS = "{slug}.html"
+# was "{slug}.html" but I want short urls
+PAGE_SAVE_AS = PAGE_URL = ARTICLE_SAVE_AS = ARTICLE_URL = "{slug}"
 
 # Disable the generation of these pages
 TAG_SAVE_AS = ''

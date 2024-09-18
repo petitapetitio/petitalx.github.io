@@ -5,8 +5,8 @@
       <meta charset="utf-8" />
       <meta name="generator" content="Pelican" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" type="text/css" href="https://petitalx.github.io/theme/css/style.css" />
-      <link rel="stylesheet" type="text/css" href="https://petitalx.github.io/theme/css/code.css" />
+      <link rel="stylesheet" type="text/css" href="https://petitapetit.io/theme/css/style.css" />
+      <link rel="stylesheet" type="text/css" href="https://petitapetit.io/theme/css/code.css" />
       <script>
       function copyToClipboard(button) {
           const codeElement = button.nextElementSibling.querySelector('code');
@@ -26,8 +26,8 @@
 
       <script defer id="fairlytics-id-ajcu6jd9k7ysd6" data-fairlyticskey="a8dadb702211d3b56df412e4fbde8518" src="https://app.fairlytics.tech/tag/tag.js"></script>
 
-        <link href="https://petitalx.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Alexandre Petit Full Atom Feed" />
-        <link href="https://petitalx.github.io/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Alexandre Petit Full RSS Feed" />
+        <link href="https://petitapetit.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Alexandre Petit Full Atom Feed" />
+        <link href="https://petitapetit.io/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Alexandre Petit Full RSS Feed" />
 
 
 
@@ -36,7 +36,7 @@
 
   <body>
     <header>
-      <hgroup><h1><a href="https://petitalx.github.io/">Alexandre Petit</a></h1></hgroup>
+      <hgroup><h1><a href="https://petitapetit.io/">Alexandre Petit</a></h1></hgroup>
     </header>
     <main>
   <article>
@@ -107,7 +107,7 @@
 <p>Et cela me fait une histoire à raconter. </p>
 <p>Voilà,</p>
 <p>à plus pour la prochaine aventure !</p>
-<div class="subscription-widget-wrap-editor" data-attrs='{"url":"https://100produits.substack.com/subscribe?","text":"Subscribe","language":"en"}' data-component-name="SubscribeWidgetToDOM"><div class="subscription-widget show-subscribe"><div class="preamble"><p class="cta-caption">Merci d’avoir lu jusqu’ici ! Si tu souhaites recevoir les prochaines éditions, tu peux t’abonner juste là 👇🙂</p></div><form class="subscription-widget-subscribe"><input class="email-input" name="email" placeholder="Type your email…" tabindex="-1" type="email"/><input class="button primary" type="submit" value="Subscribe"/><div class="fake-input-wrapper"><div class="fake-input"></div><div class="fake-button"></div></div></form></div></div>
+<div class="subscription-widget-wrap-editor" data-attrs='{"url":"https://100produits.substack.com/subscribe?","text":"Subscribe","language":"en"}' data-component-name="SubscribeWidgetToDOM"><div class="subscription-widget show-subscribe"><div class="preamble"><p class="cta-caption">Merci d’avoir lu jusqu’ici ! </p></div></div></div>
     <footer>
       <p>Publié le <time datetime="2024-01-08T07:04:54.678000+00:00">
         Lun 08 janvier 2024

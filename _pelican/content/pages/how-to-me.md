@@ -1,6 +1,7 @@
 ---
 Title: How to me
 Date: 2024-07-21
+slug: readme
 ---
 
 Ma journée idéale.

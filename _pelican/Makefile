@@ -4,7 +4,7 @@ PELICANOPTS=
 
 BASEDIR=$(CURDIR)
 INPUTDIR=$(BASEDIR)/content
-OUTPUTDIR=$(BASEDIR)/..
+OUTPUTDIR=$(BASEDIR)/../htdocs
 CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF=$(BASEDIR)/publishconf.py
 
@@ -42,7 +42,7 @@ help:
 	@echo '                                                                          '
 
 clean:
-	rm $(OUTPUTDIR)/**.html || true
+	rm $(OUTPUTDIR)/* || true
 	rm -rf "$(OUTPUTDIR)/feeds"
 	rm -rf "$(OUTPUTDIR)/pages"
 	rm -rf "$(OUTPUTDIR)/theme"
@@ -54,11 +54,14 @@ devserver:
 
 publish:
 	"$(PELICAN)" "$(INPUTDIR)" -o "$(OUTPUTDIR)" -s "$(PUBLISHCONF)" $(PELICANOPTS)
+	cp $(BASEDIR)/favicon.ico $(OUTPUTDIR)/
 
-github: clean publish
-	git add -A
-	git commit -m "Update site"
-	git push origin $(GITHUB_PAGES_BRANCH)
+deploy: clean publish
+	rsync -avz --delete --exclude='pub' --exclude='pub/*' $(OUTPUTDIR)/* a@petitapetit.io:/var/www/htdocs
+# github: clean publish
+# 	git add -A
+# 	git commit -m "Update site"
+# 	git push origin $(GITHUB_PAGES_BRANCH)
 
 
 .PHONY: help clean devserver publish github

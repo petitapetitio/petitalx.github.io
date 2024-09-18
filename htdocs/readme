@@ -5,8 +5,8 @@
       <meta charset="utf-8" />
       <meta name="generator" content="Pelican" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" type="text/css" href="https://petitalx.github.io/theme/css/style.css" />
-      <link rel="stylesheet" type="text/css" href="https://petitalx.github.io/theme/css/code.css" />
+      <link rel="stylesheet" type="text/css" href="https://petitapetit.io/theme/css/style.css" />
+      <link rel="stylesheet" type="text/css" href="https://petitapetit.io/theme/css/code.css" />
       <script>
       function copyToClipboard(button) {
           const codeElement = button.nextElementSibling.querySelector('code');
@@ -26,13 +26,13 @@
 
       <script defer id="fairlytics-id-ajcu6jd9k7ysd6" data-fairlyticskey="a8dadb702211d3b56df412e4fbde8518" src="https://app.fairlytics.tech/tag/tag.js"></script>
 
-        <link href="https://petitalx.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Alexandre Petit Full Atom Feed" />
-        <link href="https://petitalx.github.io/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Alexandre Petit Full RSS Feed" />
+        <link href="https://petitapetit.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Alexandre Petit Full Atom Feed" />
+        <link href="https://petitapetit.io/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Alexandre Petit Full RSS Feed" />
   </head>
 
   <body>
     <header>
-      <hgroup><h1><a href="https://petitalx.github.io/">Alexandre Petit</a></h1></hgroup>
+      <hgroup><h1><a href="https://petitapetit.io/">Alexandre Petit</a></h1></hgroup>
     </header>
     <main>
   <article>

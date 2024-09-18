@@ -1,5 +1,6 @@
 ---
 Title: Now
+slug: now
 ---
 
 Updated July 25th, 2024, from Belbeuf, France.

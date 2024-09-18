@@ -1,6 +1,7 @@
 ---
 Title: Alexandre Petit
 Date: 2024-07-21
+slug: home
 ---
 
 Hello ! 👋
