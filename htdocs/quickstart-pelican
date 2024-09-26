@@ -141,6 +141,7 @@
 <p>Dans la suite de l'article, on va suivre ensemble les étapes que j'ai suivi pour construire mon site personnel https://petitalx.io. </p>
 <blockquote>
 <p><code>petitalx</code> est mon username Github. Naturellement, vous pouvez remplacer toutes les occurrences de <code>petitalx</code> par votre username. Vous ne pourrez pas copier coller toutes les instructions. Mais cela fera travailler votre mémoire mécanique :).</p>
+<p>Une version vidéo de ce tutoriel est disponible sur ma chaîne Youtube : https://www.youtube.com/watch?v=cdcrieAV6Wk</p>
 </blockquote>
 <h3>Créer un walking skeleton</h3>
 <p>Notre premier objectif est de configurer et déployer un site le plus rapidement possible. On pourra ensuite itérer pour ajuster le style, ajouter du contenu, et simplifier le code.</p>
