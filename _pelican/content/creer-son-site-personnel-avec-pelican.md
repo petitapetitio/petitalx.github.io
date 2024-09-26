@@ -133,6 +133,8 @@ Dans la suite de l'article, on va suivre ensemble les étapes que j'ai suivi pou
 
 > `petitalx` est mon username Github. Naturellement, vous pouvez remplacer toutes les occurrences de `petitalx` par votre username. Vous ne pourrez pas copier coller toutes les instructions. Mais cela fera travailler votre mémoire mécanique :).
 
+> Une version vidéo de ce tutoriel est disponible sur ma chaîne Youtube : https://www.youtube.com/watch?v=cdcrieAV6Wk
+
 ### Créer un walking skeleton
 
 
