@@ -35,7 +35,7 @@ help:
 	@echo '   make clean                          remove the generated files         '
 	@echo '   make publish                        generate using production settings '
 	@echo '   make devserver [PORT=8000]          serve and regenerate together      '
-	@echo '   make github                         upload the web site                '
+	@echo '   make deploy                         upload the web site                '
 	@echo '                                                                          '
 	@echo 'Set the DEBUG variable to 1 to enable debugging, e.g. make DEBUG=1 html   '
 	@echo 'Set the RELATIVE variable to 1 to enable relative urls                    '
@@ -58,10 +58,5 @@ publish:
 
 deploy: clean publish
 	rsync -avz --delete --exclude='pub' --exclude='pub/*' $(OUTPUTDIR)/* a@petitapetit.io:/var/www/htdocs
-# github: clean publish
-# 	git add -A
-# 	git commit -m "Update site"
-# 	git push origin $(GITHUB_PAGES_BRANCH)
 
-
-.PHONY: help clean devserver publish github
+.PHONY: help clean devserver publish deploy
