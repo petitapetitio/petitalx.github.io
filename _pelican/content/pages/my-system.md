@@ -15,8 +15,6 @@ Je dresse une liste de mes projets du moment en appliquant deux principes :
 
 Puis je les met au clair sur ma page ["now"](now).
 
-Et voilà.
-
 ### Semaine idéale
 
 Ma semaine idéale dérive de mes projets du moment. 
@@ -108,3 +106,4 @@ Lorsque je m'y tiens, mon protocole à ça :
 - **task trace** : tracer les actions que je réalise, les commandes que je saisi, et faire des screenshots au fur et à mesure que j'avance sur une tâche
 - **téléphone silencieux** : mes notifications sont coupées par défaut, les notifications que je laisse passer différées
 - **retarder l'accès à la dopamine facile** : pas de réseaux sociaux avant 12h
+- **faire tout de suite** : si la tâche prends seulement quelques secondes et que je n'ai pas envie de la faire, j'essaie de la traiter immédiatement. Cela me permet d'évacuer rapidement la charge mentale qui lui est associée et de me sentir en paix avec moi-même. C'est par exemple les tâches de type "relancer le syndic de copro", appeler tel organisme pour prendre des informations.
