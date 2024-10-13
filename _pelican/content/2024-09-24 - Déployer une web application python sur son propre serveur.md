@@ -1,6 +1,6 @@
 ---
 date: 2024-09-25
-title: Deploy your Python web applications on your own server
+title: Deploying Python Web Applications on your own server
 slug: deploy
 ---
 
@@ -9,18 +9,17 @@ slug: deploy
 Why would I do that ? 
 
 Here are 5 reasons that motivated me :
+
 - it's economical (only 5$/month + the price of your domain name)
 - it's easy (just follow this tutorial)
 - it's empowering
 - it's simple
 - it's fun
 
-Another reason that pushed me is mimesis.
-Pieter Levels deploy his index.php files on his own server.
-Derek Sivers run all his business on it's own sever. 
-Hackers do it. It looks exciting.
+Another reason that pushed me is mimesis. Pieter Levels deploy his index.php files on his own server. Derek Sivers run all his business on it's own sever. Hackers do it. It looks exciting.
 
 So, here is the plan :
+
 - Setup your server
 - Make a simple python web app
 - Add your subdomain to your certificate
